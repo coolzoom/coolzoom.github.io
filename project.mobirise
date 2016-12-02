@@ -8,7 +8,7 @@
       "styling": {}
     },
     "versionFirst": "3.9.2",
-    "uniqCompNum": 8,
+    "uniqCompNum": 9,
     "versionPublish": "3.9.2",
     "favicon": "@PROJECT_PATH@/assets/images/logo1-128x128-73.png",
     "noImageResize": "",
@@ -220,6 +220,27 @@
           "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\"></a>",
           "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".nav-item .btn\" href=\"https://mobirise.com\">Download</a></li>",
           "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"https://mobirise.com\"><br></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-en.html\"><span class=\"mdi-action-language mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\">&nbsp;English</span></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"><span class=\"mdi-action-language mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\">&nbsp;Italian</span></a></li><li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"https://mobirise.com\"></a></li>"
+        },
+        {
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "footer1",
+          "_anchor": "footer1-8",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/photo-3.jpg",
+            "bgColor": "#11011a",
+            "bgColorRadio": true,
+            "overlay": true,
+            "overlayOpacity": 0.8,
+            "overlayColor": "#444444"
+          },
+          "text": "Copyright (c) 2016 Drassil.org&nbsp;<br>Tax code: 95164560658"
         }
       ]
     },
