@@ -22,7 +22,7 @@
       "settings": {
         "title": "",
         "meta_descr": "",
-        "header_custom": "",
+        "header_custom": "<style>\n.mbr-arrow{\n   color: #FFFFFF;\n}\n</style>",
         "footer_custom": "",
         "html_before": ""
       },
@@ -146,7 +146,7 @@
         "main": true,
         "title": "",
         "meta_descr": "",
-        "header_custom": "",
+        "header_custom": "<style>\n.mbr-arrow{\n   color: #FFFFFF;\n}\n</style>",
         "footer_custom": "",
         "html_before": ""
       },
