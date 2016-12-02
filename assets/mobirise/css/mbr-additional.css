@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700&subset=latin,vietnamese,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+
+
+
+#header1-3 H1 {
+  color: #ffffff;
+  font-family: 'Indie Flower', cursive;
+}
+#header1-3 P {
+  color: #ffffff;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 24px;
+}
+#menu-4 .navbar-toggler {
+  color: #5cb85c;
+}
+#menu-4 .nav-link STRONG {
+  font-family: 'Oswald', sans-serif;
+}
+#menu-4 .nav-link {
+  font-family: 'Oswald', sans-serif;
+}
+
+
+
+
+#header1-0 H1 {
+  color: #ffffff;
+  font-family: 'Indie Flower', cursive;
+}
+#header1-0 P {
+  color: #ffffff;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 24px;
+}
+#menu-1 .navbar-toggler {
+  color: #5cb85c;
+}
+#menu-1 .nav-link STRONG {
+  font-family: 'Oswald', sans-serif;
+}
+#menu-1 .nav-link {
+  font-family: 'Oswald', sans-serif;
+}
+
+#header1-7 H1 {
+  font-family: 'Indie Flower', cursive;
+  color: #ffffff;
+}
