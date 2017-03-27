@@ -27,6 +27,7 @@
 
 
 
+
 #header1-0 H1 {
   color: #ffffff;
   font-family: 'Indie Flower', cursive;
@@ -43,6 +44,9 @@
   font-family: 'Oswald', sans-serif;
 }
 #menu-1 .nav-link {
+  font-family: 'Oswald', sans-serif;
+}
+#menu-1 .nav-link SPAN {
   font-family: 'Oswald', sans-serif;
 }
 

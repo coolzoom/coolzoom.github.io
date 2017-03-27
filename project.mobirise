@@ -11,7 +11,10 @@
     "uniqCompNum": 11,
     "versionPublish": "3.12.1",
     "path": "@PROJECT_PATH@",
-    "screenshot": "screenshot.png"
+    "screenshot": "screenshot.png",
+    "publishFtpPath": "public_html",
+    "publishType": "local",
+    "publishPath": "@PROJECT_PATH@"
   },
   "pages": {
     "index-en.html": {
@@ -111,8 +114,8 @@
             }
           },
           "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\"></a>",
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".nav-item .btn\" href=\"https://mobirise.com\">Download</a></li>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"https://mobirise.com\"><br></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-en.html\"><span class=\"mdi-action-language mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\">&nbsp;English</span></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"><span class=\"mdi-action-language mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\">&nbsp;Italian</span></a></li><li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"https://mobirise.com\"></a></li>"
+          "buttons": " <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-success-outline btn-success\" data-app-selector=\".nav-item .btn\" href=\"https://mobirise.com\"><span class=\"fa fa-group mbr-iconfont mbr-iconfont-btn-parent\"></span>Partners</a></li>",
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"https://mobirise.com\"><br></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-en.html\"><span class=\"mdi-action-language mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\">&nbsp;English</span></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"><span class=\"mdi-action-language mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\">&nbsp;Italian</span></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"pages/partners.html\"><span class=\"icon54-handshake mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\"></span>Partners&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"pages/team.html\"><span class=\"mdi-social-people mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\"></span> Team</a></li>  <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"></a></li><li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"https://mobirise.com\"></a></li>"
         },
         {
           "alias": "purity/components",
@@ -207,6 +210,10 @@
             ".nav-link": {
               "font-family": "'Oswald', sans-serif",
               "googleLink": "https://fonts.googleapis.com/css?family=Oswald:400,300,700"
+            },
+            ".nav-link SPAN": {
+              "font-family": "'Oswald', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Oswald:400,300,700"
             }
           },
           "_anchor": "menu-1",
@@ -236,7 +243,7 @@
           },
           "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\"></a>",
           "buttons": " <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-success-outline btn-success\" data-app-selector=\".nav-item .btn\" href=\"https://mobirise.com\"><span class=\"fa fa-group mbr-iconfont mbr-iconfont-btn-parent\"></span>Partners</a></li>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"https://mobirise.com\"><br></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-en.html\"><span class=\"mdi-action-language mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\">&nbsp;English</span></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"><span class=\"mdi-action-language mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\">&nbsp;Italian</span></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"></a></li><li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"https://mobirise.com\"></a></li>"
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"https://mobirise.com\"><br></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-en.html\"><span class=\"mdi-action-language mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\">&nbsp;English</span></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"><span class=\"mdi-action-language mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\">&nbsp;Italian</span></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"pages/partners.html\"><span class=\"icon54-handshake mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\"></span>Partners&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"pages/team.html\"><span class=\"mdi-social-people mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\"></span> Team</a></li>  <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"></a></li><li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"https://mobirise.com\"></a></li>"
         },
         {
           "alias": "purity/components",
