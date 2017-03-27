@@ -191,7 +191,7 @@
           },
           "title": "Drassil",
           "text": "Drassil è un associazione senza scopo di lucro che gestisce e/o sponsorizza vari progetti di carattere ricreativo e culturale creando comunità sociali, fornendo i migliori strumenti per metterle in comunicazione tra loro sotto lo stesso <i>albero</i>.&nbsp;<br><b>I nostri obiettivi:</b> promuovere ed organizzare&nbsp;sessioni di gioco dal vivo e online; dare supporto a progetti artistici, tecnologici , scientifici e tutto ciò che concerne la cultura.<br><br>Inizia a scoprire Drassil! scegli il <i>ramo</i> che preferisci:",
-          "buttons": " <a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"http://github.com/drassil\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\"><span class=\"li_lab mbr-iconfont mbr-iconfont-btn\"></span>Drassil Laboratory</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"http://www.drassil.net\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">Drassil Network <span class=\"icon54-v2-cup-2 mbr-iconfont mbr-iconfont-btn\"></span></a> "
+          "buttons": " <a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"pages/laboratory.html\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\"><span class=\"li_lab mbr-iconfont mbr-iconfont-btn\"></span>Drassil Laboratory</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"http://www.drassil.net\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">Drassil Network <span class=\"icon54-v2-cup-2 mbr-iconfont mbr-iconfont-btn\"></span></a> "
         },
         {
           "alias": "purity/components",
