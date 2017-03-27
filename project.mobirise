@@ -1,21 +1,17 @@
 {
   "settings": {
-    "name": "Drassil",
-    "currentPage": "index.html",
+    "name": "Drassil Lab",
+    "currentPage": "index-it.html",
     "theme": {
       "name": "purity",
       "title": "PurityM",
       "styling": {}
     },
     "versionFirst": "3.9.2",
-    "uniqCompNum": 9,
-    "versionPublish": "3.9.2",
-    "favicon": "@PROJECT_PATH@/assets/images/logo1-128x128-73.png",
-    "noImageResize": "",
-    "cookiesAlert": "",
-    "google-analytics": "",
-    "publishType": "local",
-    "publishPath": "file:///C:/Hw2_Hybrid/usr/workspace/projects/Drassil/drassil.github.io"
+    "uniqCompNum": 11,
+    "versionPublish": "3.12.1",
+    "path": "@PROJECT_PATH@",
+    "screenshot": "screenshot.png"
   },
   "pages": {
     "index-en.html": {
@@ -68,7 +64,7 @@
           },
           "title": "Drassil",
           "text": "<br>Drassil Association is a non-profit organization that manages and/or supports many cultural and &nbsp;leisure projects. It leads to the creation of social communities by providing the best tools in order to put them in communication with each other, under the same<br> <i>tree</i>.<br>Our goals: promoting and organizing live &amp; online gaming sessions; &nbsp;giving support to artistic, technological, scientific projects and everything related to culture.<br><br>Begin to discover Drassil <i>branches</i>! <br>",
-          "buttons": " <a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"http://github.com/drassil\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">Drassil Laboratory</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"http://www.drassil.net\" data-toolbar=\"-mbrBtnMove\">Drassil Network</a>"
+          "buttons": " <a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"http://github.com/drassil\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\"><span class=\"li_lab mbr-iconfont mbr-iconfont-btn\"></span>Drassil Laboratory</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"http://www.drassil.net\" data-toolbar=\"-mbrBtnMove\">Drassil Network<span class=\"icon54-v2-cup-2 mbr-iconfont mbr-iconfont-btn\"></span></a>"
         },
         {
           "alias": "purity/components",
@@ -103,7 +99,7 @@
           "logo": {
             "image": {
               "active": true,
-              "src": "@THEME_PATH@/components/_images/logo.png",
+              "src": "@PROJECT_PATH@/assets/images/logo.png",
               "height": 128,
               "alt": "Mobirise",
               "link": "https://mobirise.com"
@@ -137,7 +133,7 @@
             "overlayOpacity": 0.8,
             "overlayColor": "#444444"
           },
-          "text": "Copyright (c) 2016 Drassil.org&nbsp;<br>Tax code: 95164560658"
+          "text": "<p>Copyright (c) 2016 Drassil.org&nbsp;<br>Contacts:&nbsp;<a href=\"mailto:staff-drassil@googlegroups.com\">staff-drassil@googlegroups.com</a><br>Tax code: 95164560658</p>"
         }
       ]
     },
@@ -192,7 +188,7 @@
           },
           "title": "Drassil",
           "text": "Drassil è un associazione senza scopo di lucro che gestisce e/o sponsorizza vari progetti di carattere ricreativo e culturale creando comunità sociali, fornendo i migliori strumenti per metterle in comunicazione tra loro sotto lo stesso <i>albero</i>.&nbsp;<br><b>I nostri obiettivi:</b> promuovere ed organizzare&nbsp;sessioni di gioco dal vivo e online; dare supporto a progetti artistici, tecnologici , scientifici e tutto ciò che concerne la cultura.<br><br>Inizia a scoprire Drassil! scegli il <i>ramo</i> che preferisci:",
-          "buttons": " <a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"http://github.com/drassil\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">Drassil Laboratory</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"http://www.drassil.net\" data-toolbar=\"-mbrBtnMove\">Drassil Network</a>"
+          "buttons": " <a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"http://github.com/drassil\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\"><span class=\"li_lab mbr-iconfont mbr-iconfont-btn\"></span>Drassil Laboratory</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"http://www.drassil.net\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">Drassil Network <span class=\"icon54-v2-cup-2 mbr-iconfont mbr-iconfont-btn\"></span></a> "
         },
         {
           "alias": "purity/components",
@@ -227,7 +223,7 @@
           "logo": {
             "image": {
               "active": true,
-              "src": "@THEME_PATH@/components/_images/logo.png",
+              "src": "@PROJECT_PATH@/assets/images/logo.png",
               "height": 128,
               "alt": "Mobirise",
               "link": "https://mobirise.com"
@@ -239,8 +235,8 @@
             }
           },
           "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\"></a>",
-          "buttons": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-secondary-outline\" data-app-selector=\".nav-item .btn\" href=\"https://mobirise.com\">Download</a></li>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"https://mobirise.com\"><br></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-en.html\"><span class=\"mdi-action-language mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\">&nbsp;English</span></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"><span class=\"mdi-action-language mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\">&nbsp;Italian</span></a></li><li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"https://mobirise.com\"></a></li>"
+          "buttons": " <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-success-outline btn-success\" data-app-selector=\".nav-item .btn\" href=\"https://mobirise.com\"><span class=\"fa fa-group mbr-iconfont mbr-iconfont-btn-parent\"></span>Partners</a></li>",
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"https://mobirise.com\"><br></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-en.html\"><span class=\"mdi-action-language mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\">&nbsp;English</span></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"><span class=\"mdi-action-language mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\">&nbsp;Italian</span></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"></a></li><li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"https://mobirise.com\"></a></li>"
         },
         {
           "alias": "purity/components",
@@ -261,7 +257,7 @@
             "overlayOpacity": 0.8,
             "overlayColor": "#444444"
           },
-          "text": "Copyright (c) 2016 Drassil.org&nbsp;<br>Tax code: 95164560658"
+          "text": "<p>Copyright (c) 2016 Drassil.org&nbsp;<br>Contacts:&nbsp;<a href=\"mailto:staff-drassil@googlegroups.com\">staff-drassil@googlegroups.com</a><br>Tax code: 95164560658</p>"
         }
       ]
     },
