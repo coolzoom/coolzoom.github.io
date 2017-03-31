@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Drassil.Org",
-    "currentPage": "partners.html",
+    "currentPage": "team.html",
     "theme": {
       "name": "mobirise3",
       "title": "Mobirise 3",
@@ -170,7 +170,7 @@
                 "active": false
               },
               {
-                "tags": "Network,Organization",
+                "tags": "Network",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
@@ -843,14 +843,14 @@
             "paddingBottom": 0,
             "images": [
               {
-                "tags": "DrassilLab,DrassilNetwork",
+                "tags": "DrassilNetwork",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/af8790302bcbb97062873431312f4b2c-2000x2000-800x800.png",
                 "image": "@PROJECT_PATH@/assets/images/af8790302bcbb97062873431312f4b2c-2000x2000.png",
                 "caption": "<b><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">Rithelsem</a></b><br><b><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\"><br></a></b><br><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">-</a>&nbsp;AS &nbsp;Information Security Analyst<br><br>- Drassil.net Counselor&nbsp;",
-                "active": false
+                "active": true
               },
               {
                 "tags": "DrassilNetwork",
@@ -890,7 +890,7 @@
                 "thumb": "@PROJECT_PATH@/assets/images/768de7aeb42bd1ef73d913a12a980c11-2000x2000-800x800.png",
                 "image": "@PROJECT_PATH@/assets/images/768de7aeb42bd1ef73d913a12a980c11-2000x2000.png",
                 "caption": "<b><a href=\"http://it.gravatar.com/yehonal\" target=\"_blank\" class=\"text-white\">Yehonal</a></b><br><br>- Drassil Founder<br>- AC Lead Developer<br>- AS Manager<br><br>",
-                "active": true
+                "active": false
               }
             ],
             "spacing": "2",
