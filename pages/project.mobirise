@@ -843,7 +843,7 @@
             "paddingBottom": 0,
             "images": [
               {
-                "tags": "Network,Laboratory",
+                "tags": "Network",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
@@ -853,14 +853,14 @@
                 "active": false
               },
               {
-                "tags": "DrassilNetwork",
+                "tags": "Network,Laboratory",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/myavatar-7-2000x2000-800x800.png",
                 "image": "@PROJECT_PATH@/assets/images/myavatar-7-2000x2000.png",
                 "caption": "<b><a href=\"https://it.gravatar.com/matem6\" target=\"_blank\" class=\"text-white\">Jestus</a></b><br><br>- AC Developer<br><br>- Drassil.net CTO<br><br>",
-                "active": false
+                "active": true
               },
               {
                 "tags": "Network",
@@ -890,7 +890,7 @@
                 "thumb": "@PROJECT_PATH@/assets/images/768de7aeb42bd1ef73d913a12a980c11-2000x2000-800x800.png",
                 "image": "@PROJECT_PATH@/assets/images/768de7aeb42bd1ef73d913a12a980c11-2000x2000.png",
                 "caption": "<b><a href=\"http://it.gravatar.com/yehonal\" target=\"_blank\" class=\"text-white\">Yehonal</a></b><br><br>- Drassil Founder<br>- AC Lead Developer<br>- AS Manager<br><br>",
-                "active": true
+                "active": false
               }
             ],
             "spacing": "2",
