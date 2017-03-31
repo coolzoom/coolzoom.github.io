@@ -29,6 +29,9 @@
     "uniqCompNum": 15,
     "versionPublish": "3.12.1",
     "path": "@PROJECT_PATH@",
+    "publishFtpPath": "public_html",
+    "publishType": "local",
+    "publishPath": "@PROJECT_PATH@",
     "screenshot": "screenshot.png"
   },
   "pages": {
@@ -145,7 +148,7 @@
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/hw2-banner-2000x1142-800x456.png",
-                "image": "@PROJECT_PATH@/assets/images/hw2-banner-2000x1142.png",
+                "image": "@PROJECT_PATH@/assets/images/hw2_banner-2000x1142.png",
                 "caption": "<p><a href=\"http://www.hyperweb2.com\" target=\"_blank\">HyperWeb 2.0 - Software development</a><a href=\"http://www.hyperweb2.com\" target=\"_blank\"></a></p>",
                 "active": false
               },
@@ -434,7 +437,7 @@
           },
           "media2": {
             "image": {
-              "src": "@PROJECT_PATH@/assets/images/hw2-banner-600x342.png",
+              "src": "@PROJECT_PATH@/assets/images/hw2_banner-600x342.png",
               "class": "card-img-top",
               "width": 600,
               "active": true,
@@ -493,7 +496,7 @@
           },
           "media3": {
             "image": {
-              "src": "@PROJECT_PATH@/assets/images/drassil-banner-600x337.jpg",
+              "src": "@PROJECT_PATH@/assets/images/drassil_banner-600x337.jpg",
               "class": "card-img-top",
               "width": 600,
               "active": true,
@@ -552,7 +555,7 @@
           },
           "media4": {
             "image": {
-              "src": "@PROJECT_PATH@/assets/images/logomakr-5qrnm6-600x300.png",
+              "src": "@PROJECT_PATH@/assets/images/logomakr_5qrnm6-600x300.png",
               "class": "card-img-top",
               "width": 600,
               "active": true,
@@ -858,7 +861,7 @@
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/myavatar-7-2000x2000-800x800.png",
-                "image": "@PROJECT_PATH@/assets/images/myavatar-7-2000x2000.png",
+                "image": "@PROJECT_PATH@/assets/images/myavatar%20(7)-2000x2000.png",
                 "caption": "<b><a href=\"https://it.gravatar.com/matem6\" target=\"_blank\" class=\"text-white\">Jestus</a></b><br><br>- AC Developer<br><br>- Drassil.net CTO<br><br>",
                 "active": true
               },

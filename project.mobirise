@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Drassil.Org",
-    "currentPage": "index-it.html",
+    "currentPage": "index-en.html",
     "theme": {
       "name": "purity",
       "title": "PurityM",
@@ -11,10 +11,7 @@
     "uniqCompNum": 11,
     "versionPublish": "3.12.1",
     "path": "@PROJECT_PATH@",
-    "screenshot": "screenshot.png",
-    "publishFtpPath": "public_html",
-    "publishType": "local",
-    "publishPath": "@PROJECT_PATH@"
+    "screenshot": "screenshot.png"
   },
   "pages": {
     "index-en.html": {
@@ -67,7 +64,7 @@
           },
           "title": "Drassil",
           "text": "<br>Drassil Association is a non-profit organization that manages and/or supports many cultural and &nbsp;leisure projects. It leads to the creation of social communities by providing the best tools in order to put them in communication with each other, under the same<br> <i>tree</i>.<br>Our goals: promoting and organizing live &amp; online gaming sessions; &nbsp;giving support to artistic, technological, scientific projects and everything related to culture.<br><br>Begin to discover Drassil <i>branches</i>! <br>",
-          "buttons": " <a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"http://github.com/drassil\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\"><span class=\"li_lab mbr-iconfont mbr-iconfont-btn\"></span>Drassil Laboratory</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"http://www.drassil.net\" data-toolbar=\"-mbrBtnMove\">Drassil Network<span class=\"icon54-v2-cup-2 mbr-iconfont mbr-iconfont-btn\"></span></a>"
+          "buttons": " <a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"pages/laboratory.html\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\"><span class=\"li_lab mbr-iconfont mbr-iconfont-btn\"></span>Drassil Laboratory</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"http://www.drassil.net\" data-toolbar=\"-mbrBtnMove\">Drassil Network<span class=\"icon54-v2-cup-2 mbr-iconfont mbr-iconfont-btn\"></span></a>"
         },
         {
           "alias": "purity/components",
