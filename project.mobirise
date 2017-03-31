@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Drassil.Org",
-    "currentPage": "index-en.html",
+    "currentPage": "index-it.html",
     "theme": {
       "name": "purity",
       "title": "PurityM",
@@ -11,7 +11,10 @@
     "uniqCompNum": 11,
     "versionPublish": "3.12.1",
     "path": "@PROJECT_PATH@",
-    "screenshot": "screenshot.png"
+    "screenshot": "screenshot.png",
+    "publishFtpPath": "public_html",
+    "publishType": "local",
+    "publishPath": "@PROJECT_PATH@"
   },
   "pages": {
     "index-en.html": {
@@ -44,23 +47,23 @@
           },
           "_anchor": "header1-3",
           "_params": {
-            "parallax": true,
-            "bgImageRadio": true,
-            "bgImage": "@PROJECT_PATH@/assets/images/download-2000x1250-3.jpg",
-            "bgColor": "#fff8e0",
-            "bgColorRadio": false,
-            "bgVideo": {
-              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
-            },
-            "bgVideoRadio": false,
-            "overlay": true,
-            "overlayOpacity": "0.4",
-            "overlayColor": "#000000",
-            "contentAlign": "center",
             "showTitle": true,
             "showText": true,
             "showButtons": true,
-            "showArrow": true
+            "showArrow": true,
+            "contentAlign": "center",
+            "bgImageRadio": true,
+            "bgImage": "@PROJECT_PATH@/assets/images/download-2000x1250-3.jpg",
+            "parallax": true,
+            "bgColorRadio": false,
+            "bgColor": "#fff8e0",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": true,
+            "overlayColor": "#000000",
+            "overlayOpacity": "0.4"
           },
           "title": "Drassil",
           "text": "<br>Drassil Association is a non-profit organization that manages and/or supports many cultural and &nbsp;leisure projects. It leads to the creation of social communities by providing the best tools in order to put them in communication with each other, under the same<br> <i>tree</i>.<br>Our goals: promoting and organizing live &amp; online gaming sessions; &nbsp;giving support to artistic, technological, scientific projects and everything related to culture.<br><br>Begin to discover Drassil <i>branches</i>! <br>",
@@ -87,14 +90,14 @@
           },
           "_anchor": "menu-4",
           "_params": {
-            "hamburgerColor": "#5cb85c",
-            "sticky": false,
-            "transparent": true,
-            "color": "#fff",
-            "collapsed": true,
             "logo": false,
             "showBrand": false,
-            "showButtons": false
+            "showButtons": false,
+            "sticky": false,
+            "collapsed": true,
+            "transparent": true,
+            "color": "#fff",
+            "hamburgerColor": "#5cb85c"
           },
           "logo": {
             "image": {
@@ -125,13 +128,13 @@
             "paddingTop": 3,
             "paddingBottom": 3,
             "bgImageRadio": false,
-            "parallax": true,
             "bgImage": "@THEME_PATH@/components/_images/photo-3.jpg",
-            "bgColor": "#11011a",
+            "parallax": true,
             "bgColorRadio": true,
+            "bgColor": "#11011a",
             "overlay": true,
-            "overlayOpacity": 0.8,
-            "overlayColor": "#444444"
+            "overlayColor": "#444444",
+            "overlayOpacity": 0.8
           },
           "text": "<p>Copyright (c) 2016 Drassil.org&nbsp;<br>Contacts:&nbsp;<a href=\"mailto:staff-drassil@googlegroups.com\">staff-drassil@googlegroups.com</a><br>Tax code: 95164560658</p>"
         }

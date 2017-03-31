@@ -26,12 +26,9 @@
     "cookiesAlert": "",
     "google-analytics": "",
     "versionFirst": "3.12.1",
-    "uniqCompNum": 15,
+    "uniqCompNum": 20,
     "versionPublish": "3.12.1",
-    "path": "@PROJECT_PATH@",
-    "publishFtpPath": "public_html",
-    "publishType": "local",
-    "publishPath": "@PROJECT_PATH@",
+    "path": "file:///C:/Hw2_Hybrid/usr/workspace/projects/Drassil/drassil.github.io",
     "screenshot": "screenshot.png"
   },
   "pages": {
@@ -45,6 +42,26 @@
         "html_before": ""
       },
       "components": [
+        {
+          "_styles": {
+            ".mbr-section-title, .mbr-section-subtitle": {
+              "text-align": "center"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "header3",
+          "_anchor": "header3-h",
+          "_params": {
+            "paddingTop": "6",
+            "paddingBottom": 1,
+            "bgColor": "#fff",
+            "showMeta": true
+          },
+          "title": "Our Partners",
+          "meta": "Every great idea needs the right people behind it to really make a difference. Our partners believe in our vision and have helped us build a solid foundation to make it happen.<br>"
+        },
         {
           "_inherit": "menu",
           "_tags": [
@@ -139,7 +156,7 @@
           ],
           "_name": "gallery4",
           "_params": {
-            "paddingTop": "4",
+            "paddingTop": "0",
             "paddingBottom": 0,
             "images": [
               {
@@ -148,7 +165,7 @@
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/hw2-banner-2000x1142-800x456.png",
-                "image": "@PROJECT_PATH@/assets/images/hw2_banner-2000x1142.png",
+                "image": "@PROJECT_PATH@/assets/images/hw2-banner-2000x1142.png",
                 "caption": "<p><a href=\"http://www.hyperweb2.com\" target=\"_blank\">HyperWeb 2.0 - Software development</a><a href=\"http://www.hyperweb2.com\" target=\"_blank\"></a></p>",
                 "active": false
               },
@@ -180,6 +197,36 @@
                 "thumb": "@PROJECT_PATH@/assets/images/lenusmedia-2000x1142-800x456.png",
                 "image": "@PROJECT_PATH@/assets/images/lenusmedia-2000x1142.png",
                 "caption": "<p><a href=\"http://www.lenus.it/\" target=\"_blank\">Lenus Media - Web Agency</a><a href=\"http://dellagreca.it\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
+                "active": false
+              },
+              {
+                "tags": "Network",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/photo369842821180533029-2000x1137-800x454.jpg",
+                "image": "@PROJECT_PATH@/assets/images/photo369842821180533029-2000x1137.jpg",
+                "caption": "<p><a href=\"https://www.azerothshard.org/\" target=\"_blank\">AzerothShard - RPG Community</a><a href=\"http://www.azerothshard.org/\" target=\"_blank\"></a><a href=\"http://www.lenus.it/\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
+                "active": false
+              },
+              {
+                "tags": "Network",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/logomakr-0tv645-2000x1069-800x427.png",
+                "image": "@PROJECT_PATH@/assets/images/logomakr-0tv645-2000x1069.png",
+                "caption": "<p><a href=\"https://www.azerothcore.org\" target=\"_blank\">AzerothCore - MMO Platform Org.</a><a href=\"https://www.wildhammer.co.uk\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
+                "active": false
+              },
+              {
+                "tags": "Network",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/logomakr-0tv645-2000x1069-800x427.png",
+                "image": "@PROJECT_PATH@/assets/images/logomakr-0tv645-2000x1069.png",
+                "caption": "<p><a href=\"https://www.wildhammer.co.uk\" target=\"_blank\">Wildhammer - RPG Community</a><a href=\"https://www.azerothshard.org/\" target=\"_blank\"></a><a href=\"http://www.azerothshard.org/\" target=\"_blank\"></a><a href=\"http://www.lenus.it/\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
                 "active": true
               }
             ],
@@ -194,6 +241,26 @@
           "_anchor": "gallery4-2",
           "articleLayout": false,
           "allItem": "All"
+        },
+        {
+          "_styles": {
+            ".mbr-section-title, .mbr-section-subtitle": {
+              "text-align": "center"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "header3",
+          "_anchor": "header3-i",
+          "_params": {
+            "paddingTop": 1,
+            "paddingBottom": 1,
+            "bgColor": "#fff",
+            "showMeta": true
+          },
+          "title": "Join Us!",
+          "meta": "<a href=\"http://www.drassil.org/index-en.html\" class=\"text-warning\">Contact us</a> to become a Drassil.org Partner!"
         }
       ]
     },
@@ -437,7 +504,7 @@
           },
           "media2": {
             "image": {
-              "src": "@PROJECT_PATH@/assets/images/hw2_banner-600x342.png",
+              "src": "@PROJECT_PATH@/assets/images/hw2-banner-600x342.png",
               "class": "card-img-top",
               "width": 600,
               "active": true,
@@ -496,7 +563,7 @@
           },
           "media3": {
             "image": {
-              "src": "@PROJECT_PATH@/assets/images/drassil_banner-600x337.jpg",
+              "src": "@PROJECT_PATH@/assets/images/drassil-banner-600x337.jpg",
               "class": "card-img-top",
               "width": 600,
               "active": true,
@@ -555,7 +622,7 @@
           },
           "media4": {
             "image": {
-              "src": "@PROJECT_PATH@/assets/images/logomakr_5qrnm6-600x300.png",
+              "src": "@PROJECT_PATH@/assets/images/logomakr-5qrnm6-600x300.png",
               "class": "card-img-top",
               "width": 600,
               "active": true,
@@ -732,6 +799,26 @@
       },
       "components": [
         {
+          "_styles": {
+            ".mbr-section-title, .mbr-section-subtitle": {
+              "text-align": "center"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "header3",
+          "_anchor": "header3-f",
+          "_params": {
+            "paddingTop": "5",
+            "paddingBottom": 1,
+            "bgColor": "#fff",
+            "showMeta": true
+          },
+          "title": "Drassil People",
+          "meta": "Super-human awesome people that is working and have worked for our Drassil projects!"
+        },
+        {
           "_inherit": "menu",
           "_tags": [
             "Theme"
@@ -842,37 +929,17 @@
           },
           "_customCSS": ".mbr-gallery-title {\n    background: -webkit-linear-gradient(left, rgba(85, 67, 70, 0.45), rgba(69, 80, 91, 0.45)) !important;\n}",
           "_params": {
-            "paddingTop": "4",
+            "paddingTop": "0",
             "paddingBottom": 0,
             "images": [
-              {
-                "tags": "Network",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/af8790302bcbb97062873431312f4b2c-2000x2000-800x800.png",
-                "image": "@PROJECT_PATH@/assets/images/af8790302bcbb97062873431312f4b2c-2000x2000.png",
-                "caption": "<b><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">Rithelsem</a></b><br><b><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\"><br></a></b><br><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">-</a>&nbsp;AS &nbsp;Information Security Analyst<br><br>- Drassil.net Counselor&nbsp;",
-                "active": false
-              },
               {
                 "tags": "Network,Laboratory",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/myavatar-7-2000x2000-800x800.png",
-                "image": "@PROJECT_PATH@/assets/images/myavatar%20(7)-2000x2000.png",
-                "caption": "<b><a href=\"https://it.gravatar.com/matem6\" target=\"_blank\" class=\"text-white\">Jestus</a></b><br><br>- AC Developer<br><br>- Drassil.net CTO<br><br>",
-                "active": true
-              },
-              {
-                "tags": "Network",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/13cf06142a4426622ed3202265180c45-2000x2000-800x800.png",
-                "image": "@PROJECT_PATH@/assets/images/13cf06142a4426622ed3202265180c45-2000x2000.png",
-                "caption": "<p><span style=\"font-size: 17px; line-height: 25px;\"><b>Ghost</b></span></p><p>- AS Supporter</p><p><span style=\"line-height: 1.5;\">- Drassil.net Counselor</span></p>",
+                "image": "@PROJECT_PATH@/assets/images/myavatar-7-2000x2000.png",
+                "caption": "<b><a href=\"https://it.gravatar.com/matem6\" target=\"_blank\" class=\"text-white\">Jestus</a></b><br><br>- AC Developer<br><br>- Drassil.net CTO<br><br><br>",
                 "active": false
               },
               {
@@ -880,9 +947,9 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/4a7f6708eeece3c50ee8c4f724a514d5-2000x2000-800x800.png",
-                "image": "@PROJECT_PATH@/assets/images/4a7f6708eeece3c50ee8c4f724a514d5-2000x2000.png",
-                "caption": "<b><a href=\"https://it.gravatar.com/pati3nc39506\" target=\"_blank\" class=\"text-white\">Whynot</a><br></b><br>- AS Game Expert<br><br>- Drassil.net Supporter<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/a486124cd5f811dee6ce95490c6ec664-2000x2000-800x800.png",
+                "image": "@PROJECT_PATH@/assets/images/a486124cd5f811dee6ce95490c6ec664-2000x2000.png",
+                "caption": "<p><b><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">Arkanor</a></b></p><p><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">-</a>&nbsp;Drassil.net Lead Supporter</p><p><span style=\"line-height: 1.5;\">- AC Counselor</span></p><p>- AS Manager&nbsp;</p>",
                 "active": false
               },
               {
@@ -892,8 +959,58 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/768de7aeb42bd1ef73d913a12a980c11-2000x2000-800x800.png",
                 "image": "@PROJECT_PATH@/assets/images/768de7aeb42bd1ef73d913a12a980c11-2000x2000.png",
-                "caption": "<b><a href=\"http://it.gravatar.com/yehonal\" target=\"_blank\" class=\"text-white\">Yehonal</a></b><br><br>- Drassil Founder<br>- AC Lead Developer<br>- AS Manager<br><br>",
+                "caption": "<b><a href=\"http://it.gravatar.com/yehonal\" target=\"_blank\" class=\"text-white\">Yehonal</a></b><br><br>- Drassil Founder<br><br>- AC Lead Developer<br><br>- AS Manager<br>",
                 "active": false
+              },
+              {
+                "tags": "Network",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/13cf06142a4426622ed3202265180c45-2000x2000-800x800.png",
+                "image": "@PROJECT_PATH@/assets/images/13cf06142a4426622ed3202265180c45-2000x2000.png",
+                "caption": "<p><span style=\"font-size: 17px; line-height: 25px;\"><b><a href=\"https://it.gravatar.com/ghost19881\" target=\"_blank\" class=\"text-white\">Ghost</a></b></span></p><p>- AS Supporter</p><p><span style=\"line-height: 1.5;\">- Drassil.net Counselor</span></p><p><span style=\"line-height: 1.5;\"><br></span></p>",
+                "active": false
+              },
+              {
+                "tags": "Network",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/9e66b185aea0de61e940e9b694f48071-2000x2000-800x800.png",
+                "image": "@PROJECT_PATH@/assets/images/9e66b185aea0de61e940e9b694f48071-2000x2000.png",
+                "caption": "<p><a href=\"https://it.gravatar.com/niivaedar\" target=\"_blank\" class=\"text-white\"><b>Niivaedar</b></a><a href=\"https://it.gravatar.com/niivaedar\" target=\"_blank\"></a><b><a href=\"https://it.gravatar.com/matem6\" target=\"_blank\" class=\"text-white\"></a></b><br><br>- AS Manager<br><br>- Drassil Legal Advice<br><br></p>",
+                "active": false
+              },
+              {
+                "tags": "Network",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/4a7f6708eeece3c50ee8c4f724a514d5-2000x2000-800x800.png",
+                "image": "@PROJECT_PATH@/assets/images/4a7f6708eeece3c50ee8c4f724a514d5-2000x2000.png",
+                "caption": "<b><a href=\"https://it.gravatar.com/pati3nc39506\" target=\"_blank\" class=\"text-white\">Whynot</a><br></b><br>- AS Game Expert<br><br>- Drassil.net Supporter<br><br><br>",
+                "active": false
+              },
+              {
+                "tags": "Network",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/af8790302bcbb97062873431312f4b2c-2000x2000-800x800.png",
+                "image": "@PROJECT_PATH@/assets/images/af8790302bcbb97062873431312f4b2c-2000x2000.png",
+                "caption": "<b><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">Rithelsem</a></b><br><b><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\"><br></a></b><br><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">-</a>&nbsp;AS &nbsp;Information Security Analyst<br><br>- Drassil.net Counselor&nbsp;<br><br>",
+                "active": false
+              },
+              {
+                "tags": "Network",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/helias-2000x2000-800x800.png",
+                "image": "@PROJECT_PATH@/assets/images/helias-2000x2000.png",
+                "caption": "<p><b><a href=\"https://it.gravatar.com/heliasdev\" target=\"_blank\" class=\"text-white\">Helias</a></b></p><p><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">-</a>&nbsp;AC Web &amp; DB Developer</p><p><span style=\"line-height: 1.5;\">- AS Counselor</span></p><p><span style=\"line-height: 1.5;\"><br></span></p>",
+                "active": true
               }
             ],
             "spacing": "2",
@@ -907,6 +1024,26 @@
           "_anchor": "gallery4-a",
           "articleLayout": false,
           "allItem": "All"
+        },
+        {
+          "_styles": {
+            ".mbr-section-title, .mbr-section-subtitle": {
+              "text-align": "center"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "header3",
+          "_anchor": "header3-j",
+          "_params": {
+            "paddingTop": 1,
+            "paddingBottom": "5",
+            "bgColor": "#fff",
+            "showMeta": true
+          },
+          "title": "Join us",
+          "meta": "Choose a project and become a Drassil.org Team Member!"
         }
       ]
     }
