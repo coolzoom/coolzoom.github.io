@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Drassil.Org",
-    "currentPage": "team.html",
+    "currentPage": "laboratory.html",
     "theme": {
       "name": "mobirise3",
       "title": "Mobirise 3",
@@ -385,7 +385,7 @@
               "linkInNewWindow": false
             }
           },
-          "title1": "AzerothCore",
+          "title1": "<a href=\"http://www.azerothcore.org\" target=\"_blank\">AzerothCore</a>",
           "subtitle1": "MMORPG Server Applications",
           "caption1": "Solid &amp; Modular server frameworks<br> and applications<br>",
           "media1_1": {
@@ -444,7 +444,7 @@
               "linkInNewWindow": false
             }
           },
-          "title2": "HW-CORE",
+          "title2": "<a href=\"https://github.com/HW-Core\" target=\"_blank\">HW-CORE</a>",
           "subtitle2": "Crosslanguage libraries &amp; framework",
           "caption2": "It's a framework and collection of libraries<br>developed with modular architecture in mind",
           "media2_1": {
@@ -503,7 +503,7 @@
               "linkInNewWindow": false
             }
           },
-          "title3": "Drassil Lab",
+          "title3": "<a href=\"https://github.com/drassil\" target=\"_blank\">Drassil Lab</a>",
           "subtitle3": "Laboratory of Ideas",
           "caption3": "Drassil lab is the hub of developing projects supported by <br>Drassil organization and powered by github",
           "media3_1": {
