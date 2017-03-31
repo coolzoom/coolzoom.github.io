@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Drassil.Org",
-    "currentPage": "team.html",
+    "currentPage": "partners.html",
     "theme": {
       "name": "mobirise3",
       "title": "Mobirise 3",
@@ -28,7 +28,7 @@
     "versionFirst": "3.12.1",
     "uniqCompNum": 15,
     "versionPublish": "3.12.1",
-    "path": "file:///C:/Hw2_Hybrid/usr/workspace/projects/Drassil/drassil.github.io",
+    "path": "@PROJECT_PATH@",
     "screenshot": "screenshot.png"
   },
   "pages": {
@@ -156,7 +156,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/adg-2000x1142-800x456.png",
                 "image": "@PROJECT_PATH@/assets/images/adg-2000x1142.png",
-                "caption": "<p><a href=\"http://dellagreca.it\" target=\"_blank\">Dellagreca.it - webdesign</a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
+                "caption": "<p><a href=\"http://www.attiliodellagreca.it/\" target=\"_blank\">Dellagreca.it - webdesign</a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
                 "active": false
               },
               {
