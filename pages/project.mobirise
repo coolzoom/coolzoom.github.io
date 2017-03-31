@@ -156,7 +156,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/adg-2000x1142-800x456.png",
                 "image": "@PROJECT_PATH@/assets/images/adg-2000x1142.png",
-                "caption": "<p><a href=\"http://www.attiliodellagreca.it/\" target=\"_blank\">attiliodellagreca.it - Web Design</a><a href=\"http://www.attiliodellagreca.it/\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
+                "caption": "<p><a href=\"http://www.attiliodellagreca.it/\" target=\"_blank\">Attiliodellagreca.it - Web Design</a><a href=\"http://www.attiliodellagreca.it/\" target=\"_blank\"></a><a href=\"http://www.attiliodellagreca.it/\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
                 "active": false
               },
               {
@@ -166,7 +166,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/logowhiteba2-2000x1132-800x452.png",
                 "image": "@PROJECT_PATH@/assets/images/logowhiteba2-2000x1132.png",
-                "caption": "<p><a href=\"https://ts.hydrake.eu\" target=\"_blank\">hydrake - TS network</a><a href=\"http://dellagreca.it\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
+                "caption": "<p><a href=\"https://ts.hydrake.eu\" target=\"_blank\">Hydrake - TS network</a><a href=\"https://ts.hydrake.eu\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
                 "active": false
               },
               {
