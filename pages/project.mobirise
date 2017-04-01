@@ -1061,7 +1061,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/2ce5803db4aa69f1360769edfa010cd7-2000x2000-800x800.png",
                 "image": "@PROJECT_PATH@/assets/images/2ce5803db4aa69f1360769edfa010cd7-2000x2000.png",
-                "caption": "<p><span style=\"font-size: 17px; line-height: 25px;\"><b>Thurin</b></span></p><p>-&nbsp;AS Chief Supporter</p><p>- Drassil.net Counselor</p><p><span style=\"line-height: 1.5;\"><br></span></p>",
+                "caption": "<p><span style=\"font-size: 17px; line-height: 25px;\"><b><a href=\"https://it.gravatar.com/thurinK\" target=\"_blank\">Thurin</a></b></span></p><p>-&nbsp;AS Chief Supporter</p><p>- Drassil.net Counselor</p><p><span style=\"line-height: 1.5;\"><br></span></p>",
                 "active": true
               },
               {
