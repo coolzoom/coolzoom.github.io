@@ -22,9 +22,12 @@
     $(".mbr-gallery-layout-default > div > div > div").each(function() {
         $(this).children().first().removeAttr("data-toggle");
 
-        /*var $a=$(this).find("a").first();
+        var $a=$(this).find("a").first();
         if ($a && $a.text()) {
-            $(this).children().first().wrap("<a target='_blank' href='"+$a[0].href+"'></a>");
-        }*/
+            $(this).children().first().click(function(){
+                window.open($a[0].href);
+                return false;
+            });
+        }
     });
 }());
