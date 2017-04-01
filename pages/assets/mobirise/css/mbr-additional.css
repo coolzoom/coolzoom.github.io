@@ -881,6 +881,10 @@ h6,
 #gallery4-a .mbr-gallery-title {
   background: -webkit-linear-gradient(left, rgba(85, 67, 70, 0.45), rgba(69, 80, 91, 0.45)) !important;
 }
+#header3-n .mbr-section-title,
+#header3-n .mbr-section-subtitle {
+  text-align: center;
+}
 #header3-j .mbr-section-title,
 #header3-j .mbr-section-subtitle {
   text-align: center;

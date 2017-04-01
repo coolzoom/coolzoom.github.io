@@ -26,7 +26,7 @@
     "cookiesAlert": "",
     "google-analytics": "",
     "versionFirst": "3.12.1",
-    "uniqCompNum": 20,
+    "uniqCompNum": 25,
     "versionPublish": "3.12.1",
     "path": "file:///C:/Hw2_Hybrid/usr/workspace/projects/Drassil/drassil.github.io",
     "screenshot": "screenshot.png"
@@ -147,7 +147,7 @@
             }
           },
           "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"http://www.drassil.org\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\" target=\"_blank\">Drassil</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"laboratory.html\">Laboratory</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"partners.html\">Partners</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"team.html\">Team</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-success-outline btn-success\" href=\"http://www.drassil.org\">Drassil.org</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white-outline btn-white\" href=\"http://www.drassil.net\">Drassil network</a></li>"
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"laboratory.html\">Laboratory</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"partners.html\">Partners</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"team.html\">Team</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-warning-outline btn-warning\" href=\"http://www.drassil.org\">Drassil.org</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white-outline btn-white\" href=\"http://www.drassil.net\">Drassil network</a></li>"
         },
         {
           "_inherit": "gallery1",
@@ -214,10 +214,10 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/logomakr-0tv645-2000x1069-800x427.png",
-                "image": "@PROJECT_PATH@/assets/images/logomakr-0tv645-2000x1069.png",
+                "thumb": "@PROJECT_PATH@/assets/images/logo-2000x1148-800x459.png",
+                "image": "@PROJECT_PATH@/assets/images/logo-2000x1148.png",
                 "caption": "<p><a href=\"https://www.azerothcore.org\" target=\"_blank\">AzerothCore - MMO Platform Org.</a><a href=\"https://www.wildhammer.co.uk\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
-                "active": false
+                "active": true
               },
               {
                 "tags": "Network",
@@ -227,7 +227,7 @@
                 "thumb": "@PROJECT_PATH@/assets/images/logomakr-0tv645-2000x1069-800x427.png",
                 "image": "@PROJECT_PATH@/assets/images/logomakr-0tv645-2000x1069.png",
                 "caption": "<p><a href=\"https://www.wildhammer.co.uk\" target=\"_blank\">Wildhammer - RPG Community</a><a href=\"https://www.azerothshard.org/\" target=\"_blank\"></a><a href=\"http://www.azerothshard.org/\" target=\"_blank\"></a><a href=\"http://www.lenus.it/\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
-                "active": true
+                "active": false
               }
             ],
             "spacing": "1",
@@ -255,7 +255,7 @@
           "_anchor": "header3-i",
           "_params": {
             "paddingTop": 1,
-            "paddingBottom": 1,
+            "paddingBottom": "4",
             "bgColor": "#fff",
             "showMeta": true
           },
@@ -355,7 +355,7 @@
             }
           },
           "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"http://www.drassil.org\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\" target=\"_blank\">Drassil</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"laboratory.html\">Laboratory</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"partners.html\">Partners</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"team.html\">Team</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-success-outline btn-success\" href=\"http://www.drassil.org\">Drassil.org</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white-outline btn-white\" href=\"http://www.drassil.net\">Drassil network</a></li>"
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"laboratory.html\">Laboratory</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"partners.html\">Partners</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"team.html\">Team</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-warning-outline btn-warning\" href=\"http://www.drassil.org\">Drassil.org</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white-outline btn-white\" href=\"http://www.drassil.net\">Drassil network</a></li>"
         },
         {
           "_tags": [
@@ -903,7 +903,7 @@
             }
           },
           "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"http://www.drassil.org\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\" target=\"_blank\">Drassil</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"laboratory.html\">Laboratory</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"partners.html\">Partners</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"team.html\">Team</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-success-outline btn-success\" href=\"http://www.drassil.org\">Drassil.org</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white-outline btn-white\" href=\"http://www.drassil.net\">Drassil network</a></li>"
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"laboratory.html\">Laboratory</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"partners.html\">Partners</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"team.html\">Team</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-warning-outline btn-warning\" href=\"http://www.drassil.org\">Drassil.org</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white-outline btn-white\" href=\"http://www.drassil.net\">Drassil network</a></li>"
         },
         {
           "_inherit": "gallery1",
@@ -933,46 +933,6 @@
             "paddingBottom": 0,
             "images": [
               {
-                "tags": "Network,Laboratory",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/myavatar-7-2000x2000-800x800.png",
-                "image": "@PROJECT_PATH@/assets/images/myavatar-7-2000x2000.png",
-                "caption": "<b><a href=\"https://it.gravatar.com/matem6\" target=\"_blank\" class=\"text-white\">Jestus</a></b><br><br>- AC Developer<br><br>- Drassil.net CTO<br><br><br>",
-                "active": false
-              },
-              {
-                "tags": "Network",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/a486124cd5f811dee6ce95490c6ec664-2000x2000-800x800.png",
-                "image": "@PROJECT_PATH@/assets/images/a486124cd5f811dee6ce95490c6ec664-2000x2000.png",
-                "caption": "<p><b><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">Arkanor</a></b></p><p><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">-</a>&nbsp;Drassil.net Lead Supporter</p><p><span style=\"line-height: 1.5;\">- AC Counselor</span></p><p>- AS Manager&nbsp;</p>",
-                "active": false
-              },
-              {
-                "tags": "Network,Laboratory",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/768de7aeb42bd1ef73d913a12a980c11-2000x2000-800x800.png",
-                "image": "@PROJECT_PATH@/assets/images/768de7aeb42bd1ef73d913a12a980c11-2000x2000.png",
-                "caption": "<b><a href=\"http://it.gravatar.com/yehonal\" target=\"_blank\" class=\"text-white\">Yehonal</a></b><br><br>- Drassil Founder<br><br>- AC Lead Developer<br><br>- AS Manager<br>",
-                "active": false
-              },
-              {
-                "tags": "Network",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/13cf06142a4426622ed3202265180c45-2000x2000-800x800.png",
-                "image": "@PROJECT_PATH@/assets/images/13cf06142a4426622ed3202265180c45-2000x2000.png",
-                "caption": "<p><span style=\"font-size: 17px; line-height: 25px;\"><b><a href=\"https://it.gravatar.com/ghost19881\" target=\"_blank\" class=\"text-white\">Ghost</a></b></span></p><p>- AS Supporter</p><p><span style=\"line-height: 1.5;\">- Drassil.net Counselor</span></p><p><span style=\"line-height: 1.5;\"><br></span></p>",
-                "active": false
-              },
-              {
                 "tags": "Network",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
@@ -987,9 +947,49 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/4a7f6708eeece3c50ee8c4f724a514d5-2000x2000-800x800.png",
-                "image": "@PROJECT_PATH@/assets/images/4a7f6708eeece3c50ee8c4f724a514d5-2000x2000.png",
-                "caption": "<b><a href=\"https://it.gravatar.com/pati3nc39506\" target=\"_blank\" class=\"text-white\">Whynot</a><br></b><br>- AS Game Expert<br><br>- Drassil.net Supporter<br><br><br>",
+                "thumb": "@PROJECT_PATH@/assets/images/a486124cd5f811dee6ce95490c6ec664-2000x2000-800x800.png",
+                "image": "@PROJECT_PATH@/assets/images/a486124cd5f811dee6ce95490c6ec664-2000x2000.png",
+                "caption": "<p><b><a href=\"https://it.gravatar.com/arkan0r\" target=\"_blank\" class=\"text-white\">Arkanor</a></b></p><p><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">-</a>&nbsp;Drassil.net Lead Supporter</p><p><span style=\"line-height: 1.5;\">- AC Counselor</span></p><p>- AS Manager&nbsp;</p>",
+                "active": false
+              },
+              {
+                "tags": "Network,Laboratory",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/768de7aeb42bd1ef73d913a12a980c11-2000x2000-800x800.png",
+                "image": "@PROJECT_PATH@/assets/images/768de7aeb42bd1ef73d913a12a980c11-2000x2000.png",
+                "caption": "<b><a href=\"http://it.gravatar.com/yehonal\" target=\"_blank\" class=\"text-white\">Yehonal</a></b><br><br>- Drassil Founder<br><br>- AC Lead Developer<br><br>- AS Manager<br>",
+                "active": false
+              },
+              {
+                "tags": "Network,Laboratory",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/myavatar-7-2000x2000-800x800.png",
+                "image": "@PROJECT_PATH@/assets/images/myavatar-7-2000x2000.png",
+                "caption": "<b><a href=\"https://it.gravatar.com/matem6\" target=\"_blank\" class=\"text-white\">Jestus</a></b><br><br>- AC Developer<br><br>- Drassil.net CTO<br><br><br>",
+                "active": false
+              },
+              {
+                "tags": "Network",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/13cf06142a4426622ed3202265180c45-2000x2000-800x800.png",
+                "image": "@PROJECT_PATH@/assets/images/13cf06142a4426622ed3202265180c45-2000x2000.png",
+                "caption": "<p><span style=\"font-size: 17px; line-height: 25px;\"><b><a href=\"https://it.gravatar.com/ghost19881\" target=\"_blank\" class=\"text-white\">Ghost</a></b></span></p><p>- AS Supporter</p><p><span style=\"line-height: 1.5;\">- Drassil.net Counselor</span></p><p><span style=\"line-height: 1.5;\"><br></span></p>",
+                "active": false
+              },
+              {
+                "tags": "Laboratory",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/unknown-user-pic-2000x2000-800x800.jpg",
+                "image": "@PROJECT_PATH@/assets/images/unknown-user-pic-2000x2000.jpg",
+                "caption": "<p><span style=\"font-size: 17px; line-height: 25px;\"><b>Shin</b></span></p><p><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">-</a>&nbsp;AC Manager</p><p>- Drassil.net Counselor</p>",
                 "active": false
               },
               {
@@ -999,7 +999,37 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/af8790302bcbb97062873431312f4b2c-2000x2000-800x800.png",
                 "image": "@PROJECT_PATH@/assets/images/af8790302bcbb97062873431312f4b2c-2000x2000.png",
-                "caption": "<b><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">Rithelsem</a></b><br><b><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\"><br></a></b><br><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">-</a>&nbsp;AS &nbsp;Information Security Analyst<br><br>- Drassil.net Counselor&nbsp;<br><br>",
+                "caption": "<b><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">Rithelsem</a></b><br><br><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">-</a>&nbsp;AS &nbsp;Information Security Analyst<br><br>- Drassil.net Counselor&nbsp;<br><br><br>",
+                "active": false
+              },
+              {
+                "tags": "Network,Laboratory,AdHonorem",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/unknown-user-pic-2000x2000-800x800.jpg",
+                "image": "@PROJECT_PATH@/assets/images/unknown-user-pic-2000x2000.jpg",
+                "caption": "<p><span style=\"font-size: 17px; line-height: 25px;\"><b>Mik1893</b></span></p><p><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">-</a>&nbsp;AC Developer</p><p><br></p><p><span style=\"line-height: 1.5;\"><br></span></p>",
+                "active": false
+              },
+              {
+                "tags": "Network",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/4a7f6708eeece3c50ee8c4f724a514d5-2000x2000-800x800.png",
+                "image": "@PROJECT_PATH@/assets/images/4a7f6708eeece3c50ee8c4f724a514d5-2000x2000.png",
+                "caption": "<b><a href=\"https://it.gravatar.com/pati3nc39506\" target=\"_blank\" class=\"text-white\">Whynot</a><br></b><br>- AS Game Expert<br><br>- Drassil.net Supporter<br><br><br>",
+                "active": false
+              },
+              {
+                "tags": "Laboratory",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/468816-2000x2000-800x800.png",
+                "image": "@PROJECT_PATH@/assets/images/468816-2000x2000.png",
+                "caption": "<p><span style=\"font-size: 17px; line-height: 25px;\"><b>Rochet2</b></span></p><p><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">-</a>&nbsp;AC Developer</p><p>- Eluna Founder</p><p><span style=\"line-height: 1.5;\"><br></span></p>",
                 "active": false
               },
               {
@@ -1010,7 +1040,47 @@
                 "thumb": "@PROJECT_PATH@/assets/images/helias-2000x2000-800x800.png",
                 "image": "@PROJECT_PATH@/assets/images/helias-2000x2000.png",
                 "caption": "<p><b><a href=\"https://it.gravatar.com/heliasdev\" target=\"_blank\" class=\"text-white\">Helias</a></b></p><p><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">-</a>&nbsp;AC Web &amp; DB Developer</p><p><span style=\"line-height: 1.5;\">- AS Counselor</span></p><p><span style=\"line-height: 1.5;\"><br></span></p>",
+                "active": false
+              },
+              {
+                "tags": "Network,Laboratory",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/dd67f095b2090b2fa466d13cc37d6197-2000x2000-800x800.png",
+                "image": "@PROJECT_PATH@/assets/images/dd67f095b2090b2fa466d13cc37d6197-2000x2000.png",
+                "caption": "<p><a href=\"https://it.gravatar.com/gabrir1\" target=\"_blank\" class=\"text-white\"><b>Gargarensis</b></a><a href=\"https://it.gravatar.com/gabrir1\" target=\"_blank\"></a><b><a href=\"https://it.gravatar.com/heliasdev\" target=\"_blank\" class=\"text-white\"></a></b></p><p><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">-</a>&nbsp;AC Developer</p><p><span style=\"line-height: 1.5;\">- AS Counselor</span></p><p><span style=\"line-height: 1.5;\"><br></span></p>",
+                "active": false
+              },
+              {
+                "tags": "Network",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/unknown-user-pic-2000x2000-800x800.jpg",
+                "image": "@PROJECT_PATH@/assets/images/unknown-user-pic-2000x2000.jpg",
+                "caption": "<p><span style=\"font-size: 17px; line-height: 25px;\"><b>Thurin</b></span></p><p><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">-</a>&nbsp;AS Chief Supporter</p><p><br></p><p><span style=\"line-height: 1.5;\"><br></span></p>",
                 "active": true
+              },
+              {
+                "tags": "Network,Laboratory",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/unknown-user-pic-2000x2000-800x800.jpg",
+                "image": "@PROJECT_PATH@/assets/images/unknown-user-pic-2000x2000.jpg",
+                "caption": "<p><span style=\"font-size: 17px; line-height: 25px;\"><b>Talamortis</b></span></p><p><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">-</a>&nbsp;AC Developer</p><p><span style=\"line-height: 1.5;\">- Wildhammer Manager</span></p><p><span style=\"line-height: 1.5;\"><br></span></p>",
+                "active": false
+              },
+              {
+                "tags": "Network",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/unknown-user-pic-2000x2000-800x800.jpg",
+                "image": "@PROJECT_PATH@/assets/images/unknown-user-pic-2000x2000.jpg",
+                "caption": "<p><span style=\"font-size: 17px; line-height: 25px;\"><b>Starrheld</b></span></p><p><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">-</a>&nbsp;AC Developer</p><p><br></p><p><span style=\"line-height: 1.5;\"><br></span></p>",
+                "active": false
               }
             ],
             "spacing": "2",
@@ -1024,6 +1094,39 @@
           "_anchor": "gallery4-a",
           "articleLayout": false,
           "allItem": "All"
+        },
+        {
+          "_styles": {
+            ".mbr-section-title, .mbr-section-subtitle": {
+              "text-align": "center"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "header3",
+          "_anchor": "header3-n",
+          "_params": {
+            "paddingTop": 1,
+            "paddingBottom": 1,
+            "bgColor": "#fff",
+            "showMeta": true
+          },
+          "title": "Contributors",
+          "meta": "External contributors and \"occasional\" co-workers"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content1",
+          "_anchor": "content1-o",
+          "_params": {
+            "paddingTop": 1,
+            "paddingBottom": 1,
+            "bgColor": "#fff"
+          },
+          "text": "<ul><li><b><a href=\"https://github.com/azerothcore/azerothcore-wotlk/graphs/contributors\" target=\"_blank\">AzerothCore</a> <a href=\"https://github.com/azerothcore/azerothcore-wotlk/graphs/contributors\" target=\"_blank\">contributors</a></b></li><li><b><a href=\"https://github.com/trinitycore/trinitycore/graphs/contributors\" target=\"_blank\">TrinityCore</a>&nbsp;&amp; <a href=\"https://github.com/cmangos/mangos-wotlk/graphs/contributors\" target=\"_blank\">Mangos</a> contributors</b></li></ul>"
         },
         {
           "_styles": {
