@@ -989,10 +989,10 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/unknown-user-pic-2000x2000-800x800.jpg",
-                "image": "@PROJECT_PATH@/assets/images/unknown-user-pic-2000x2000.jpg",
-                "caption": "<p><span style=\"font-size: 17px; line-height: 25px;\"><b>Shin</b></span></p><p>-&nbsp;AC Manager</p><p>- Drassil.net Counselor</p>",
-                "active": false
+                "thumb": "@PROJECT_PATH@/assets/images/6a78a862-c9f4-4426-a01d-d622fba25b22-2000x2000-800x800.jpg",
+                "image": "@PROJECT_PATH@/assets/images/6a78a862-c9f4-4426-a01d-d622fba25b22-2000x2000.jpg",
+                "caption": "<p><span style=\"font-size: 17px; line-height: 25px;\"><b><a href=\"https://it.gravatar.com/shindarth\" target=\"_blank\" class=\"text-white\">Shin</a></b></span></p><p>-&nbsp;AC Manager</p><p>- Drassil.net Counselor</p>",
+                "active": true
               },
               {
                 "tags": "Network",
@@ -1069,8 +1069,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/unknown-user-pic-2000x2000-800x800.jpg",
-                "image": "@PROJECT_PATH@/assets/images/unknown-user-pic-2000x2000.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/myavatar-8-2000x2000-800x800.png",
+                "image": "@PROJECT_PATH@/assets/images/myavatar-8-2000x2000.png",
                 "caption": "<p><span style=\"font-size: 17px; line-height: 25px;\"><b>Talamortis</b></span></p><p>-&nbsp;AC Developer</p><p><span style=\"line-height: 1.5;\">- Wildhammer Manager</span></p><p><span style=\"line-height: 1.5;\"><br></span></p>",
                 "active": false
               },
@@ -1082,7 +1082,7 @@
                 "thumb": "@PROJECT_PATH@/assets/images/myavatar-1-2000x2000-800x800.png",
                 "image": "@PROJECT_PATH@/assets/images/myavatar-1-2000x2000.png",
                 "caption": "<p><span style=\"font-size: 17px; line-height: 25px;\"><b><a href=\"http://en.gravatar.com/starrheld\" target=\"_blank\" class=\"text-white\">Starrheld</a></b></span></p><p>-&nbsp;AC Developer</p><p><br></p><p><span style=\"line-height: 1.5;\"><br></span></p>",
-                "active": true
+                "active": false
               }
             ],
             "spacing": "2",
