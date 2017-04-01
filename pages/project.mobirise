@@ -816,7 +816,7 @@
             "showMeta": true
           },
           "title": "Drassil People",
-          "meta": "Super-human awesome people that is working and have worked for our Drassil projects!"
+          "meta": "Super-human awesome people that is working and have worked for our Drassil projects!<br>"
         },
         {
           "_inherit": "menu",
@@ -1113,7 +1113,7 @@
             "showMeta": true
           },
           "title": "Contributors",
-          "meta": "External contributors and \"occasional\" co-workers"
+          "meta": "External contributors, not officers and \"occasional\" co-workers"
         },
         {
           "_tags": [
@@ -1126,7 +1126,7 @@
             "paddingBottom": 1,
             "bgColor": "#fff"
           },
-          "text": "<ul><li><b><a href=\"https://github.com/azerothcore/azerothcore-wotlk/graphs/contributors\" target=\"_blank\">AzerothCore</a> <a href=\"https://github.com/azerothcore/azerothcore-wotlk/graphs/contributors\" target=\"_blank\">contributors</a></b></li><li><b><a href=\"https://github.com/trinitycore/trinitycore/graphs/contributors\" target=\"_blank\">TrinityCore</a>&nbsp;&amp; <a href=\"https://github.com/cmangos/mangos-wotlk/graphs/contributors\" target=\"_blank\">Mangos</a> contributors</b></li></ul>"
+          "text": "<ul><li><b><a href=\"https://github.com/azerothcore/azerothcore-wotlk/graphs/contributors\" target=\"_blank\">AzerothCore</a> <a href=\"https://github.com/azerothcore/azerothcore-wotlk/graphs/contributors\" target=\"_blank\">contributors</a></b></li><li><b><a href=\"https://github.com/trinitycore/trinitycore/graphs/contributors\" target=\"_blank\">TrinityCore</a>&nbsp;&amp; <a href=\"https://github.com/cmangos/mangos-wotlk/graphs/contributors\" target=\"_blank\">Mangos</a> contributors</b></li><li><b>All Drassil Network team members that are not yet \"officers\".</b></li></ul>"
         },
         {
           "_styles": {
