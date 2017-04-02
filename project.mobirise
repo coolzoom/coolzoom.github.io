@@ -137,7 +137,12 @@
             "overlayOpacity": 0.8,
             "overlayColor": "#444444"
           },
-          "text": "<p>Copyright (c) 2016 Drassil.org&nbsp;<br>Contacts:&nbsp;<a href=\"mailto:staff-drassil@googlegroups.com\">staff-drassil@googlegroups.com</a><br>Tax code: 95164560658</p>"
+          "text": "<p>Copyright (c) 2016 Drassil.org&nbsp;<br>Contacts:&nbsp;<a href=\"mailto:staff-drassil@googlegroups.com\">staff-drassil@googlegroups.com</a><br>Tax code: 95164560658</p>",
+          "_customHTML": "<footer class=\"mbr-section mbr-section-nopadding mbr-footer\" style=\"background-color: rgb(17, 1, 26); padding-top: 3rem; padding-bottom: 1.98rem;\">\n    \n    <div class=\"container\">\n        <p class=\"mbr-editable-content\" code-editable-id=\"12\"></p><p>Copyright (c) 2016 Drassil.org&nbsp;<br>Contacts:&nbsp;<a href=\"mailto:staff-drassil@googlegroups.com\">staff-drassil@googlegroups.com</a><br>Tax code: 95164560658</p><p></p>\n        <form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\">\n<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">\n<input type=\"hidden\" name=\"hosted_button_id\" value=\"G3F7FV2WTKMVE\">\n<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">\n<img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/it_IT/i/scr/pixel.gif\" width=\"1\" height=\"1\">\n</form>\n\n    </div>\n</footer>",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_customCSS": "",
+          "_customTemplate": true
         }
       ]
     },
@@ -267,7 +272,12 @@
             "overlayOpacity": 0.8,
             "overlayColor": "#444444"
           },
-          "text": "<p>Copyright (c) 2016 Drassil.org&nbsp;<br>Contacts:&nbsp;<a href=\"mailto:staff-drassil@googlegroups.com\">staff-drassil@googlegroups.com</a><br>Tax code: 95164560658</p>"
+          "text": "<p>Copyright (c) 2016 Drassil.org&nbsp;<br>Contacts:&nbsp;<a href=\"mailto:staff-drassil@googlegroups.com\">staff-drassil@googlegroups.com</a><br>Tax code: 95164560658</p>",
+          "_customCSS": "",
+          "_customHTML": "<footer class=\"mbr-section mbr-section-nopadding mbr-footer\" style=\"background-color: rgb(17, 1, 26); padding-top: 3rem; padding-bottom: 1.98rem;\">\n    \n    <div class=\"container\">\n        <p class=\"mbr-editable-content\" code-editable-id=\"19\"></p><p>Copyright (c) 2016 Drassil.org&nbsp;<br>Email:&nbsp;<a href=\"mailto:staff-drassil@googlegroups.com\">staff-drassil@googlegroups.com</a><br>Codice Fiscale: 95164560658</p><p></p>\n\n        <form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\">\n            <input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">\n            <input type=\"hidden\" name=\"hosted_button_id\" value=\"G3F7FV2WTKMVE\">\n            <input type=\"image\" src=\"https://www.paypalobjects.com/it_IT/i/btn/btn_donate_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">\n            <img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/it_IT/i/scr/pixel.gif\" width=\"1\" height=\"1\">\n            </form>\n    </div>\n</footer>",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_customTemplate": true
         }
       ]
     },
