@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Drassil.Org",
-    "currentPage": "blog.html",
+    "currentPage": "partners.html",
     "theme": {
       "name": "mobirise3",
       "title": "Mobirise 3",
@@ -28,7 +28,7 @@
     "versionFirst": "3.12.1",
     "uniqCompNum": 27,
     "versionPublish": "3.12.1",
-    "path": "file:///C:/Hw2_Hybrid/usr/workspace/projects/Drassil/drassil.github.io",
+    "path": "@PROJECT_PATH@",
     "publishFtpPath": "public_html",
     "publishType": "local",
     "publishPath": "@PROJECT_PATH@",
@@ -1217,17 +1217,17 @@
           "_name": "ext.menu",
           "_anchor": "ext_menu-p",
           "_params": {
+            "logo": true,
+            "showBrand": true,
+            "hideButtons": false,
+            "sticky": true,
+            "collapsed": true,
+            "transparent": false,
             "bgColor": "#05162a",
             "fontSize": 0.75,
             "fontName": {},
             "fontColor": "#ffffff",
-            "fontHoverColor": "@primaryColor",
-            "transparent": false,
-            "sticky": true,
-            "logo": true,
-            "showBrand": true,
-            "collapsed": true,
-            "hideButtons": false
+            "fontHoverColor": "@primaryColor"
           },
           "logo": {
             "image": {
@@ -1258,18 +1258,18 @@
           "_params": {
             "paddingTop": "4",
             "paddingBottom": "2",
-            "youtube": "UCmpoiD4rTNXxFGLdBwY34TQ",
+            "postToLoad": "10",
             "facebook": "1664014003894179",
             "twitter": "",
             "google": "",
-            "postToLoad": "10",
-            "bgImage": "@PROJECT_PATH@/assets/images/download-2000x1250.jpg",
-            "bgImageRadio": true,
-            "bgColor": "#fff",
+            "youtube": "UCmpoiD4rTNXxFGLdBwY34TQ",
             "bgColorRadio": false,
+            "bgColor": "#fff",
+            "bgImageRadio": true,
+            "bgImage": "@PROJECT_PATH@/assets/images/download-2000x1250.jpg",
             "overlay": true,
-            "overlayOpacity": 0.6,
-            "overlayColor": "#000000"
+            "overlayColor": "#000000",
+            "overlayOpacity": 0.6
           },
           "loadsvg": "@ADDONS_PATH@/social-feed/feed/assets/loading.svg"
         }

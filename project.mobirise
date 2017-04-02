@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Drassil.Org",
-    "currentPage": "index.html",
+    "currentPage": "index-it.html",
     "theme": {
       "name": "purity",
       "title": "PurityM",
@@ -12,9 +12,10 @@
     "versionPublish": "3.12.1",
     "path": "@PROJECT_PATH@",
     "screenshot": "screenshot.png",
-    "publishFtpPath": "public_html",
-    "publishType": "local",
-    "publishPath": "@PROJECT_PATH@"
+    "favicon": "@PROJECT_PATH@/assets/images/logo1-128x128.png",
+    "noImageResize": "",
+    "cookiesAlert": "",
+    "google-analytics": ""
   },
   "pages": {
     "index-en.html": {
@@ -230,10 +231,12 @@
           "logo": {
             "image": {
               "active": true,
-              "src": "@PROJECT_PATH@/assets/images/logo.png",
+              "src": "@PROJECT_PATH@/assets/images/logo1-128x128.png",
               "height": 128,
               "alt": "Mobirise",
-              "link": "https://mobirise.com"
+              "link": "https://mobirise.com",
+              "title": "",
+              "linkInNewWindow": false
             },
             "iconFont": {
               "class": "mbr-iconfont mbr-iconfont-menu",
