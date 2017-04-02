@@ -8,7 +8,7 @@
       "styling": {}
     },
     "versionFirst": "3.9.2",
-    "uniqCompNum": 11,
+    "uniqCompNum": 14,
     "versionPublish": "3.12.1",
     "path": "@PROJECT_PATH@",
     "screenshot": "screenshot.png",
@@ -47,23 +47,23 @@
           },
           "_anchor": "header1-3",
           "_params": {
-            "showTitle": true,
-            "showText": true,
-            "showButtons": true,
-            "showArrow": true,
-            "contentAlign": "center",
+            "parallax": true,
             "bgImageRadio": true,
             "bgImage": "@PROJECT_PATH@/assets/images/download-2000x1250-3.jpg",
-            "parallax": true,
-            "bgColorRadio": false,
             "bgColor": "#fff8e0",
-            "bgVideoRadio": false,
+            "bgColorRadio": false,
             "bgVideo": {
               "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
             },
+            "bgVideoRadio": false,
             "overlay": true,
+            "overlayOpacity": "0.4",
             "overlayColor": "#000000",
-            "overlayOpacity": "0.4"
+            "contentAlign": "center",
+            "showTitle": true,
+            "showText": true,
+            "showButtons": true,
+            "showArrow": true
           },
           "title": "Drassil",
           "text": "<br>Drassil Association is a non-profit organization that manages and/or supports many cultural and &nbsp;leisure projects. It leads to the creation of social communities by providing the best tools in order to put them in communication with each other, under the same<br> <i>tree</i>.<br>Our goals: promoting and organizing live &amp; online gaming sessions; &nbsp;giving support to artistic, technological, scientific projects and everything related to culture.<br><br>Begin to discover Drassil <i>branches</i>! <br>",
@@ -90,14 +90,14 @@
           },
           "_anchor": "menu-4",
           "_params": {
-            "logo": false,
-            "showBrand": false,
-            "showButtons": false,
+            "hamburgerColor": "#5cb85c",
             "sticky": false,
-            "collapsed": true,
             "transparent": true,
             "color": "#fff",
-            "hamburgerColor": "#5cb85c"
+            "collapsed": true,
+            "logo": false,
+            "showBrand": false,
+            "showButtons": false
           },
           "logo": {
             "image": {
@@ -128,13 +128,13 @@
             "paddingTop": 3,
             "paddingBottom": 3,
             "bgImageRadio": false,
-            "bgImage": "@THEME_PATH@/components/_images/photo-3.jpg",
             "parallax": true,
-            "bgColorRadio": true,
+            "bgImage": "@THEME_PATH@/components/_images/photo-3.jpg",
             "bgColor": "#11011a",
+            "bgColorRadio": true,
             "overlay": true,
-            "overlayColor": "#444444",
-            "overlayOpacity": 0.8
+            "overlayOpacity": 0.8,
+            "overlayColor": "#444444"
           },
           "text": "<p>Copyright (c) 2016 Drassil.org&nbsp;<br>Contacts:&nbsp;<a href=\"mailto:staff-drassil@googlegroups.com\">staff-drassil@googlegroups.com</a><br>Tax code: 95164560658</p>"
         }
@@ -243,7 +243,7 @@
           },
           "brand": "<a class=\"navbar-brand\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-selector=\".navbar-brand\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\"></a>",
           "buttons": " <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"btn btn-success-outline btn-success\" data-app-selector=\".nav-item .btn\" href=\"https://mobirise.com\"><span class=\"fa fa-group mbr-iconfont mbr-iconfont-btn-parent\"></span>Partners</a></li>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"https://mobirise.com\"><br></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-en.html\"><span class=\"mdi-action-language mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\">&nbsp;English</span></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"><span class=\"mdi-action-language mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\">&nbsp;Italian</span></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"pages/partners.html\"><span class=\"icon54-handshake mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\"></span>Partners&nbsp;</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"pages/team.html\"><span class=\"mdi-social-people mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\"></span> Team</a></li>  <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"></a></li><li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"https://mobirise.com\"></a></li>"
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"https://mobirise.com\"><br></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-en.html\"><span class=\"mdi-action-language mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\">&nbsp;English</span></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"><span class=\"mdi-action-language mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\">&nbsp;Italian</span></a></li>  <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"pages/partners.html\"><span class=\"icon54-handshake mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\"></span>Partners&nbsp;</a></li>  <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"pages/team.html\"><span class=\"mdi-social-people mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\"></span> Team</a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"pages/blog.html\"><span class=\"li_news mbr-iconfont mbr-iconfont-btn-parent\" style=\"color: rgb(65, 168, 95);\"></span> Blog</a></li>    <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"></a></li> <li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"index-it.html\"></a></li><li class=\"nav-item\"><a data-app-btn=\"parent\" class=\"nav-link text-success\" data-app-selector=\".nav-link\" href=\"https://mobirise.com\"></a></li>"
         },
         {
           "alias": "purity/components",
