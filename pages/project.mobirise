@@ -163,13 +163,23 @@
             "paddingBottom": 0,
             "images": [
               {
-                "tags": "Laboratory,Network,Organization",
+                "tags": "Network",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/hw2-banner-2000x1142-800x456.png",
-                "image": "@PROJECT_PATH@/assets/images/hw2_banner-2000x1142.png",
-                "caption": "<p><a href=\"http://www.hyperweb2.com\" target=\"_blank\">HyperWeb 2.0 - Software development</a><a href=\"http://www.hyperweb2.com\" target=\"_blank\"></a></p>",
+                "thumb": "@PROJECT_PATH@/assets/images/logo-2000x1148-800x459.png",
+                "image": "@PROJECT_PATH@/assets/images/logo-2000x1148.png",
+                "caption": "<p><a href=\"https://www.azerothcore.org\" target=\"_blank\">AzerothCore - MMO Platform Org.</a><a href=\"https://www.wildhammer.co.uk\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
+                "active": true
+              },
+              {
+                "tags": "Network",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/lenusmedia-2000x1142-800x456.png",
+                "image": "@PROJECT_PATH@/assets/images/lenusmedia-2000x1142.png",
+                "caption": "<p><a href=\"http://www.lenus.it/\" target=\"_blank\">Lenus Media - Web Agency</a><a href=\"http://dellagreca.it\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
                 "active": false
               },
               {
@@ -180,6 +190,16 @@
                 "thumb": "@PROJECT_PATH@/assets/images/adg-2000x1142-800x456.png",
                 "image": "@PROJECT_PATH@/assets/images/adg-2000x1142.png",
                 "caption": "<p><a href=\"http://www.attiliodellagreca.it/\" target=\"_blank\">Attiliodellagreca.it - Web Design</a><a href=\"http://www.attiliodellagreca.it/\" target=\"_blank\"></a><a href=\"http://www.attiliodellagreca.it/\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
+                "active": false
+              },
+              {
+                "tags": "Laboratory,Network,Organization",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/hw2-banner-2000x1142-800x456.png",
+                "image": "@PROJECT_PATH@/assets/images/hw2_banner-2000x1142.png",
+                "caption": "<p><a href=\"http://www.hyperweb2.com\" target=\"_blank\">HyperWeb 2.0 - Software development</a><a href=\"http://www.hyperweb2.com\" target=\"_blank\"></a></p>",
                 "active": false
               },
               {
@@ -197,39 +217,9 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/lenusmedia-2000x1142-800x456.png",
-                "image": "@PROJECT_PATH@/assets/images/lenusmedia-2000x1142.png",
-                "caption": "<p><a href=\"http://www.lenus.it/\" target=\"_blank\">Lenus Media - Web Agency</a><a href=\"http://dellagreca.it\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
-                "active": false
-              },
-              {
-                "tags": "Network",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/photo369842821180533029-2000x1137-800x454.jpg",
                 "image": "@PROJECT_PATH@/assets/images/photo369842821180533029-2000x1137.jpg",
                 "caption": "<p><a href=\"https://www.azerothshard.org/\" target=\"_blank\">AzerothShard - RPG Community</a><a href=\"http://www.azerothshard.org/\" target=\"_blank\"></a><a href=\"http://www.lenus.it/\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
-                "active": false
-              },
-              {
-                "tags": "Network",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/logo-2000x1148-800x459.png",
-                "image": "@PROJECT_PATH@/assets/images/logo-2000x1148.png",
-                "caption": "<p><a href=\"https://www.azerothcore.org\" target=\"_blank\">AzerothCore - MMO Platform Org.</a><a href=\"https://www.wildhammer.co.uk\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
-                "active": true
-              },
-              {
-                "tags": "Network",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/logomakr-0tv645-2000x1069-800x427.png",
-                "image": "@PROJECT_PATH@/assets/images/logomakr-0tv645-2000x1069.png",
-                "caption": "<p><a href=\"https://www.wildhammer.co.uk\" target=\"_blank\">Wildhammer - RPG Community</a><a href=\"https://www.azerothshard.org/\" target=\"_blank\"></a><a href=\"http://www.azerothshard.org/\" target=\"_blank\"></a><a href=\"http://www.lenus.it/\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
                 "active": false
               }
             ],
@@ -1074,7 +1064,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/myavatar-8-2000x2000-800x800.png",
                 "image": "@PROJECT_PATH@/assets/images/myavatar%20(8)-2000x2000.png",
-                "caption": "<p><span style=\"font-size: 17px; line-height: 25px;\"><b>Talamortis</b></span></p><p>-&nbsp;AC Developer</p><p><span style=\"line-height: 1.5;\">- Wildhammer Manager</span></p><p><span style=\"line-height: 1.5;\"><br></span></p>",
+                "caption": "<p><span style=\"font-size: 17px; line-height: 25px;\"><b>Talamortis</b></span></p><p>-&nbsp;AC Developer</p><p><br></p><p><span style=\"line-height: 1.5;\"><br></span></p>",
                 "active": false
               },
               {
@@ -1217,17 +1207,17 @@
           "_name": "ext.menu",
           "_anchor": "ext_menu-p",
           "_params": {
-            "logo": true,
-            "showBrand": true,
-            "hideButtons": false,
-            "sticky": true,
-            "collapsed": true,
-            "transparent": false,
             "bgColor": "#05162a",
             "fontSize": 0.75,
             "fontName": {},
             "fontColor": "#ffffff",
-            "fontHoverColor": "@primaryColor"
+            "fontHoverColor": "@primaryColor",
+            "transparent": false,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "collapsed": true,
+            "hideButtons": false
           },
           "logo": {
             "image": {
@@ -1258,18 +1248,18 @@
           "_params": {
             "paddingTop": "4",
             "paddingBottom": "2",
-            "postToLoad": "10",
+            "youtube": "UCmpoiD4rTNXxFGLdBwY34TQ",
             "facebook": "1664014003894179",
             "twitter": "",
             "google": "",
-            "youtube": "UCmpoiD4rTNXxFGLdBwY34TQ",
-            "bgColorRadio": false,
-            "bgColor": "#fff",
-            "bgImageRadio": true,
+            "postToLoad": "10",
             "bgImage": "@PROJECT_PATH@/assets/images/download-2000x1250.jpg",
+            "bgImageRadio": true,
+            "bgColor": "#fff",
+            "bgColorRadio": false,
             "overlay": true,
-            "overlayColor": "#000000",
-            "overlayOpacity": 0.6
+            "overlayOpacity": 0.6,
+            "overlayColor": "#000000"
           },
           "loadsvg": "@ADDONS_PATH@/social-feed/feed/assets/loading.svg"
         }
