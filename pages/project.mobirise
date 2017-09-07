@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Drassil.Org",
-    "currentPage": "partners.html",
+    "currentPage": "blog.html",
     "theme": {
       "name": "mobirise3",
       "title": "Mobirise 3",
@@ -27,8 +27,8 @@
     "google-analytics": "",
     "versionFirst": "3.12.1",
     "uniqCompNum": 27,
-    "versionPublish": "3.12.1",
-    "path": "@PROJECT_PATH@",
+    "versionPublish": "4.2.4",
+    "path": "file:///C:/Hw2_Hybrid/usr/workspace/projects/Drassil/drassil.github.io",
     "publishFtpPath": "public_html",
     "publishType": "local",
     "publishPath": "@PROJECT_PATH@",
@@ -57,10 +57,10 @@
           "_name": "header3",
           "_anchor": "header3-h",
           "_params": {
+            "showMeta": true,
             "paddingTop": "6",
             "paddingBottom": 1,
-            "bgColor": "#fff",
-            "showMeta": true
+            "bgColor": "#fff"
           },
           "title": "Our Partners",
           "meta": "Every great idea needs the right people behind it to really make a difference. Our partners believe in our vision and have helped us build a solid foundation to make it happen.<br>"
@@ -121,17 +121,17 @@
           "_name": "ext.menu",
           "_anchor": "ext_menu-0",
           "_params": {
+            "logo": true,
+            "showBrand": true,
+            "hideButtons": false,
+            "sticky": true,
+            "collapsed": true,
+            "transparent": false,
             "bgColor": "#05162a",
             "fontSize": 0.75,
             "fontName": {},
             "fontColor": "#ffffff",
-            "fontHoverColor": "@primaryColor",
-            "transparent": false,
-            "sticky": true,
-            "logo": true,
-            "showBrand": true,
-            "collapsed": true,
-            "hideButtons": false
+            "fontHoverColor": "@primaryColor"
           },
           "logo": {
             "image": {
@@ -159,19 +159,16 @@
           ],
           "_name": "gallery4",
           "_params": {
+            "showBullets": true,
+            "fullWidth": false,
+            "spacing": "1",
             "paddingTop": "0",
             "paddingBottom": 0,
+            "filterBgColor": false,
+            "bgColor": "fff",
+            "showText": true,
+            "filter": true,
             "images": [
-              {
-                "tags": "Network",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/logo-2000x1148-800x459.png",
-                "image": "@PROJECT_PATH@/assets/images/logo-2000x1148.png",
-                "caption": "<p><a href=\"https://www.azerothcore.org\" target=\"_blank\">AzerothCore - MMO Platform Org.</a><a href=\"https://www.wildhammer.co.uk\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
-                "active": true
-              },
               {
                 "tags": "Network",
                 "playVideo": false,
@@ -180,7 +177,7 @@
                 "thumb": "@PROJECT_PATH@/assets/images/lenusmedia-2000x1142-800x456.png",
                 "image": "@PROJECT_PATH@/assets/images/lenusmedia-2000x1142.png",
                 "caption": "<p><a href=\"http://www.lenus.it/\" target=\"_blank\">Lenus Media - Web Agency</a><a href=\"http://dellagreca.it\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
-                "active": false
+                "active": true
               },
               {
                 "tags": "Network,Organization",
@@ -211,25 +208,8 @@
                 "image": "@PROJECT_PATH@/assets/images/logowhiteba2-2000x1132.png",
                 "caption": "<p><a href=\"https://ts.hydrake.eu\" target=\"_blank\">Hydrake - TS network</a><a href=\"https://ts.hydrake.eu\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
                 "active": false
-              },
-              {
-                "tags": "Network",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/photo369842821180533029-2000x1137-800x454.jpg",
-                "image": "@PROJECT_PATH@/assets/images/photo369842821180533029-2000x1137.jpg",
-                "caption": "<p><a href=\"https://www.azerothshard.org/\" target=\"_blank\">AzerothShard - RPG Community</a><a href=\"http://www.azerothshard.org/\" target=\"_blank\"></a><a href=\"http://www.lenus.it/\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a><a href=\"http://dellagreca.it\" target=\"_blank\"></a></p>",
-                "active": false
               }
-            ],
-            "spacing": "1",
-            "showText": true,
-            "filter": true,
-            "bgColor": "fff",
-            "filterBgColor": false,
-            "fullWidth": false,
-            "showBullets": true
+            ]
           },
           "_anchor": "gallery4-2",
           "articleLayout": false,
@@ -247,10 +227,10 @@
           "_name": "header3",
           "_anchor": "header3-i",
           "_params": {
+            "showMeta": true,
             "paddingTop": 1,
             "paddingBottom": "4",
-            "bgColor": "#fff",
-            "showMeta": true
+            "bgColor": "#fff"
           },
           "title": "Join Us!",
           "meta": "<a href=\"http://www.drassil.org/index-en.html\" class=\"text-warning\">Contact us</a> to become a Drassil.org Partner!"
@@ -319,17 +299,17 @@
           "_name": "ext.menu",
           "_anchor": "ext_menu-0",
           "_params": {
+            "logo": true,
+            "showBrand": true,
+            "hideButtons": false,
+            "sticky": true,
+            "collapsed": true,
+            "transparent": false,
             "bgColor": "#05162a",
             "fontSize": 0.75,
             "fontName": {},
             "fontColor": "#ffffff",
-            "fontHoverColor": "@primaryColor",
-            "transparent": false,
-            "sticky": true,
-            "logo": true,
-            "showBrand": true,
-            "collapsed": true,
-            "hideButtons": false
+            "fontHoverColor": "@primaryColor"
           },
           "logo": {
             "image": {
@@ -357,25 +337,25 @@
           "_name": "msg-box5",
           "_anchor": "msg-box5-5",
           "_params": {
+            "showTitle": true,
+            "showText": true,
+            "showButtons": true,
+            "inverse": false,
             "imageSize": "53",
             "paddingTop": "4",
             "paddingBottom": "2",
-            "parallax": true,
             "bgImageRadio": false,
             "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
-            "bgColor": "#fff",
+            "parallax": true,
             "bgColorRadio": true,
+            "bgColor": "#fff",
+            "bgVideoRadio": false,
             "bgVideo": {
               "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
             },
-            "bgVideoRadio": false,
             "overlay": false,
-            "overlayOpacity": 0.5,
             "overlayColor": "#fff",
-            "inverse": false,
-            "showTitle": true,
-            "showText": true,
-            "showButtons": true
+            "overlayOpacity": 0.5
           },
           "media": {
             "image": {
@@ -411,28 +391,28 @@
           "_name": "extFeatures7",
           "_anchor": "extFeatures7-8",
           "_params": {
-            "paddingTop": 2,
-            "paddingBottom": 2,
-            "bgImageRadio": false,
-            "parallax": true,
-            "bgImage": "@ADDONS_PATH@/mobirise3-blocks/components/_images/jumbotron.jpg",
-            "bgColor": "#fff",
-            "bgColorRadio": true,
-            "bgVideo": {
-              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
-            },
-            "bgVideoRadio": false,
-            "overlay": false,
-            "overlayOpacity": 0.5,
-            "overlayColor": "#222",
             "showTitle": true,
             "showSubtitle": true,
-            "columns": "4",
             "showImages": true,
             "showTitles": true,
             "showSubtitles": true,
             "ShowTexts": true,
-            "showIcons": false
+            "showIcons": false,
+            "paddingTop": 2,
+            "paddingBottom": 2,
+            "columns": "4",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/mobirise3-blocks/components/_images/jumbotron.jpg",
+            "parallax": true,
+            "bgColorRadio": true,
+            "bgColor": "#fff",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": false,
+            "overlayColor": "#222",
+            "overlayOpacity": 0.5
           },
           "title": "Supported Projects",
           "subtitle": "Drassil supported Organization and Projects",
@@ -805,10 +785,10 @@
           "_name": "header3",
           "_anchor": "header3-f",
           "_params": {
+            "showMeta": true,
             "paddingTop": "5",
             "paddingBottom": 1,
-            "bgColor": "#fff",
-            "showMeta": true
+            "bgColor": "#fff"
           },
           "title": "Drassil People",
           "meta": "Super-human awesome people that is working and have worked for our Drassil projects!<br>(random order)"
@@ -869,17 +849,17 @@
           "_name": "ext.menu",
           "_anchor": "ext_menu-9",
           "_params": {
+            "logo": true,
+            "showBrand": true,
+            "hideButtons": false,
+            "sticky": true,
+            "collapsed": true,
+            "transparent": false,
             "bgColor": "#05162a",
             "fontSize": 0.75,
             "fontName": {},
             "fontColor": "#ffffff",
-            "fontHoverColor": "@primaryColor",
-            "transparent": false,
-            "sticky": true,
-            "logo": true,
-            "showBrand": true,
-            "collapsed": true,
-            "hideButtons": false
+            "fontHoverColor": "@primaryColor"
           },
           "logo": {
             "image": {
@@ -924,8 +904,15 @@
           },
           "_customCSS": ".mbr-gallery-title {\n    background: -webkit-linear-gradient(left, rgba(85, 67, 70, 0.45), rgba(69, 80, 91, 0.45)) !important;\n}",
           "_params": {
+            "showBullets": true,
+            "fullWidth": false,
+            "spacing": "2",
             "paddingTop": "0",
             "paddingBottom": 0,
+            "filterBgColor": false,
+            "bgColor": "fff",
+            "showText": true,
+            "filter": true,
             "images": [
               {
                 "tags": "Network",
@@ -954,8 +941,8 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/9e66b185aea0de61e940e9b694f48071-2000x2000-800x800.png",
                 "image": "@PROJECT_PATH@/assets/images/9e66b185aea0de61e940e9b694f48071-2000x2000.png",
-                "caption": "<p><a href=\"https://it.gravatar.com/niivaedar\" target=\"_blank\" class=\"text-white\"><b>Niivaedar</b></a><a href=\"https://it.gravatar.com/niivaedar\" target=\"_blank\"></a><b><a href=\"https://it.gravatar.com/matem6\" target=\"_blank\" class=\"text-white\"></a></b><br><br>- AS Manager<br><br>- Drassil Legal Advice<br><br></p>",
-                "active": false
+                "caption": "<p><a href=\"https://it.gravatar.com/niivaedar\" target=\"_blank\" class=\"text-white\"><b>Niivaedar</b></a><a href=\"https://it.gravatar.com/niivaedar\" target=\"_blank\"></a><b><a href=\"https://it.gravatar.com/matem6\" target=\"_blank\" class=\"text-white\"></a></b><br><br>- Ex-AS Manager<br><br>- A.R.V.I.S. Counselor<br><br></p>",
+                "active": true
               },
               {
                 "tags": "Network,Laboratory",
@@ -985,7 +972,7 @@
                 "thumb": "@PROJECT_PATH@/assets/images/6a78a862-c9f4-4426-a01d-d622fba25b22-2000x2000-800x800.jpg",
                 "image": "@PROJECT_PATH@/assets/images/6a78a862-c9f4-4426-a01d-d622fba25b22-2000x2000.jpg",
                 "caption": "<p><span style=\"font-size: 17px; line-height: 25px;\"><b><a href=\"https://it.gravatar.com/shindarth\" target=\"_blank\" class=\"text-white\">Shin</a></b></span></p><p>-&nbsp;AC Manager</p><p>- Drassil.net Counselor</p>",
-                "active": true
+                "active": false
               },
               {
                 "tags": "Network",
@@ -994,7 +981,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/af8790302bcbb97062873431312f4b2c-2000x2000-800x800.png",
                 "image": "@PROJECT_PATH@/assets/images/af8790302bcbb97062873431312f4b2c-2000x2000.png",
-                "caption": "<b><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">Rithelsem</a></b><br><br>-&nbsp;AS &nbsp;Information Security Analyst<br><br>- Drassil.net Counselor&nbsp;<br><br><br>",
+                "caption": "<b><a href=\"https://it.gravatar.com/rithelsem\" target=\"_blank\" class=\"text-white\">Rithelsem</a></b><br><br>-&nbsp;Ex-AS Information Security Analyst<br><br>- A.R.V.I.S. Counselor<br><br><br>",
                 "active": false
               },
               {
@@ -1077,14 +1064,7 @@
                 "caption": "<p><span style=\"font-size: 17px; line-height: 25px;\"><b><a href=\"http://en.gravatar.com/starrheld\" target=\"_blank\" class=\"text-white\">Starrheld</a></b></span></p><p>-&nbsp;AC Developer</p><p><br></p><p><span style=\"line-height: 1.5;\"><br></span></p>",
                 "active": false
               }
-            ],
-            "spacing": "2",
-            "showText": true,
-            "filter": true,
-            "bgColor": "fff",
-            "filterBgColor": false,
-            "fullWidth": false,
-            "showBullets": true
+            ]
           },
           "_anchor": "gallery4-a",
           "articleLayout": false,
@@ -1102,10 +1082,10 @@
           "_name": "header3",
           "_anchor": "header3-n",
           "_params": {
+            "showMeta": true,
             "paddingTop": 1,
             "paddingBottom": 1,
-            "bgColor": "#fff",
-            "showMeta": true
+            "bgColor": "#fff"
           },
           "title": "Contributors",
           "meta": "External contributors, not officers and \"occasional\" co-workers"
@@ -1135,10 +1115,10 @@
           "_name": "header3",
           "_anchor": "header3-j",
           "_params": {
+            "showMeta": true,
             "paddingTop": 1,
             "paddingBottom": "5",
-            "bgColor": "#fff",
-            "showMeta": true
+            "bgColor": "#fff"
           },
           "title": "Join us",
           "meta": "Choose a project and become a Drassil.org Team Member!"
@@ -1207,17 +1187,17 @@
           "_name": "ext.menu",
           "_anchor": "ext_menu-p",
           "_params": {
+            "logo": true,
+            "showBrand": true,
+            "hideButtons": false,
+            "sticky": true,
+            "collapsed": true,
+            "transparent": false,
             "bgColor": "#05162a",
             "fontSize": 0.75,
             "fontName": {},
             "fontColor": "#ffffff",
-            "fontHoverColor": "@primaryColor",
-            "transparent": false,
-            "sticky": true,
-            "logo": true,
-            "showBrand": true,
-            "collapsed": true,
-            "hideButtons": false
+            "fontHoverColor": "@primaryColor"
           },
           "logo": {
             "image": {
@@ -1248,18 +1228,18 @@
           "_params": {
             "paddingTop": "4",
             "paddingBottom": "2",
-            "youtube": "UCmpoiD4rTNXxFGLdBwY34TQ",
+            "postToLoad": "10",
             "facebook": "1664014003894179",
             "twitter": "",
             "google": "",
-            "postToLoad": "10",
-            "bgImage": "@PROJECT_PATH@/assets/images/download-2000x1250.jpg",
-            "bgImageRadio": true,
-            "bgColor": "#fff",
+            "youtube": "UCmpoiD4rTNXxFGLdBwY34TQ",
             "bgColorRadio": false,
+            "bgColor": "#fff",
+            "bgImageRadio": true,
+            "bgImage": "@PROJECT_PATH@/assets/images/download-2000x1250.jpg",
             "overlay": true,
-            "overlayOpacity": 0.6,
-            "overlayColor": "#000000"
+            "overlayColor": "#000000",
+            "overlayOpacity": 0.6
           },
           "loadsvg": "@ADDONS_PATH@/social-feed/feed/assets/loading.svg"
         }
