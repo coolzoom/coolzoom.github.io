@@ -1,0 +1,156 @@
+.. _GMCommand:
+
+GM命令(GM Command)
+===============================================================================
+.. image:: GM.png
+
+
+add添加命令
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- ``.add <item_id> <amount>``: 添加xx个xx物品给当前选中的角色, 可以使用负数的amount删除物品, 请注意, 玩家身上已装备的物品和已装备的背包也会被删除, 但银行里的物品不会被删除。
+- ``.additem <item_id> <amount>``: 和 ``.add`` 相同
+- ``.additemset <itemset_id>``: 添加一个套装的所有物品给当前选中的角色。注意, 当一个套装的物品有多个物品等级版本时, 例如T10有三个版本, 该命令会一次性添加全部3个版本的15件装备。下面的例子是添加法师T2灵风套装::
+
+
+modify修改命令
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- ``.modify money money <amount>``: 添加<amount>个铜币, 值可以是负数。
+
+以下命令见文生意:
+
+- ``.modify hp <value>``: 
+- ``.modify mana <value>``: 
+- ``.modify rage <value>``: 
+- ``.modify energy <value>``: 
+- ``.modify runicpower <value>``: 
+- ``.modify speed <value>``: 
+- ``.modify faction <value>``: 
+- ``.modify reputation <value>``: 
+- ``.modify honor <value>``: 
+- ``.modify arenapoints <value>``: 
+- ``.modify drunk <value>``: 
+- ``.modify talentpoints <amount>``: 
+
+
+lookup查找命令
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+在Fox3.2 WLK端下, ``.lookup`` 命令的语法特殊说明一览:
+
+- ``.lookup item <item_name>``: 返回所有名称中含有<item_name>的物品, Fox3.2端支持简体中文。例如搜索逐风者的祝福之剑::
+
+	.lookup item 逐风者
+
+- ``.lookup creature <creature_name>``: 返回所有名称中含有<creature_name>的NPC和怪物, Fox3.2端支持简体中文。例如搜索巫妖王::
+
+	.lookup creature 巫妖王
+
+- ``.lookup object <object_name>``: 返回所有名称中含有<object_name>的物体和对象, 例如矿石, 草药, 宝箱, 机关等, Fox3.2端支持简体中文。例如搜索瑟银矿脉::
+
+	.lookup object 瑟银
+
+- ``.lookup spell <spell_name>``: 返回所有名称中含有<spell_name>的法术和技能, Fox3.2端支持英文, 因为源数据是从spell.dbc文件中读取的。例如搜索火焰冲击技能::
+
+	.lookup spell fire blast
+
+- ``.lookup spell <skill_name>``: 返回所有名称中含有<skill_name>的专业技能和武器技能, Fox3.2端支持英文。例如搜索挖矿技能::
+
+	.lookup spell mining
+
+- ``.lookup quest <quest_name>``: 返回所有名称中含有<quest_name>的任务ID, **注意, 该命令在Fox-3.2端中会造成服务端崩溃重启, 请不要使用**
+
+- ``.lookup faction <faction_name>``:  返回所有名称中含有<faction_name>的阵营ID。
+
+
+go传送命令
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- ``.go <x> <y> <z> <map_id>``: 前往坐标所在
+
+- ``.go creature <creature_id>``: 前往<creature_id>所在的坐标, 通常用于先使用 ``.lookup creature <creature_name>`` 查找某个NPC, 然后再直接前往该NPC的位置。
+
+- ``.go object <object_id>``: 前往<object_id>所在的坐标, 通常用于先使用 ``.lookup object <object_name>`` 查找某个对象, 然后再直接前往该对象的位置。
+
+
+npc怪物和NPC命令
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- ``.npc info``: 查询当前选定NPC的详细信息
+
+	- GUID是当前这个生物的全局ID, 可以根据GUID定位到具体大陆上的某个NPC, 同一个NPC可以在服务器上出现在多个地点, 但GUID是唯一的
+	- DisplayID是这个生物的 ``creature_template`` 表中的ID。``.npc add <creature_template_id>`` 命令中使用的就是DisplayID
+
+- ``.npc add <creature_template_id>``: 在当前所选中的目标位置处创建一个NPC
+- ``.npc delete``: 删除当前所选中的NPC
+- ``.npc set movetype <type>``: 设置怪物行走模式。有效的<type>有: random(随机走动), stay(停留), way(设定的路线)
+- ``.npc set spawndist <value>``: 设置随机走动半径。<value>是Npc随机走动和随机刷新的半径范围
+- ``.npc set spawntime <value>``: 设置尸体小时后Npc再次刷新所需时间。<value>的单位是秒
+- ``.npc add item <item_id> <max_count> <incrtime> <extendedcost>``: 如果npc是商人, 则给销售列表中添加<item_id>的物品, 最大持有数量为<max_count>, 再次补充一个该物品的所需时间<incrtime>。根据<extendedcost>中的定义, 启动以物换物的兑换脚本。例如拿已有的太阳井高地副本的装备加太阳井高地副本中的道具找日岛上的NPC升级装备
+- ``.npc delete item <item_id>``: 如果npc是商人, 则从销售列表中删除#itemID的物品
+
+
+quest任务命令
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- ``quest add <quest_id>``: 为当前选中目标添加一个任务
+- ``quest complete <quest_id>``: 完成当前选中目标已有的某个任务, 如果还没有接则没有效果
+- ``quest remove <quest_id>``: 移除当前选中目标已有的某个任务
+- ``quest reward <quest_id>``: 给玩家一个任务奖励, **注意, 该命令在Fox3.2端中会使服务器崩溃**
+
+
+gobject游戏对象命令
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- ``.gobject activate <guid>``: 激活/启动一个object, 与之进行互动
+- ``.gobject info``: 查询选中的object的信息, 或是使用 ``.gobject info <object_id>`` 查询详细信息
+- ``.gobject near``: 返回附近的object的ID和内容信息, **注意! 该命令会导致Fox3.2服务器崩溃**
+- ``.gobject add <object_id>``: 在选中的目标处添加一个object, 常用于添加草药, 矿石等。
+- ``.gobject delete <object_guid>: 删除 ``object_guid`` 对应的object。
+注意：每一个id对应着一个目标，比如铁矿。但是地图上有很多铁矿，所以每一个铁矿都有一个guid（全局唯一标识符）。添加的时候，当然是按照id添加。删除则是按照guid删除
+- ``.gobject target``: 显示最近的一个object的名字和ID, 例如选中的铁矿床, 草药, 或是机关, 常用于用该命令找到附近看不见的门的GUID, 然后再使用 ``.gobject activate <guid>`` 打开这个门或机关。**非常重要的命令**
+
+
+learn学习命令
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+reset重置命令
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- ``.reset achievements``: 重置所有成就
+- ``.reset all``: 重置所有法术和天赋到初始状态, 相当于 ``.reset spells`` + ``.reset talents``.
+- ``.reset honor``: 重置荣誉
+- ``.reset level``: 重置等级到1级, 如果身上装备了需求装备等级超过1级的装备, 会全部丢失
+- ``.reset spells``: 重置法术技能
+- ``.reset stats``: 重置属性点
+- ``.reset talents``: 重置天赋
+
+
+aura命令
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- ``.aura <spell_id>``: 给当前目标赋予一个魔法效果(可以是Buff, 也可以是Debuff, 光环效果在小退后消失)
+- ``.unaura <spell_id>``: 取消当前目标身上的某一魔法效果。
+
+
+其他命令
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- ``.gps``: 查询当前选择的目标的坐标
+
+- ``.revive``: 复活当前玩家。如果自己已经死亡了, 则需要使用 ``/g .revive``
+
+- ``.wchange <type> <status>``: 改变当前天气设置, type = {0: 晴天, 1: 下雨, 2: 下雪, 3: 沙尘暴}, status = {0: 禁止, 1: 允许}
+
+- ``.respawn``: 瞬间刷新周围的npc和object, 需要在不选中任何目标的情况下使用。可以用来刷新NPC, 怪物, 副本怪物和Boss, 还有机关, 矿石, 草药等。
+
+- ``.instance unbind all``: 重置所有副本。
+
+- ``.bank``: 打开银行。
+
+- ``.cooldown``: 重置选中目标的所有技能Cooldown, 包括专业技能。
+
+- ``.cheat taxi on/off`` 激活所有飞行点。
+
+- ``.die``: 杀死目标。
+
+- ``.levelup <number>``: 增加或减少等级, 当number为负数时是降级。
+
+- ``.maxskill``: 所有武器和防御技能全满(对专业技能无效), 等效于 ``.max``。
+
+- ``.setskill <skill_id> <number>``: 设定某个生活技能或专业技能到某个数。
+
+附录
+-------------------------------------------------------------------------------

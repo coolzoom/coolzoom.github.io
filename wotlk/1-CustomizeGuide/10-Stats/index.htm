@@ -1,0 +1,416 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>装备属性的代码(Stats ID) &mdash; wowWlkPrivateServerManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="..\..\_static\nature.css" type="text/css">
+    <link rel="stylesheet" href="..\..\_static\pygments.css" type="text/css">
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="..\..\_static\jquery.js"></script>
+    <script type="text/javascript" src="..\..\_static\underscore.js"></script>
+    <script type="text/javascript" src="..\..\_static\doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="wowWlkPrivateServerManual 0.0.1 documentation" href="..\..\index.htm">
+    <link rel="up" title="单机修改手册(Customize Guide)" href="..\index.htm">
+    <link rel="next" title="玩Fox3.2端的参考资料(Fox-3.2 Reference)" href="..\..\2-Fox32\index.htm">
+    <link rel="prev" title="坐骑(Mount)" href="..\09-Mount\index.htm"> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="..\..\2-Fox32\index.htm" title="玩Fox3.2端的参考资料(Fox-3.2 Reference)" accesskey="N">next</a> |</li>
+        <li class="right">
+          <a href="..\09-Mount\index.htm" title="坐骑(Mount)" accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm" accesskey="U">单机修改手册(Customize Guide)</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="stats-id">
+<span id="stats"></span><h1>装备属性的代码(Stats ID)<a class="headerlink" href="#stats-id" title="Permalink to this headline">¶</a></h1>
+<p><strong>属性代码列表</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%">
+<col width="3%">
+<col width="17%">
+<col width="3%">
+<col width="17%">
+<col width="3%">
+<col width="17%">
+<col width="3%">
+<col width="17%">
+<col width="3%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">名称</th>
+<th class="head">ID</th>
+<th class="head">名称</th>
+<th class="head">ID</th>
+<th class="head">名称</th>
+<th class="head">ID</th>
+<th class="head">名称</th>
+<th class="head">ID</th>
+<th class="head">名称</th>
+<th class="head">ID</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>力量(Strength)</td>
+<td>4</td>
+<td>敏捷(Agility)</td>
+<td>3</td>
+<td>耐力(Stamina)</td>
+<td>7</td>
+<td>智力(Intellect)</td>
+<td>5</td>
+<td>精神(Spirit)</td>
+<td>6</td>
+</tr>
+<tr class="row-odd"><td>命中等级(Hit)</td>
+<td>31</td>
+<td>致命等级(Critical Strike)</td>
+<td>32</td>
+<td>加速等级(Haste)</td>
+<td>36</td>
+<td>熟练等级(Expertise)</td>
+<td>37</td>
+<td>护甲穿透等级(Armor Penetration)</td>
+<td>44</td>
+</tr>
+<tr class="row-even"><td>防御等级(Defense)</td>
+<td>12</td>
+<td>招架等级(Parry)</td>
+<td>14</td>
+<td>躲闪等级(Dodge)</td>
+<td>13</td>
+<td>盾牌格挡值(Block Value)</td>
+<td>48</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>攻击强度(Attack Power)</td>
+<td>38</td>
+<td>猎豹、熊、巨熊、枭兽形态攻击强度</td>
+<td>40</td>
+<td>法术能量(Spell Power)</td>
+<td>45</td>
+<td>每5秒回蓝(Restore Mana)</td>
+<td>43</td>
+<td>每5秒回血(Restore Life)</td>
+<td>46</td>
+</tr>
+<tr class="row-even"><td>韧性(Resilience)</td>
+<td>35</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>属性等级和实际百分比效果随着人物等级的变化关系</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%">
+<col width="25%">
+<col width="25%">
+<col width="25%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Label</th>
+<th class="head">60级</th>
+<th class="head">70级</th>
+<th class="head">80级</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1%物理命中</td>
+<td>10</td>
+<td>15.8</td>
+<td>32.79</td>
+</tr>
+<tr class="row-odd"><td>1%法术命中</td>
+<td>8</td>
+<td>12.6</td>
+<td>26.23</td>
+</tr>
+<tr class="row-even"><td>1%暴击率</td>
+<td>14</td>
+<td>22.1</td>
+<td>45.91</td>
+</tr>
+<tr class="row-odd"><td>1%急速</td>
+<td>10</td>
+<td>15.76</td>
+<td>32.79</td>
+</tr>
+<tr class="row-even"><td>1%躲闪</td>
+<td>12</td>
+<td>18.9</td>
+<td>39.34</td>
+</tr>
+<tr class="row-odd"><td>1%招架</td>
+<td>15</td>
+<td>23.6</td>
+<td>49.18</td>
+</tr>
+<tr class="row-even"><td>1%格挡</td>
+<td>5</td>
+<td>7.9</td>
+<td>16.40</td>
+</tr>
+<tr class="row-odd"><td>1点防御技能等级</td>
+<td>1.5</td>
+<td>2.4</td>
+<td>4.92</td>
+</tr>
+<tr class="row-even"><td>1点熟练技能</td>
+<td>2.5</td>
+<td>3.9</td>
+<td>8.3</td>
+</tr>
+<tr class="row-odd"><td>熟练(-1%躲闪/招架)</td>
+<td>&nbsp;</td>
+<td>15.8</td>
+<td>32.8</td>
+</tr>
+<tr class="row-even"><td>1%穿透护甲</td>
+<td>4.7</td>
+<td>7.4</td>
+<td>15.40</td>
+</tr>
+<tr class="row-odd"><td>-1%暴 -2.19%暴伤 -2%全伤</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>94.0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>1%物理暴击所需敏捷</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">职业</th>
+<th class="head">70级</th>
+<th class="head">80级</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>战士</td>
+<td>30.03</td>
+<td>62.5</td>
+</tr>
+<tr class="row-odd"><td>死亡骑士</td>
+<td>30.03</td>
+<td>62.5</td>
+</tr>
+<tr class="row-even"><td>圣骑士</td>
+<td>24.81</td>
+<td>52.08</td>
+</tr>
+<tr class="row-odd"><td>猎人</td>
+<td>40</td>
+<td>83.33</td>
+</tr>
+<tr class="row-even"><td>萨满</td>
+<td>40</td>
+<td>83.33</td>
+</tr>
+<tr class="row-odd"><td>盗贼</td>
+<td>40</td>
+<td>83.33</td>
+</tr>
+<tr class="row-even"><td>德鲁伊</td>
+<td>40</td>
+<td>83.33</td>
+</tr>
+<tr class="row-odd"><td>牧师</td>
+<td>24.94</td>
+<td>52.08</td>
+</tr>
+<tr class="row-even"><td>法师</td>
+<td>24.57</td>
+<td>51.02</td>
+</tr>
+<tr class="row-odd"><td>术士</td>
+<td>24.57</td>
+<td>50.51</td>
+</tr>
+</tbody>
+</table>
+<p><strong>1%法术爆击所需要智力(全职业通用)</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">等级</th>
+<th class="head">所需智力</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>70</td>
+<td>80</td>
+</tr>
+<tr class="row-odd"><td>71</td>
+<td>86.21</td>
+</tr>
+<tr class="row-even"><td>72</td>
+<td>92.59</td>
+</tr>
+<tr class="row-odd"><td>73</td>
+<td>99.01</td>
+</tr>
+<tr class="row-even"><td>74</td>
+<td>107.53</td>
+</tr>
+<tr class="row-odd"><td>75</td>
+<td>114.94</td>
+</tr>
+<tr class="row-even"><td>76</td>
+<td>123.46</td>
+</tr>
+<tr class="row-odd"><td>77</td>
+<td>133.33</td>
+</tr>
+<tr class="row-even"><td>78</td>
+<td>142.86</td>
+</tr>
+<tr class="row-odd"><td>79</td>
+<td>153.85</td>
+</tr>
+<tr class="row-even"><td>80</td>
+<td>166.87</td>
+</tr>
+</tbody>
+</table>
+<p><strong>在特定等级达到一定物理免伤所需的护甲值</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%">
+<col width="14%">
+<col width="14%">
+<col width="14%">
+<col width="14%">
+<col width="14%">
+<col width="14%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Label</th>
+<th class="head">60级</th>
+<th class="head">63级</th>
+<th class="head">70级</th>
+<th class="head">73级</th>
+<th class="head">80级</th>
+<th class="head">83级</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>减伤50%</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>15232.5</td>
+<td>16635</td>
+</tr>
+<tr class="row-odd"><td>减伤75%</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>45697</td>
+<td>49905</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="..\..\index.htm">
+              <img class="logo" src="..\..\_static\WowWlkPrivateServerManual.jpg" alt="Logo">
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="..\09-Mount\index.htm" title="previous chapter">坐骑(Mount)</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="..\..\2-Fox32\index.htm" title="next chapter">玩Fox3.2端的参考资料(Fox-3.2 Reference)</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="..\..\_sources\1-CustomizeGuide\10-Stats\index.txt" rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q">
+      <input type="submit" value="Go">
+      <input type="hidden" name="check_keywords" value="yes">
+      <input type="hidden" name="area" value="default">
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index">index</a></li>
+        <li class="right">
+          <a href="..\..\2-Fox32\index.htm" title="玩Fox3.2端的参考资料(Fox-3.2 Reference)">next</a> |</li>
+        <li class="right">
+          <a href="..\09-Mount\index.htm" title="坐骑(Mount)">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm">单机修改手册(Customize Guide)</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, MacHuGWU.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

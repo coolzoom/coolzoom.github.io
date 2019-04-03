@@ -1,0 +1,523 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>团队副本Buff和Debuff &mdash; wowWlkPrivateServerManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="..\..\_static\nature.css" type="text/css">
+    <link rel="stylesheet" href="..\..\_static\pygments.css" type="text/css">
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="..\..\_static\jquery.js"></script>
+    <script type="text/javascript" src="..\..\_static\underscore.js"></script>
+    <script type="text/javascript" src="..\..\_static\doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="wowWlkPrivateServerManual 0.0.1 documentation" href="..\..\index.htm">
+    <link rel="up" title="玩Fox3.2端的参考资料(Fox-3.2 Reference)" href="..\index.htm">
+    <link rel="next" title="修改游戏中常用的Buff和Debuff" href="..\05-BTBuff\index.htm">
+    <link rel="prev" title="宏命令指南(Macro)" href="..\03-Macro\index.htm"> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="..\05-BTBuff\index.htm" title="修改游戏中常用的Buff和Debuff" accesskey="N">next</a> |</li>
+        <li class="right">
+          <a href="..\03-Macro\index.htm" title="宏命令指南(Macro)" accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm" accesskey="U">玩Fox3.2端的参考资料(Fox-3.2 Reference)</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="buffdebuff">
+<span id="raidbuff"></span><h1>团队副本Buff和Debuff<a class="headerlink" href="#buffdebuff" title="Permalink to this headline">¶</a></h1>
+<img alt="../../_images/RaidBuff.png" src="..\..\_images\RaidBuff.png">
+<img alt="../../_images/RaidDeBuff.png" src="..\..\_images\RaidDeBuff.png">
+<p>在单机版模式下, 由于只有一个人, 无法体验在官服打团队副本时, 有队友刷齐Buff, 给怪物上Debuff的过程。本文档将各职业所需的WLK团队副本Buff和Debuff做成了宏, 方便一键刷齐所有Buff。</p>
+<div class="section" id="id1">
+<h2>一键上Buff和Debuff宏命令<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="dps-buff">
+<span id="raidbuff-physicdps"></span><h3>物理DPS Buff (武器/狂暴战士, 战斗/刺杀/敏锐盗贼, 猫德, 猎人)<a class="headerlink" href="#dps-buff" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.aura 48161
+.aura 48469
+.aura 47436
+.aura 56525
+.aura 48942
+.aura 24932
+.unaura 34300
+.aura 34300
+.aura 19506
+.aura 75447
+.unaura 58646
+.aura 58646
+.aura 55610
+/targetlasttarget
+</pre></div>
+</div>
+</div>
+<div class="section" id="dpsdebuff">
+<span id="raiddebuff-physicdps"></span><h3>物理DPS有利Debuff (武器/狂暴战士, 战斗/刺杀/敏锐盗贼, 猫德, 猎人)<a class="headerlink" href="#dpsdebuff" title="Permalink to this headline">¶</a></h3>
+<p>请根据需要自行修改技能名称:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast [mod:alt]嗜血术; 旋风斩
+/stopmacro [noharm]
+.aura 54499
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 16857
+.aura 58683
+.aura 33983
+.aura 20185 光明审判 战士 盗贼 野德
+##.aura 20186 智慧审判 猎人萨满
+</pre></div>
+</div>
+</div>
+<div class="section" id="raidbuff-spelldps">
+<span id="id2"></span><h3>法系DPS Buff (法师, 术士, 暗影牧师, 元素萨满, 平衡德鲁伊)<a class="headerlink" href="#raidbuff-spelldps" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.aura 56525
+.aura 48161
+.aura 42995
+.aura 48073
+.aura 48469
+.aura 24907
+.aura 75447
+.aura 19746
+.unaura 58777
+.aura 58777
+.unaura 57663
+.aura 57663
+.unaura 2895
+.aura 2895
+/targetlasttarget
+</pre></div>
+</div>
+</div>
+<div class="section" id="raiddebuff-spelldps">
+<span id="id3"></span><h3>法系DPS有利Debuff (法师, 术士, 暗影牧师, 元素萨满, 平衡德鲁伊)<a class="headerlink" href="#raiddebuff-spelldps" title="Permalink to this headline">¶</a></h3>
+<p>请根据需要自行修改技能名称:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast [mod:alt]冰枪术; 寒冰箭
+/stopmacro [noharm]
+.aura 54499
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 31589
+</pre></div>
+</div>
+</div>
+<div class="section" id="tank-buff">
+<span id="raidbuff-tank"></span><h3>Tank Buff (防御战士, 防御圣骑士, 防御死亡骑士, 熊坦德鲁伊)<a class="headerlink" href="#tank-buff" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.aura 48161
+.aura 48469
+.aura 47440
+.aura 25899
+.aura 48942
+.aura 24932
+.unaura 34300
+.aura 34300
+.aura 19506
+.aura 75447
+.unaura 58646
+.aura 58646
+.aura 55610
+/targetlasttarget
+</pre></div>
+</div>
+</div>
+<div class="section" id="tankdebuff">
+<span id="raiddebuff-tank"></span><h3>Tank有利Debuff (防御战士, 防御圣骑士, 防御死亡骑士, 熊坦德鲁伊)<a class="headerlink" href="#tankdebuff" title="Permalink to this headline">¶</a></h3>
+<p>请根据需要自行修改技能名称:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast [mod:alt]嗜血术; 旋风斩
+/stopmacro [noharm]
+.aura 47437
+.aura 31589
+.aura 47502
+</pre></div>
+</div>
+</div>
+<div class="section" id="buff">
+<span id="raidbuff-healer"></span><h3>治疗 Buff (戒律/神圣牧师, 神圣圣骑士, 恢复萨满, 恢复德鲁伊)<a class="headerlink" href="#buff" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.aura 56525
+.aura 48161
+.aura 42995
+.aura 48073
+.aura 48469
+.aura 24907
+.aura 19746
+.unaura 58777
+.aura 58777
+.unaura 57663
+.aura 57663
+.unaura 2895
+.aura 2895
+/targetlasttarget
+</pre></div>
+</div>
+</div>
+<div class="section" id="raidbuff-everything">
+<span id="id4"></span><h3>全部 Buff (魔武双修类职业, 惩戒骑, 增强萨)<a class="headerlink" href="#raidbuff-everything" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.aura 48161
+.aura 42995
+.aura 48469
+.aura 47436
+.aura 56525
+.aura 48942
+.aura 24932
+.unaura 34300
+.aura 34300
+.aura 75447
+.unaura 58646
+.aura 58646
+.unaura 57663
+.aura 57663
+.unaura 2895
+.aura 2895
+.aura 24907
+.aura 55610
+/targetlasttarget
+</pre></div>
+</div>
+</div>
+<div class="section" id="debuff">
+<span id="raiddebuff-everything"></span><h3>全部 Debuff (魔武双修类职业, 惩戒骑, 增强萨)<a class="headerlink" href="#debuff" title="Permalink to this headline">¶</a></h3>
+<p>请根据需要自行修改技能名称:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast [mod:alt]冰枪术; 寒冰箭
+/stopmacro [noharm]
+.aura 47437
+.aura 31589
+.aura 47502
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 54499
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 16857
+.aura 58683
+.aura 33983
+.aura 20185
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>团队副本Buff一览<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id6">
+<h3>属性<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>包括: 王者祝福, 真言术: 韧, 奥术智慧, 神圣之灵, 野性印记</p>
+<p>60级:</p>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.aura 56525
+.aura 10938
+.aura 10157
+.aura 27841
+.aura 9885
+/targetlasttaget
+</pre></div>
+</div>
+<p>70级:</p>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.aura 56525
+.aura 25389
+.aura 27126
+.aura 25312
+.aura 26990
+/targetlasttaget
+</pre></div>
+</div>
+<p>80级:</p>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.aura 56525
+.aura 48161
+.aura 42995
+.aura 48073
+.aura 48469
+/targetlasttaget
+</pre></div>
+</div>
+</div>
+<div class="section" id="id7">
+<h3>攻击强度<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>.aura 47436 战斗怒吼 +550AP 持续2分钟
+.aura 48934 力量祝福 +550AP 持续30分钟
+.aura 19506 强击光环 +10%AP
+</pre></div>
+</div>
+</div>
+<div class="section" id="id8">
+<h3>力量敏捷<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>.aura 57623 凛冬号角 (死亡骑士技能) 力量敏捷+155点 持续2分钟
+
+# 注: 该技能的aura可以叠加, 使用时要用unaura trick
+.aura 58646 大地之力图腾 (萨满技能) 力量敏捷+155点 永久
+</pre></div>
+</div>
+</div>
+<div class="section" id="id9">
+<h3>全属性<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>.aura 48469 野性赐福 750护甲, 54全抗, 37全属性
+.aura 56525 王者祝福 10%全属性
+</pre></div>
+</div>
+</div>
+<div class="section" id="id10">
+<h3>物理暴击<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>.aura 24932 兽群领袖光环 (德鲁伊技能) +5%物理暴击
+
+# 该技能配合兽群领袖光环使用, 面板上隐藏, 但有效果
+# 注: 该技能的aura可以叠加, 使用时要用unaura trick
+.aura 34300 强化兽群领袖 暴击加血, 并给自己恢复法力
+</pre></div>
+</div>
+</div>
+<div class="section" id="id11">
+<h3>近战急速<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>.aura 55610 强化冰爪 (冰DK天赋) 100码内全团+20%近战急速, 本人额外+5%近战急速, 光环效果
+
+# 注: 该技能的aura可以叠加, 使用时要用unaura trick
+.aura 8515 风怒图腾 (萨满技能) +16%近战急速, 光环效果
+</pre></div>
+</div>
+</div>
+<div class="section" id="id12">
+<h3>法术伤害<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre># 注: 该技能的aura可以叠加, 使用时要用unaura trick
+.aura 57663 愤怒图腾 (萨满技能) +280法伤 光环效果
+</pre></div>
+</div>
+</div>
+<div class="section" id="id13">
+<h3>法术暴击<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>.aura 24907 枭兽光环 (德鲁伊技能) +5%法暴 永久持续
+</pre></div>
+</div>
+</div>
+<div class="section" id="id14">
+<h3>法术急速<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre># 注: 该技能的aura可以叠加, 使用时要用unaura trick
+.aura 2895 风惩图腾 (萨满技能) 5%急速 可叠加 永久持续
+</pre></div>
+</div>
+</div>
+<div class="section" id="id15">
+<h3>免伤<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>.aura 25899 庇护祝福 (圣骑士技能) +10%耐 3%免伤
+</pre></div>
+</div>
+</div>
+<div class="section" id="id16">
+<h3>全伤害<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>.aura 75447 凶性鼓舞 (兽王猎人天赋) +3%总伤害
+</pre></div>
+</div>
+</div>
+<div class="section" id="id17">
+<h3>施法专注<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>.aura 19746 专注光环 -35% 施法时因受到攻击而损失的施法时间 [骑士光环]
+</pre></div>
+</div>
+</div>
+<div class="section" id="id18">
+<h3>血量上限<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>.aura 48161 真言术: 韧 +165耐力 持续30分钟
+.aura 47982 血之契约 +1330HP上限 永久持续
+.aura 47440 命令怒吼 +2255hp上限 持续2分钟
+.aura 25899 庇护祝福 +10%耐 3%免伤 持续30分钟
+</pre></div>
+</div>
+</div>
+<div class="section" id="id19">
+<h3>提高护甲<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>.aura 48942 虔诚光环 +1205护甲
+</pre></div>
+</div>
+</div>
+<div class="section" id="id20">
+<h3>抗性类<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>.aura 49071 野性守护 +130 自然抗 [猎人光环]
+.aura 48947 火炕光环 +130 火焰抗 [骑士光环]
+.aura 48945 冰抗光环 +130 冰霜抗 [骑士光环]
+.aura 48943 暗抗光环 +130 暗影抗 [骑士光环]
+.aura 48170 暗影防护 +130 暗影抗 [牧师buff] 不可以跟骑士光环叠加 但不占圣骑士的光环位置
+</pre></div>
+</div>
+</div>
+<div class="section" id="id21">
+<h3>法力回复<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>.aura 48938 强效智慧祝福 (圣骑士技能) 每5秒恢复92点法力, 持续30分钟
+
+# 注: 该技能的aura可以叠加, 使用时要用unaura trick
+.aura 58777 法力之泉图腾 (撒吗技能) 每5秒恢复92点法力, 持续30分钟
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id22">
+<h2>团队副本Debuff一览<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
+<p>以下的Debuff都需要对怪物释放, 使得对团队产生有利效果。</p>
+<div class="section" id="dps">
+<h3>近战DPS有利<a class="headerlink" href="#dps" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>.aura 54499 十字军之心 +3%被暴击几率 持续20秒
+.aura 71554 破甲 每次-4%甲 持续30秒 可叠加5次 需要X5
+.aura 16857 精灵之火 -5%护甲 持续5分钟
+.aura 58683 狠毒战斗 被毒药影响, 使得受到物理伤害+4%
+.aura 33983 芒果 +30%流血伤害
+.aura 20185 光明审判 (对战士, 盗贼, 猫德, 死亡骑士有效)
+.aura 20186 智慧审判 (对圣骑士, 萨满, 猎人有效)
+</pre></div>
+</div>
+</div>
+<div class="section" id="id23">
+<h3>法系DPS有利<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>.aura 54499 十字军之心 +3%被暴击几率 持续20秒
+.aura 47865 元素诅咒 -165全抗, +13%伤害, 持续5分钟
+.aura 22959 强化灼烧 +5%暴, 持续30秒, 无法和极寒冰冻叠加
+.aura 33198 苦难 +3%被命中几率 持续24秒
+.aura 31589 减速术 -60%移动, 远程攻击速度, +30%施法时间, 持续15秒
+</pre></div>
+</div>
+</div>
+<div class="section" id="tank">
+<h3>Tank有利<a class="headerlink" href="#tank" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>.aura 47437 挫志怒吼 -410攻击强度
+.aura 31589 减速术 -60%移动, 远程攻击速度, +30%施法时间, 持续15秒
+.aura 47502 雷霆一击 攻击间隔+10%
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="..\..\index.htm">
+              <img class="logo" src="..\..\_static\WowWlkPrivateServerManual.jpg" alt="Logo">
+            </a></p>
+  <h3><a href="..\..\index.htm">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">团队副本Buff和Debuff</a><ul>
+<li><a class="reference internal" href="#id1">一键上Buff和Debuff宏命令</a><ul>
+<li><a class="reference internal" href="#dps-buff">物理DPS Buff (武器/狂暴战士, 战斗/刺杀/敏锐盗贼, 猫德, 猎人)</a></li>
+<li><a class="reference internal" href="#dpsdebuff">物理DPS有利Debuff (武器/狂暴战士, 战斗/刺杀/敏锐盗贼, 猫德, 猎人)</a></li>
+<li><a class="reference internal" href="#raidbuff-spelldps">法系DPS Buff (法师, 术士, 暗影牧师, 元素萨满, 平衡德鲁伊)</a></li>
+<li><a class="reference internal" href="#raiddebuff-spelldps">法系DPS有利Debuff (法师, 术士, 暗影牧师, 元素萨满, 平衡德鲁伊)</a></li>
+<li><a class="reference internal" href="#tank-buff">Tank Buff (防御战士, 防御圣骑士, 防御死亡骑士, 熊坦德鲁伊)</a></li>
+<li><a class="reference internal" href="#tankdebuff">Tank有利Debuff (防御战士, 防御圣骑士, 防御死亡骑士, 熊坦德鲁伊)</a></li>
+<li><a class="reference internal" href="#buff">治疗 Buff (戒律/神圣牧师, 神圣圣骑士, 恢复萨满, 恢复德鲁伊)</a></li>
+<li><a class="reference internal" href="#raidbuff-everything">全部 Buff (魔武双修类职业, 惩戒骑, 增强萨)</a></li>
+<li><a class="reference internal" href="#debuff">全部 Debuff (魔武双修类职业, 惩戒骑, 增强萨)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id5">团队副本Buff一览</a><ul>
+<li><a class="reference internal" href="#id6">属性</a></li>
+<li><a class="reference internal" href="#id7">攻击强度</a></li>
+<li><a class="reference internal" href="#id8">力量敏捷</a></li>
+<li><a class="reference internal" href="#id9">全属性</a></li>
+<li><a class="reference internal" href="#id10">物理暴击</a></li>
+<li><a class="reference internal" href="#id11">近战急速</a></li>
+<li><a class="reference internal" href="#id12">法术伤害</a></li>
+<li><a class="reference internal" href="#id13">法术暴击</a></li>
+<li><a class="reference internal" href="#id14">法术急速</a></li>
+<li><a class="reference internal" href="#id15">免伤</a></li>
+<li><a class="reference internal" href="#id16">全伤害</a></li>
+<li><a class="reference internal" href="#id17">施法专注</a></li>
+<li><a class="reference internal" href="#id18">血量上限</a></li>
+<li><a class="reference internal" href="#id19">提高护甲</a></li>
+<li><a class="reference internal" href="#id20">抗性类</a></li>
+<li><a class="reference internal" href="#id21">法力回复</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id22">团队副本Debuff一览</a><ul>
+<li><a class="reference internal" href="#dps">近战DPS有利</a></li>
+<li><a class="reference internal" href="#id23">法系DPS有利</a></li>
+<li><a class="reference internal" href="#tank">Tank有利</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="..\03-Macro\index.htm" title="previous chapter">宏命令指南(Macro)</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="..\05-BTBuff\index.htm" title="next chapter">修改游戏中常用的Buff和Debuff</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="..\..\_sources\2-Fox32\04-RaidBuff\index.txt" rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q">
+      <input type="submit" value="Go">
+      <input type="hidden" name="check_keywords" value="yes">
+      <input type="hidden" name="area" value="default">
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index">index</a></li>
+        <li class="right">
+          <a href="..\05-BTBuff\index.htm" title="修改游戏中常用的Buff和Debuff">next</a> |</li>
+        <li class="right">
+          <a href="..\03-Macro\index.htm" title="宏命令指南(Macro)">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm">玩Fox3.2端的参考资料(Fox-3.2 Reference)</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, MacHuGWU.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

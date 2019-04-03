@@ -1,0 +1,10 @@
+裁缝 (Tailoring)
+================
+
+.. toctree::
+	:maxdepth: 1
+
+	Tailoring-1-to-375 <Tailoring-1-to-375.rst>
+	Tailoring-350-to-450 <Tailoring-350-to-450.rst>
+	Tailoring-1-to-450 <Tailoring-1-to-450.rst>
+	Tailoring-WLK图纸和配方 <Tailoring-WLK图纸和配方.rst>

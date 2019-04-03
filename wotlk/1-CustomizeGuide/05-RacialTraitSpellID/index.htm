@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>种族天赋技能(Racial Trait Spell ID) &mdash; wowWlkPrivateServerManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="..\..\_static\nature.css" type="text/css">
+    <link rel="stylesheet" href="..\..\_static\pygments.css" type="text/css">
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="..\..\_static\jquery.js"></script>
+    <script type="text/javascript" src="..\..\_static\underscore.js"></script>
+    <script type="text/javascript" src="..\..\_static\doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="wowWlkPrivateServerManual 0.0.1 documentation" href="..\..\index.htm">
+    <link rel="up" title="单机修改手册(Customize Guide)" href="..\index.htm">
+    <link rel="next" title="武器和防具技能代码(Weapon and Armor Spell ID)" href="..\06-WeaponAndArmorSpellID\index.htm">
+    <link rel="prev" title="职业天赋代码(Talent Spell)" href="..\04-Talent\index.htm"> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="..\06-WeaponAndArmorSpellID\index.htm" title="武器和防具技能代码(Weapon and Armor Spell ID)" accesskey="N">next</a> |</li>
+        <li class="right">
+          <a href="..\04-Talent\index.htm" title="职业天赋代码(Talent Spell)" accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm" accesskey="U">单机修改手册(Customize Guide)</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="racial-trait-spell-id">
+<span id="racialtraitspellid"></span><h1>种族天赋技能(Racial Trait Spell ID)<a class="headerlink" href="#racial-trait-spell-id" title="Permalink to this headline">¶</a></h1>
+<img alt="../../_images/Human.png" src="..\..\_images\Human.png">
+<img alt="../../_images/NightElf.png" src="..\..\_images\NightElf.png">
+<img alt="../../_images/Orc.png" src="..\..\_images\Orc.png">
+<img alt="../../_images/Undead.png" src="..\..\_images\Undead.png">
+<div class="section" id="id1">
+<h2>联盟<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">人类:</p>
+<div class="highlight-python"><div class="highlight"><pre>.learn 20598 人类精魂 精神+3%
+.learn 20597 剑类武器专精
+.learn 20599 声望获得速度+10%
+.learn 20600 感知 提高侦测潜行能力, 持续20秒
+.learn 20864 锤类武器专精
+</pre></div>
+</div>
+</li>
+<li><p class="first">矮人:</p>
+<div class="highlight-python"><div class="highlight"><pre>.learn 20596 冰霜抗性 你被冰霜魔法击中的几率-2%
+.learn 2481 寻找财宝
+.learn 20595 枪械专精 枪械的暴击几率+1%
+.learn 20594 石像形态 进入石像形态, 护甲提高10%, 免疫中毒, 疾病, 流血, 持续8秒
+</pre></div>
+</div>
+</li>
+<li><p class="first">侏儒:</p>
+<div class="highlight-python"><div class="highlight"><pre>.learn 20592 奥术抗性 你被奥术魔法击中的几率-2%
+.learn 20593 工程学专精 工程学技能+15点
+.learn 20591 开阔思维 智力+5%
+.learn 20589 逃命专家 解除所有移动限制效果
+</pre></div>
+</div>
+</li>
+<li><p class="first">暗夜精灵:</p>
+<div class="highlight-python"><div class="highlight"><pre>.learn 20580 影遁 非战斗状态可以进入状态潜行, 但不可移动
+.learn 20583 自然抗性 你被自然魔法击中的几率-2%
+.learn 20585 精灵之魂 死后变成小精灵移动速度+75%
+.learn 20582 迅捷 躲闪+2%
+</pre></div>
+</div>
+</li>
+<li><p class="first">德莱尼:</p>
+<div class="highlight-python"><div class="highlight"><pre>.learn unknown 宝石切割 珠宝加工技能+5点
+.learn 20579 暗影抗性 +10
+.learn 59547 纳鲁的祝福 治疗自己, 治疗效果收到法术强度和攻击强度中高的那个的影响
+.learn 28878 英勇风采 使得30码内的小队成员的命中率+1%
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>部落<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">兽人:</p>
+<div class="highlight-python"><div class="highlight"><pre>.learn 20575 命令 宠物伤害提高5%
+.learn 20573 坚韧 抵抗昏迷的几率提高15%
+.learn 20574 斧类, 拳套类专精 拳套, 斧子的熟练度+5
+.learn 20572 血性狂暴 攻击强度随着你的等级提高, 持续15秒, 冷却时间2分钟
+</pre></div>
+</div>
+</li>
+<li><p class="first">巨魔:</p>
+<div class="highlight-python"><div class="highlight"><pre>.learn 20555 再生 生命值回复速度+10%
+.learn 26290 枪械专精 弓箭的暴击几率+1%
+.learn 20558 投掷专精 投掷武器的暴击几率+1%
+.learn 20554 狂暴 攻击和施法速度提高20%, 持续10秒, 冷却时间3分钟
+.learn 20557 野兽杀手 对野兽的伤害+5%
+</pre></div>
+</div>
+</li>
+<li><p class="first">牛头人:</p>
+<div class="highlight-python"><div class="highlight"><pre>.learn 20550 耐久 基础生命值上限提高5%
+.learn 20549 战争践踏 8码内最多5个敌人昏迷2秒
+.learn 20552 栽培 草药学技能+15点
+.learn 20551 自然抗性 你被自然魔法击中的几率-2%
+</pre></div>
+</div>
+</li>
+<li><p class="first">亡灵:</p>
+<div class="highlight-python"><div class="highlight"><pre>.learn 7744 亡灵意志 解除恐惧, 魅惑, 催眠, 冷却时间45秒
+.learn 20579 暗影抗性 你被暗影魔法击中的几率-2%
+.learn 5227 水下呼吸 水下呼吸时间延长233%
+.learn 20577 食尸 吃人形生物和亡灵的尸体, 每2秒恢复7%的生命, 持续5秒, 可以在战斗中使用
+</pre></div>
+</div>
+</li>
+<li><p class="first">血精灵:</p>
+<div class="highlight-python"><div class="highlight"><pre>.learn unknown 奥术亲和 附魔技能+10点
+.learn 25046 奥术洪流 半径8码内敌对玩家沉默2秒, 非玩家角色沉默3秒, 并恢复6%的法力值, 冷却时间2分钟
+.learn unknown 魔法抗性 你被法术击中的几率-2%
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="..\..\index.htm">
+              <img class="logo" src="..\..\_static\WowWlkPrivateServerManual.jpg" alt="Logo">
+            </a></p>
+  <h3><a href="..\..\index.htm">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">种族天赋技能(Racial Trait Spell ID)</a><ul>
+<li><a class="reference internal" href="#id1">联盟</a></li>
+<li><a class="reference internal" href="#id2">部落</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="..\04-Talent\index.htm" title="previous chapter">职业天赋代码(Talent Spell)</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="..\06-WeaponAndArmorSpellID\index.htm" title="next chapter">武器和防具技能代码(Weapon and Armor Spell ID)</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="..\..\_sources\1-CustomizeGuide\05-RacialTraitSpellID\index.txt" rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q">
+      <input type="submit" value="Go">
+      <input type="hidden" name="check_keywords" value="yes">
+      <input type="hidden" name="area" value="default">
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index">index</a></li>
+        <li class="right">
+          <a href="..\06-WeaponAndArmorSpellID\index.htm" title="武器和防具技能代码(Weapon and Armor Spell ID)">next</a> |</li>
+        <li class="right">
+          <a href="..\04-Talent\index.htm" title="职业天赋代码(Talent Spell)">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm">单机修改手册(Customize Guide)</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, MacHuGWU.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

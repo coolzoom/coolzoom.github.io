@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>Wotlk猎人简易指南和FAQ &mdash; wowWlkPrivateServerManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="..\..\..\..\_static\nature.css" type="text/css">
+    <link rel="stylesheet" href="..\..\..\..\_static\pygments.css" type="text/css">
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="..\..\..\..\_static\jquery.js"></script>
+    <script type="text/javascript" src="..\..\..\..\_static\underscore.js"></script>
+    <script type="text/javascript" src="..\..\..\..\_static\doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="wowWlkPrivateServerManual 0.0.1 documentation" href="..\..\..\..\index.htm">
+    <link rel="up" title="猎人区" href="index.htm">
+    <link rel="next" title="兽王猎人3.3.3raid指南([3.33PVE)" href="兽王猎人3.3.3Raid指南.htm">
+    <link rel="prev" title="猎人区" href="index.htm"> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\..\..\genindex.htm" title="General Index" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="兽王猎人3.3.3Raid指南.htm" title="兽王猎人3.3.3raid指南([3.33PVE)" accesskey="N">next</a> |</li>
+        <li class="right">
+          <a href="index.htm" title="猎人区" accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\..\..\index.htm">巫妖王之怒攻略(GameGuide)</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="..\..\index.htm">精华文章</a> &raquo;</li>
+          <li class="nav-item nav-item-3"><a href="..\index.htm">各职业精华帖</a> &raquo;</li>
+          <li class="nav-item nav-item-4"><a href="index.htm" accesskey="U">猎人区</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="wotlkfaq">
+<h1>Wotlk猎人简易指南和FAQ<a class="headerlink" href="#wotlkfaq" title="Permalink to this headline">¶</a></h1>
+<p><strong>战斗等级与你</strong></p>
+<p><strong>命中</strong></p>
+<p>和TBC一样，如果你想要在面对83级Boss的时候达到命中上限，那么你需要9%命中。</p>
+<p>在80级每32.78998947（近似为32.8）点命中等级换算1%命中率。</p>
+<div class="highlight-python"><div class="highlight"><pre>专注瞄准天赋   需要命中率   需要命中等级
+0/3            9%            296 (295.1099)
+1/3            8%            263 (262.3199)
+2/3            7%            229 (229.5299)
+3/3            6%            197 (196.7399)
+---            5%            164 (163.9499) *德莱尼命中光环
+</pre></div>
+</div>
+<p>其他可以提升你的命中率的方法：
+- +45命中等级 (1 小时 - 战斗药剂)
+- +40命中等级 (1 小时 - 烹饪制品)</p>
+<p><strong>急速</strong></p>
+<p>就单个战斗等级来看，急速等级是最有价值的战斗等级，因为它可以将稳固射击的施法时间降低到和公共CD相同（1.5s）。当到达这个时候，你继续增加急速等级就不可能使你在相同时间内打出更多稳固射击了（由于GCD的制约），因此急速的价值开始下降（在这之后急速等级仍然可以加速平射的速度）。</p>
+<p>一个两秒的稳固射击（标准值）在15%箭袋加速下（至少我没有发现有超过15%加速的箭袋——译者注）施法时间是1.739秒。这就是我们计算的起始线，我们需要15.942%加速来达到稳固射击的上限——1.5秒。</p>
+<p>唯一一个可以提升攻击速度的天赋，是野兽系的蛇之迅捷，5/5的情况下加速20%，因此，野兽系猎人不需要任何急速等级来达到稳固射击提升上限。</p>
+<p>对于其他天赋的猎人，我们需要知道，80级的时候你需要32.78998947点急速等级来提升1%的加速。</p>
+<ul class="simple">
+<li>I = 从物品获得的加速%</li>
+<li>T = 从天赋获得的加速%</li>
+<li>P = 从箭袋获得的加速%</li>
+</ul>
+<p>稳固射击速度 = 2.0 / ((1+(I/100)/32.78998947)*(1+(T/100))*(1+(P/100))), 计算得，我们需要522.738点急速等级来让稳固射击的速度达到GCD。</p>
+<p><strong>其他需要关注的</strong></p>
+<ul class="simple">
+<li>1%爆击率 = 45.9060点爆击等级</li>
+<li>1%护甲穿透 = 15.39529991护甲穿透等级</li>
+</ul>
+<p><strong>属性相关</strong></p>
+<ul class="simple">
+<li>1敏捷 = 0.012%爆击率</li>
+<li>1爆击率 = 83.3333333敏捷</li>
+</ul>
+<p><strong>战斗等级与你的宠物</strong></p>
+<p>宠物从猎人处获得的属性进行了一些修改，主要是如下：</p>
+<ul class="simple">
+<li>22% 猎人远程攻击强度 -&gt; 宠物攻击强度</li>
+<li>100% 猎人命中等级 -&gt; 宠物命中等级</li>
+</ul>
+<p><strong>有用的宏</strong></p>
+<p>在现行版本中，急速等级、护甲穿透等级、精准等级、防御等级和韧性等级无法加成给宠物。（译者注：关于宠物的具体加成信息会在另一篇帖子里面提到完整的资料，这里只是按照原文译成）有用的宏:</p>
+<p>（译者注：以下宏并没有经过测试，因此我也不能保证它们都能用并且都好用……）任何宏的作用都必定是以下两个之一：最大化DPS，最小化操作难度。</p>
+<p>首先是一个节省操作的宏，快速切换守护，用法简单到没什么说的。省一个快捷键:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/castsequence 龙鹰守护, 蝰蛇守护
+</pre></div>
+</div>
+<p>第二个是一个将杀戮射击绑定到稳固上面的宏，会在条件适合的时候自动放斩杀，其中两句以/script开头的语句作用是消除屏幕中间“你现在还不能这样做”的红字提示，如果你觉得无所谓的话，可以删掉这两句，没有任何影响。而使用这个宏和直接点稳固的区别只有一个，那就是用这个宏的话你会在第一次点击宏的时候施放一次平射，在这同时开始稳固射击读条，如果直接点稳固，那么就是直接读条。因此这个宏的作用就是让你在循环开始的时候多一个平射。（译者注：其实这个宏的主体就是现在的稳固优先宏，也就是所谓的“新宏”，只是我们不再需要那些什么风蛇啊什么杀戮啊之类的语句，也不用担心卡这卡那）:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip 稳固射击
+/script UIErrorsFrame:UnregisterEvent(&quot;UI_ERROR_MESSAGE&quot;);
+/cast 杀戮射击
+/script UIErrorsFrame:RegisterEvent(&quot;UI_ERROR_MESSAGE&quot;);
+/cast 自动射击
+/cast 稳固射击
+</pre></div>
+</div>
+<p>下面是一个简单的全开宏，13和14代表开上面和下面的饰品栏，你可以自行选择是否要这两行。
+注意急速射击和狂野怒火都要占去一次GCD，因此你需要按两下（中间间隔一个GCD）才能全开:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip 狂野怒火
+/cast 杀戮命令
+/petautocasttoggle 野性呼唤
+/use 13
+/use 14
+/cast 狂野怒火
+/cast 急速射击
+</pre></div>
+</div>
+<p><strong>一些额外问题</strong></p>
+<ul class="simple">
+<li>Q：目前最好的DPS天赋是什么？</li>
+<li>A：据目前的测试回报看来，野兽系天赋仍然是最好的选择，它的表现超过了其他两系天赋，但是你需要面对两个问题：宠物的生存，以及你不能有太多的移动（简单的说就是更适合木桩战），射击系天赋在有不断移动的战斗可以造成比较高的DPS，而生存系天赋则看上去更糟，不过生存系的猎人对团队辅助的能力（团队法力电池）弥补了这个问题。</li>
+<li>Q：最好的DPS宠物是什么？</li>
+<li>A：早期的经验似乎是更倾向于猫，灵魂兽，魔暴龙，迅猛龙和蝎子，不过由于目前只是在早期Raid阶段，不过现在还不能下结论，我们还需要更多在25人的英雄难度团队副本的数据。</li>
+<li>Q：为什么我的宠物自动打开/关闭技能的自动施放开关？</li>
+<li>A：It&#8217;s a known issue（暴雪说过，这是一个已知的BUG），同时这个BUG经常在部分宠物技能上面发生，通常情况下，原因是因为这个技能不在宠物动作条里面。如果你老为了低吼和畏缩的不听使唤而烦恼的话，可以选择下面两个宏。</li>
+</ul>
+<p>事实上，你可以把这两句话加入到任何其他宏里面，这只是一个暂时的解决方法:</p>
+<div class="highlight-python"><div class="highlight"><pre>/petautocaston 技能名称
+打开自动施放
+/petautocastoff 技能名称
+关闭自动施放
+</pre></div>
+</div>
+<ul class="simple">
+<li>Q：关于4T6效果（提升稳固伤害10%），在有稳固射击铭文的时候会变成什么样子？</li>
+<li>A：直接相加，增加稳固伤害20%</li>
+<li>Q：关于稳固射击铭文，这个“毒蛇钉刺存在的时候”是必须我自己的毒蛇钉还是任何人的都可以？</li>
+<li>A：这需要进一步的测试。</li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="..\..\..\..\index.htm">
+              <img class="logo" src="..\..\..\..\_static\WowWlkPrivateServerManual.jpg" alt="Logo">
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.htm" title="previous chapter">猎人区</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="兽王猎人3.3.3Raid指南.htm" title="next chapter">兽王猎人3.3.3raid指南([3.33PVE)</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="..\..\..\..\_sources\3-GameGuide\09-EliteArticle\Class\Hunter\Wotlk猎人简易指南和FAQ.txt" rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q">
+      <input type="submit" value="Go">
+      <input type="hidden" name="check_keywords" value="yes">
+      <input type="hidden" name="area" value="default">
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\..\..\genindex.htm" title="General Index">index</a></li>
+        <li class="right">
+          <a href="兽王猎人3.3.3Raid指南.htm" title="兽王猎人3.3.3raid指南([3.33PVE)">next</a> |</li>
+        <li class="right">
+          <a href="index.htm" title="猎人区">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\..\..\index.htm">巫妖王之怒攻略(GameGuide)</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="..\..\index.htm">精华文章</a> &raquo;</li>
+          <li class="nav-item nav-item-3"><a href="..\index.htm">各职业精华帖</a> &raquo;</li>
+          <li class="nav-item nav-item-4"><a href="index.htm">猎人区</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, MacHuGWU.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

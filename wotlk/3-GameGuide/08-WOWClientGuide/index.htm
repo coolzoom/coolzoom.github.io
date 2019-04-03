@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>魔兽世界客户端文件详解(WOW Client Guide) &mdash; wowWlkPrivateServerManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="..\..\_static\nature.css" type="text/css">
+    <link rel="stylesheet" href="..\..\_static\pygments.css" type="text/css">
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="..\..\_static\jquery.js"></script>
+    <script type="text/javascript" src="..\..\_static\underscore.js"></script>
+    <script type="text/javascript" src="..\..\_static\doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="wowWlkPrivateServerManual 0.0.1 documentation" href="..\..\index.htm">
+    <link rel="up" title="巫妖王之怒攻略(GameGuide)" href="..\index.htm">
+    <link rel="next" title="精华文章" href="..\09-EliteArticle\index.htm">
+    <link rel="prev" title="宏命令编程手册(Macro)" href="..\07-Macro\index.htm"> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="..\09-EliteArticle\index.htm" title="精华文章" accesskey="N">next</a> |</li>
+        <li class="right">
+          <a href="..\07-Macro\index.htm" title="宏命令编程手册(Macro)" accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm" accesskey="U">巫妖王之怒攻略(GameGuide)</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="wow-client-guide">
+<span id="wowclientguide"></span><h1>魔兽世界客户端文件详解(WOW Client Guide)<a class="headerlink" href="#wow-client-guide" title="Permalink to this headline">¶</a></h1>
+<img alt="../../_images/WOWClientGuide.png" src="..\..\_images\WOWClientGuide.png">
+<div class="section" id="id1">
+<h2>键位信息<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">account_name</span></code> 是你登陆游戏时的账号</p>
+<p>键位有两种设置, 通用设置和角色设置。</p>
+<ul class="simple">
+<li>通用设置文件保存在 <code class="docutils literal"><span class="pre">World</span> <span class="pre">of</span> <span class="pre">Warcraft/WTF/Account/&lt;account_name&gt;/bindings-cache.wtf</span></code></li>
+<li>角色设置文件保存在 <code class="docutils literal"><span class="pre">World</span> <span class="pre">of</span> <span class="pre">Warcraft/WTF/Account/&lt;account_name&gt;/&lt;server_name&gt;/&lt;character_name&gt;/bindings-cache.wtf</span></code></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>宏命令信息<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>宏命令也有两种设置, 通用设置和角色设置。</p>
+<ul class="simple">
+<li>通用设置文件保存在 <code class="docutils literal"><span class="pre">World</span> <span class="pre">of</span> <span class="pre">Warcraft/WTF/Account/&lt;account_name&gt;/macros-cache.txt</span></code></li>
+<li>角色设置文件保存在 <code class="docutils literal"><span class="pre">World</span> <span class="pre">of</span> <span class="pre">Warcraft/WTF/Account/&lt;account_name&gt;/&lt;server_name&gt;/&lt;character_name&gt;/bindings-cache.wtf</span></code>, <code class="docutils literal"><span class="pre">macros-cache.txt</span></code></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>插件设置<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>魔兽世界的插件文件是以文件夹的形式保存在 <code class="docutils literal"><span class="pre">World</span> <span class="pre">of</span> <span class="pre">Warcraft/Interface/AddOns</span></code> 目录下的。插件产生的数据并不保存在这儿, 而是根据账号和角色名保存在 <code class="docutils literal"><span class="pre">World</span> <span class="pre">of</span> <span class="pre">Warcraft/WTF</span></code> 目录下。每次登陆游戏时, 系统会自动创建一系列以 <code class="docutils literal"><span class="pre">Blizzard</span></code> 开头的插件。</p>
+</div>
+<div class="section" id="id4">
+<h2>游戏内数据缓存<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>鼠标移动到item, npc, object上所显示的面板, 是用到了 <code class="docutils literal"><span class="pre">World</span> <span class="pre">of</span> <span class="pre">Warcraft/Cache/WDB/zhTW</span></code> 目录下的缓存文件。<code class="docutils literal"><span class="pre">itemcache.wdb</span></code> 文件最大, 最有备份价值。台服, 美服, 国服的cache文件不可以通用。</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="..\..\index.htm">
+              <img class="logo" src="..\..\_static\WowWlkPrivateServerManual.jpg" alt="Logo">
+            </a></p>
+  <h3><a href="..\..\index.htm">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">魔兽世界客户端文件详解(WOW Client Guide)</a><ul>
+<li><a class="reference internal" href="#id1">键位信息</a></li>
+<li><a class="reference internal" href="#id2">宏命令信息</a></li>
+<li><a class="reference internal" href="#id3">插件设置</a></li>
+<li><a class="reference internal" href="#id4">游戏内数据缓存</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="..\07-Macro\index.htm" title="previous chapter">宏命令编程手册(Macro)</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="..\09-EliteArticle\index.htm" title="next chapter">精华文章</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="..\..\_sources\3-GameGuide\08-WOWClientGuide\index.txt" rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q">
+      <input type="submit" value="Go">
+      <input type="hidden" name="check_keywords" value="yes">
+      <input type="hidden" name="area" value="default">
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index">index</a></li>
+        <li class="right">
+          <a href="..\09-EliteArticle\index.htm" title="精华文章">next</a> |</li>
+        <li class="right">
+          <a href="..\07-Macro\index.htm" title="宏命令编程手册(Macro)">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm">巫妖王之怒攻略(GameGuide)</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, MacHuGWU.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

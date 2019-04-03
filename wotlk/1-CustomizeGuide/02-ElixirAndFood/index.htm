@@ -1,0 +1,470 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>药剂和食物(Elixir And Food) &mdash; wowWlkPrivateServerManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="..\..\_static\nature.css" type="text/css">
+    <link rel="stylesheet" href="..\..\_static\pygments.css" type="text/css">
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="..\..\_static\jquery.js"></script>
+    <script type="text/javascript" src="..\..\_static\underscore.js"></script>
+    <script type="text/javascript" src="..\..\_static\doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="wowWlkPrivateServerManual 0.0.1 documentation" href="..\..\index.htm">
+    <link rel="up" title="单机修改手册(Customize Guide)" href="..\index.htm">
+    <link rel="next" title="职业技能代码(Class Spell)" href="..\03-ClassSpell\index.htm">
+    <link rel="prev" title="传送点坐标汇总(Teleport)" href="..\01-Teleport\index.htm"> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="..\03-ClassSpell\index.htm" title="职业技能代码(Class Spell)" accesskey="N">next</a> |</li>
+        <li class="right">
+          <a href="..\01-Teleport\index.htm" title="传送点坐标汇总(Teleport)" accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm" accesskey="U">单机修改手册(Customize Guide)</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="elixir-and-food">
+<span id="elixirandfood"></span><h1>药剂和食物(Elixir And Food)<a class="headerlink" href="#elixir-and-food" title="Permalink to this headline">¶</a></h1>
+<img alt="../../_images/Elixir.png" src="..\..\_images\Elixir.png">
+<img alt="../../_images/Food.png" src="..\..\_images\Food.png">
+<p>其他药剂和食物请在ItemDB插件中的 <code class="docutils literal"><span class="pre">消耗品(Consumable)</span></code> 分类中查询。特别地, 法师制造的食物饮料请在 <code class="docutils literal"><span class="pre">消耗品(Consumable)/食物和饮料(Foods</span> <span class="pre">and</span> <span class="pre">Drink)</span></code> 分类中选择白色普通物品, 以 <code class="docutils literal"><span class="pre">魔法</span></code> 为关键字搜索即可。</p>
+<div class="section" id="id1">
+<h2>合剂类:<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">无尽怒火合剂 AP:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 46377 -20
+.add 46377 20 无尽怒火合剂
+</pre></div>
+</div>
+</li>
+<li><p class="first">纯净魔精合剂 Mana:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 46378 -20
+.add 46378 20 纯净魔精合剂
+</pre></div>
+</div>
+</li>
+<li><p class="first">冰霜巨龙合剂 SP:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 46376 -20
+.add 46376 20 冰霜巨龙合剂
+</pre></div>
+</div>
+</li>
+<li><p class="first">石血合剂 Life:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 46379 -20
+.add 46379 20 石血合剂
+</pre></div>
+</div>
+</li>
+<li><p class="first">次级抗性合剂 所有抗性:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 44939 -20
+.add 44939 20 次级抗性合剂
+</pre></div>
+</div>
+</li>
+<li><p class="first">次级强健合剂 韧性:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 40079 -20
+.add 40079 20 次级强健合剂
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>药水类<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">速度药水 急速:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 40211 -20
+.add 40211 20 速度药水
+</pre></div>
+</div>
+</li>
+<li><p class="first">狂野魔法药水 致命等级和法术能量:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 40212 -20
+.add 40212 20 狂野魔法药水
+</pre></div>
+</div>
+</li>
+<li><p class="first">强效活力药水 Life和Mana:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 40087 -20
+.add 40087 20 强效活力药水
+</pre></div>
+</div>
+</li>
+<li><p class="first">符文治疗药水 2700到4500Life:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 33447 -20
+.add 33447 20 符文治疗药水
+</pre></div>
+</div>
+</li>
+<li><p class="first">符文法力药水 4200到4500Mana:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 33448 -20
+.add 33448 20 符文法力药水
+</pre></div>
+</div>
+</li>
+<li><p class="first">不灭药水 护甲:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 40093 -20
+.add 40093 20 不灭药水
+</pre></div>
+</div>
+</li>
+<li><p class="first">极效奥术防护药水 吸收奥术伤害:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 40213 -20
+.add 40213 20 极效奥术防护药水
+</pre></div>
+</div>
+</li>
+<li><p class="first">极效火焰防护药水 吸收火焰伤害:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 40214 -20
+.add 40214 20 极效火焰防护药水
+</pre></div>
+</div>
+</li>
+<li><p class="first">极效冰霜防护药水 吸收冰霜伤害:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 40215 -20
+.add 40215 20 极效冰霜防护药水
+</pre></div>
+</div>
+</li>
+<li><p class="first">极效自然防护药水 吸收自然伤害:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 40216 -20
+.add 40216 20 极效自然防护药水
+</pre></div>
+</div>
+</li>
+<li><p class="first">极效暗影防护药水 吸收暗影伤害:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 40217 -20
+.add 40217 20 极效暗影防护药水
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>食物类<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p><strong>攻击强度, 法术能量</strong></p>
+<ul>
+<li><p class="first">水煮北地蚌背鱼 耐力和攻击强度, 生命和法力:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 34766 -20
+.add 34766 20 水煮北地蚌背鱼
+</pre></div>
+</div>
+</li>
+<li><p class="first">爆炒鲑鱼 耐力和法术能量, 生命和法力:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 34767 -20
+.add 34767 20 爆炒鲑鱼
+</pre></div>
+</div>
+</li>
+<li><p class="first">达拉然蚌肉杂烩 耐力和攻击强度和法术能量, 生命和法力:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 43268 -20
+.add 43268 20 达拉然蚌肉杂烩
+</pre></div>
+</div>
+</li>
+</ul>
+<p><strong>力量, 敏捷, 精神</strong></p>
+<ul>
+<li><p class="first">龙鳞鱼片 耐力和力量, 生命和法力:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 43000 -20
+.add 43000 20 龙鳞鱼片
+</pre></div>
+</div>
+</li>
+<li><p class="first">熏烤龙鳞鱼 耐力和敏捷, 生命和法力:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 42999 -20
+.add 42999 20 熏烤龙鳞鱼
+</pre></div>
+</div>
+</li>
+<li><p class="first">墨鱼片 耐力和精神, 生命和法力:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 42998 -20
+.add 42998 20 墨鱼片
+</pre></div>
+</div>
+</li>
+</ul>
+<p><strong>致命, 命中, 急速, 破甲, 熟练, 回蓝</strong></p>
+<ul>
+<li><p class="first">香辣蓝色水母 耐力和致命等级, 生命和法力:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 34768 -20
+.add 34768 20 香辣蓝色水母
+</pre></div>
+</div>
+</li>
+<li><p class="first">钳鱼大餐 耐力和命中等级, 生命和法力:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 42996 -20
+.add 42996 20 钳鱼大餐
+</pre></div>
+</div>
+</li>
+<li><p class="first">帝王鳐鱼片 耐力和加速等级, 生命和法力:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 34769 -20
+.add 34769 20 帝王鳐鱼片
+</pre></div>
+</div>
+</li>
+<li><p class="first">犀牛大餐 耐力和护甲穿透, 生命:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 42995 -20
+.add 42995 20 犀牛大餐
+</pre></div>
+</div>
+</li>
+<li><p class="first">虫犀肉排 耐力和熟练等级, 生命:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 42994 -20
+.add 42994 20 虫犀肉排
+</pre></div>
+</div>
+</li>
+<li><p class="first">香辣油炸青鱼 耐力和回复法力, 生命和法力:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 42993 -20
+.add 42993 20 香辣油炸青鱼
+</pre></div>
+</div>
+</li>
+</ul>
+<p><strong>其他</strong></p>
+<ul>
+<li><p class="first">香辣猛犸小吃, 宠物的力量和耐力:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 43005 -20
+.add 43005 20 香辣猛犸小吃
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2>特殊药剂和食物<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">诺格弗格药剂 变形为骷髅:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 8529 -20
+.add 8529 20 诺格弗格药剂
+</pre></div>
+</div>
+</li>
+<li><p class="first">美味风蛇 变形为对立阵营:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 6657 -20
+.add 6657 20 美味风蛇
+</pre></div>
+</div>
+</li>
+<li><p class="first">春节饺子 在25秒内每秒恢复4%生命和3%法力:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 21537 -20
+.add 21537 20 春节饺子
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2>其他专业技能消耗品<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">工程:</p>
+<div class="highlight-python"><div class="highlight"><pre>瘫痪3秒
+.add 40771 -20
+.add 40771 20 钴质破片炸弹
+.add 23737 -20
+.add 23737 20 精金手雷
+.add 15993 -20
+.add 15993 20 瑟银手雷
+
+冰冻在原地
+.add 32413 -20
+.add 32413 20 冰霜手雷
+.add 40771 -20
+
+.add 40769 -20
+.add 40769 20 废物贩卖机器人制造器
+</pre></div>
+</div>
+</li>
+<li><p class="first">裁缝:</p>
+<div class="highlight-python"><div class="highlight"><pre>.add 41509 -20
+.add 41509 20 霜纹投网
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h2>各类职业所需消耗品<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">防御战, 防御圣骑士, 防御DK, 熊坦德:</p>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.add 46379 -20
+.add 46379 20 石血合剂
+.add 40093 -20
+.add 40093 20 不灭药水
+.add 43000 -20
+.add 43000 20 龙鳞鱼片
+/targetlasttarget
+</pre></div>
+</div>
+</li>
+<li><p class="first">狂暴战士, 武器战士, 惩戒骑士, 邪DK:</p>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.add 46377 -20
+.add 46377 20 无尽怒火合剂
+.add 40211 -20
+.add 40211 20 速度药水
+.add 43000 -20
+.add 43000 20 龙鳞鱼片
+/targetlasttarget
+</pre></div>
+</div>
+</li>
+<li><p class="first">盗贼, 猫德, 猎人, 增强萨:</p>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.add 46377 -20
+.add 46377 20 无尽怒火合剂
+.add 40211 -20
+.add 40211 20 速度药水
+.add 34766 -20
+.add 34766 20 水煮北地蚌背鱼
+/targetlasttarget
+</pre></div>
+</div>
+</li>
+<li><p class="first">法师, 术士, 暗牧, 元素萨, 平衡德:</p>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.add 46376 -20
+.add 46376 20 冰霜巨龙合剂
+.add 40211 -20
+.add 40211 20 速度药水
+.add 34767 -20
+.add 34767 20 爆炒鲑鱼
+/targetlasttarget
+</pre></div>
+</div>
+</li>
+<li><p class="first">戒律神圣牧, 神圣圣骑士, 平衡德, 恢复萨:</p>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.add 46378 -20
+.add 46378 20 纯净魔精合剂
+.add 33448 -20
+.add 33448 20 符文法力药水
+.add 42993 -20
+.add 42993 20 香辣油炸青鱼
+/targetlasttarget
+</pre></div>
+</div>
+</li>
+<li><p class="first">全职业全天赋常用药剂药水食物:</p>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.add 46377 -20
+.add 46377 20
+.add 46378 -20
+.add 46378 20
+.add 46376 -20
+.add 46376 20
+.add 46379 -20
+.add 46379 20
+.add 40093 -20
+.add 40093 20
+.add 40211 -20
+.add 40211 20
+.add 33447 -20
+.add 33447 20
+.add 43268 -20
+.add 43268 20
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="..\..\index.htm">
+              <img class="logo" src="..\..\_static\WowWlkPrivateServerManual.jpg" alt="Logo">
+            </a></p>
+  <h3><a href="..\..\index.htm">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">药剂和食物(Elixir And Food)</a><ul>
+<li><a class="reference internal" href="#id1">合剂类:</a></li>
+<li><a class="reference internal" href="#id2">药水类</a></li>
+<li><a class="reference internal" href="#id3">食物类</a></li>
+<li><a class="reference internal" href="#id4">特殊药剂和食物</a></li>
+<li><a class="reference internal" href="#id5">其他专业技能消耗品</a></li>
+<li><a class="reference internal" href="#id6">各类职业所需消耗品</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="..\01-Teleport\index.htm" title="previous chapter">传送点坐标汇总(Teleport)</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="..\03-ClassSpell\index.htm" title="next chapter">职业技能代码(Class Spell)</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="..\..\_sources\1-CustomizeGuide\02-ElixirAndFood\index.txt" rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q">
+      <input type="submit" value="Go">
+      <input type="hidden" name="check_keywords" value="yes">
+      <input type="hidden" name="area" value="default">
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index">index</a></li>
+        <li class="right">
+          <a href="..\03-ClassSpell\index.htm" title="职业技能代码(Class Spell)">next</a> |</li>
+        <li class="right">
+          <a href="..\01-Teleport\index.htm" title="传送点坐标汇总(Teleport)">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm">单机修改手册(Customize Guide)</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, MacHuGWU.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

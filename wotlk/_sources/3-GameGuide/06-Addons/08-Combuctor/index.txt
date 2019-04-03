@@ -1,0 +1,17 @@
+.. _Combuctor:
+
+Combuctor - 背包整合插件
+===============================================================================
+使用界面
+
+.. image:: Interface.png
+
+设置界面
+
+.. image:: Setting.png
+
+注, Combuctor一共包含三个子模块:
+
+1. Combuctor - 主模块
+2. :ref:`Bagnon - 背包整合<Bagnon>`
+3. :ref:`JPack - 一键整理<JPack>`

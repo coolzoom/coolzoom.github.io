@@ -1,0 +1,1700 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>宏命令指南(Macro) &mdash; wowWlkPrivateServerManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="..\..\_static\nature.css" type="text/css">
+    <link rel="stylesheet" href="..\..\_static\pygments.css" type="text/css">
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="..\..\_static\jquery.js"></script>
+    <script type="text/javascript" src="..\..\_static\underscore.js"></script>
+    <script type="text/javascript" src="..\..\_static\doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="wowWlkPrivateServerManual 0.0.1 documentation" href="..\..\index.htm">
+    <link rel="up" title="玩Fox3.2端的参考资料(Fox-3.2 Reference)" href="..\index.htm">
+    <link rel="next" title="团队副本Buff和Debuff" href="..\04-RaidBuff\index.htm">
+    <link rel="prev" title="GM命令(GM Command)" href="..\02-GMCommand\index.htm"> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="..\04-RaidBuff\index.htm" title="团队副本Buff和Debuff" accesskey="N">next</a> |</li>
+        <li class="right">
+          <a href="..\02-GMCommand\index.htm" title="GM命令(GM Command)" accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm" accesskey="U">玩Fox3.2端的参考资料(Fox-3.2 Reference)</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="macro">
+<span id="fox32macro"></span><h1>宏命令指南(Macro)<a class="headerlink" href="#macro" title="Permalink to this headline">¶</a></h1>
+<img alt="../../_images/Macro.png" src="..\..\_images\Macro.png">
+<div class="section" id="wlk">
+<h2>WLK单机版全角色通用的常用宏命令<a class="headerlink" href="#wlk" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>新建角色测试通用<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">新人 - 在Fox3.2端中, 学习60%陆地坐骑, 100%陆地坐骑, 150%飞行坐骑都不要钱。而280%坐骑需要3000金, 诺森德飞行需要300金币</p>
+<blockquote>
+<div><img alt="../../_images/Newbie.png" src="..\..\_images\Newbie.png">
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.modify money 50000000 // 增加5000金币
+.add 23162 4  // 增加4个36格包包
+/targetlasttarget
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">飞起 - 所有地区通用坐骑: 安其拉飞行坦克</p>
+<blockquote>
+<div><img alt="../../_images/FlyUp.png" src="..\..\_images\FlyUp.png">
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.aura 31700 乘坐其拉飞行坦克
+/targetlasttarget
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">飞落 - 离开坐骑, 给予4倍移动速度</p>
+<blockquote>
+<div><img alt="../../_images/FlyUp.png" src="..\..\_images\FlyUp.png">
+<div class="highlight-python"><div class="highlight"><pre>/target player
+/dismount 下坐骑
+.modify speed all 1
+.unaura 39870 暴速
+.aura 39870 暴速
+/targetlasttarget
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">X01 - 移动速度x1, 恢复正常速度</p>
+<blockquote>
+<div><img alt="../../_images/ModifySpeed.png" src="..\..\_images\ModifySpeed.png">
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.modify speed all 1
+/targetlasttarget
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">X03 - 移动速度x3</p>
+<blockquote>
+<div><img alt="../../_images/ModifySpeed.png" src="..\..\_images\ModifySpeed.png">
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.modify speed all 3
+/targetlasttarget
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">X16 - 移动速度x16</p>
+<blockquote>
+<div><img alt="../../_images/ModifySpeed.png" src="..\..\_images\ModifySpeed.png">
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.modify speed all 16
+/targetlasttarget
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">X32 - 移动速度x32</p>
+<blockquote>
+<div><img alt="../../_images/ModifySpeed.png" src="..\..\_images\ModifySpeed.png">
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.modify speed all 32
+/targetlasttarget
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">加速 - 移动速度x2, 被打晕后不会出错</p>
+<blockquote>
+<div><img alt="../../_images/SpeedX2.png" src="..\..\_images\SpeedX2.png">
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.unaura 62375
+.aura 62375
+.aura 62375
+.aura 62375
+.aura 62375
+.aura 62375
+.aura 62375
+.aura 62375
+.aura 62375
+.aura 62375
+.aura 62375
+/targetlastt
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h3>常用特殊宏命令<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">刷怪 - 附近所有怪物刷新</p>
+<blockquote>
+<div><img alt="../../_images/Respawn.png" src="..\..\_images\Respawn.png">
+<div class="highlight-python"><div class="highlight"><pre>/cleartarget
+.respawn
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">On - 伤害免疫模式(但会吸引仇恨)</p>
+<blockquote>
+<div><img alt="../../_images/Overwhelming.png" src="..\..\_images\Overwhelming.png">
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.learn 39804 伤害免疫:魔法
+.learn 34311 伤害免疫:物理
+/targetlasttarget
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Off - 关闭伤害免疫模式</p>
+<blockquote>
+<div><img alt="../../_images/Overwhelming.png" src="..\..\_images\Overwhelming.png">
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.unlearn 39804 伤害免疫:魔法
+.unlearn 34311 伤害免疫:物理
+/targetlasttarget
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">假死 - 假死并脱离战斗状态</p>
+<blockquote>
+<div><img alt="../../_images/Feign.png" src="..\..\_images\Feign.png">
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.aura 5384 假死
+/targetlasttarget
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">冷却 - 所有技能CD冷却</p>
+<blockquote>
+<div><img alt="../../_images/RefreshCooldown.png" src="..\..\_images\RefreshCooldown.png">
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.cooldown
+/targetlasttarget
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">清除 - 清除身上所有debuff并且无敌, 再按一下解除无敌</p>
+<blockquote>
+<div><img alt="../../_images/CleanDebuffAndImmuneDamage.png" src="..\..\_images\CleanDebuffAndImmuneDamage.png">
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.aura 45438
+.unaura 45438
+/targetlasttarget
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">隐身 - 瞬间隐身并脱离战斗</p>
+<blockquote>
+<div><img alt="../../_images/Invisible.png" src="..\..\_images\Invisible.png">
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.npcbot command stay
+.aura 32612 隐身
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">复活 - 复活当前玩家</p>
+<blockquote>
+<div><img alt="../../_images/Revive.png" src="..\..\_images\Revive.png">
+<div class="highlight-python"><div class="highlight"><pre>/g .revive
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">重置 - 所有副本重置</p>
+<blockquote>
+<div><img alt="../../_images/ResetDungeon.png" src="..\..\_images\ResetDungeon.png">
+<div class="highlight-python"><div class="highlight"><pre>.instance unbind all
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">DB - 打开数据库查询</p>
+<blockquote>
+<div><img alt="../../_images/Itemdb.png" src="..\..\_images\Itemdb.png">
+<div class="highlight-python"><div class="highlight"><pre>/itemdb
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="buff">
+<h3>刷基础Buff以及回复生命和法力宏<a class="headerlink" href="#buff" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">状态 - 基础属性状态, 王者, 耐力, 智力, 精神, 野性印记</p>
+<blockquote>
+<div><img alt="../../_images/BasicBuff.png" src="..\..\_images\BasicBuff.png">
+<p>60级:</p>
+<div class="highlight-python"><div class="highlight"><pre># Lv60 Basic Buff
+/target player
+.aura 56525 wangzhe
+.aura 10938 naili
+.aura 10157 zhili
+.aura 27841 jingshen
+.aura 9885 zhuazi
+.aura 24932 shouqun
+.aura 24907 xiaoshou
+/targetlasttaget
+</pre></div>
+</div>
+<p>70级:</p>
+<div class="highlight-python"><div class="highlight"><pre># Lv70 Basic Buff
+/target player
+.aura 56525 wangzhe
+.aura 25389 naili
+.aura 27126 zhili
+.aura 25312 jingshen
+.aura 26990 zhuazi
+.aura 24932 shouqun
+.aura 24907 xiaoshou
+/targetlasttaget
+</pre></div>
+</div>
+<p>80级:</p>
+<div class="highlight-python"><div class="highlight"><pre># Lv80 Basic Buff
+/target player
+.aura 56525 wangzhe
+.aura 48161 naili
+.aura 42995 zhili
+.aura 48073 jingshen
+.aura 48469 zhuazi
+.aura 24932 shouqun
+.aura 24907 xiaoshou
+/targetlasttaget
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">恢复 - 慢慢回满生命和法力宏</p>
+<blockquote>
+<div><img alt="../../_images/Regeneration.png" src="..\..\_images\Regeneration.png">
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.aura 68037 恢复 15秒内恢复347k-403k点生命
+.aura 29166 激活 法力回复速度+400%, 持续10秒
+.aura 64901 希望礼颂
+/targetlasttarget
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">回血 - 紧急回复生命宏</p>
+<blockquote>
+<div><img alt="../../_images/RegenerateLife.png" src="..\..\_images\RegenerateLife.png">
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.aura 48066
+.aura 871
+.aura 48068
+.aura 48441
+.aura 48443
+.aura 61301
+.aura 48451
+.aura 48451
+.aura 48451
+.aura 53251
+.aura 51972
+.aura 48085
+.aura 64843
+/targetlasttarget
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">回蓝 - 紧急回复法力宏</p>
+<blockquote>
+<div><img alt="../../_images/RegenerateMana.png" src="..\..\_images\RegenerateMana.png">
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.aura 15271
+.aura 29166
+.aura 64901
+/targetlasttarget
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">补充 - 补充常用药品食物, 具体药剂请参考 <a class="reference internal" href="..\..\1-CustomizeGuide\02-ElixirAndFood\index.htm#elixirandfood"><span>药剂和食物(Elixir And Food)</span></a> 部分</p>
+<blockquote>
+<div><img alt="../../_images/Refill.png" src="..\..\_images\Refill.png">
+<p>四大合剂, 红瓶蓝瓶, 速度药水, 通用食物:</p>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.add 46377 -20
+.add 46377 20
+.add 46378 -20
+.add 46378 20
+.add 46376 -20
+.add 46376 20
+.add 46379 -20
+.add 46379 20
+.add 40093 -20
+.add 40093 20
+.add 40211 -20
+.add 40211 20
+.add 33447 -20
+.add 33447 20
+.add 43268 -20
+.add 43268 20
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">嗜血术</p>
+<blockquote>
+<div><img alt="../../_images/BloodThirst.png" src="..\..\_images\BloodThirst.png">
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.aura 2825 嗜血术
+/targetlasttarget
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h3>其他类<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">变羊 - 清除目标身上所有debuff, 然后将其变羊</p>
+<blockquote>
+<div><img alt="../../_images/Polymorph.png" src="..\..\_images\Polymorph.png">
+<div class="highlight-python"><div class="highlight"><pre>/stopmacro [noharm]
+.aura 45438 冰箱
+.unaura 45438 取消冰箱
+.aura 12826 变羊
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Pad - 打开写字本App</p>
+<blockquote>
+<div><img alt="../../_images/Pad.png" src="..\..\_images\Pad.png">
+<dl class="docutils">
+<dt>::</dt>
+<dd><p class="first last">/pad</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Shop - 刷新中立修装备NPC</p>
+<blockquote>
+<div><img alt="../../_images/ShopNPC.png" src="..\..\_images\ShopNPC.png">
+<div class="highlight-python"><div class="highlight"><pre>/clear target
+/target 里札雷克斯
+.npc delete
+/target player
+.npc add 3658 棘齿城坡上的武器商NPC
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="fox3-2">
+<h3>Fox3.2端机器人宏命令<a class="headerlink" href="#fox3-2" title="Permalink to this headline">¶</a></h3>
+<p>B跟 - 机器人跟随玩家:</p>
+<blockquote>
+<div><img alt="../../_images/Bot.png" src="..\..\_images\Bot.png">
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.npcbot juli 1
+.npcbot command follow
+/targetlasttarget
+</pre></div>
+</div>
+</div></blockquote>
+<p>B待 - 机器人原地待命:</p>
+<blockquote>
+<div><img alt="../../_images/Bot.png" src="..\..\_images\Bot.png">
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.npcbot juli 40
+.npcbot command stay
+/targetlasttarget
+</pre></div>
+</div>
+</div></blockquote>
+<p>B刷 - 机器人全部刷新:</p>
+<blockquote>
+<div><img alt="../../_images/Bot.png" src="..\..\_images\Bot.png">
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.aura 5384 假死
+.npcbot shuaxin
+/targetlasttarget
+</pre></div>
+</div>
+</div></blockquote>
+<p>MT - 设定当前选中的机器人为MT</p>
+<blockquote>
+<div><img alt="../../_images/MT.png" src="..\..\_images\MT.png">
+<div class="highlight-python"><div class="highlight"><pre>/target xxx
+.mt
+</pre></div>
+</div>
+</div></blockquote>
+<p>团盾 - 给团队中所有成员上盾, 保护自己和机器人, 上那种盾请参考 <a class="reference internal" href="..\05-BTBuff\index.htm#btsheild"><span>技能ID部分</span></a>:</p>
+<blockquote>
+<div><img alt="../../_images/RaidShield.png" src="..\..\_images\RaidShield.png">
+<div class="highlight-python"><div class="highlight"><pre>/targetraid
+.aura 71781
+/targetraid
+.aura 71781
+/targetraid
+.aura 71781
+/targetraid
+.aura 71781
+/targetraid
+.aura 71781
+/targetraid
+.aura 71781
+/targetraid
+.aura 71781
+/targetraid
+.aura 71781
+/targetraid
+.aura 71781
+/targetraid
+.aura 71781
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>各职业专用宏命令<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h3>战士专用宏<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">战姿, 切换战斗姿态, 并装备对应的武器:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast 戰鬥姿態
+/equipslot 16 影之哀伤
+</pre></div>
+</div>
+</li>
+<li><p class="first">防姿, 切换防御姿态, 并装备对应的武器:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast 防禦姿態
+/equipslot 16 米瑟里奥斯，铜须的遗产
+/equipslot 17 冰冠冰川之墙
+</pre></div>
+</div>
+</li>
+<li><p class="first">狂姿, 切换狂暴姿态, 并装备对应的武器:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast 狂暴姿態
+/equipslot 16 影之哀伤
+/equipslot 17 葛罗伦萨格，银手至高之刃
+</pre></div>
+</div>
+</li>
+<li><p class="first">冲栏, 冲锋 + 拦截 + 援护, 根据当前的姿态以及选择的目标, 智能判断能冲锋冲锋, 能拦截拦截, 能援护援护:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast 衝鋒(等級 3)
+/cast 援護
+/cast 攔截
+</pre></div>
+</div>
+</li>
+<li><p class="first">盾墙, 切换防御姿态并装备对应武器盾牌, 释放盾墙:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip 盾墻
+/equipslot 16 米瑟里奥斯，铜须的遗产
+/equipslot 17 冰冠冰川之墙
+/cast 防禦姿態
+/cast 盾墻
+</pre></div>
+</div>
+</li>
+<li><p class="first">挑吼, 切换防御姿态并装备对应武器盾牌, 释放挑战怒吼:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip 挑戰怒吼
+/equipslot 16 米瑟里奥斯，铜须的遗产
+/equipslot 17 冰冠冰川之墙
+/cast 防禦姿態
+/cast 挑戰怒吼
+</pre></div>
+</div>
+</li>
+<li><p class="first">盾反, 切换防御姿态并装备对应武器盾牌, 释放法术反射:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip 法術反射
+/equipslot 16 米瑟里奥斯，铜须的遗产
+/equipslot 17 冰冠冰川之墙
+/cast 防禦姿態
+/cast 法術反射
+</pre></div>
+</div>
+</li>
+<li><p class="first">打断, 防御姿态下施放盾击, 狂暴姿态下施放拳击:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast [stance:2]盾擊
+/cast [stance:3]拳擊
+</pre></div>
+</div>
+</li>
+<li><p class="first">破甲, 施放破甲技能, 若有挫败技能用挫败, 没有挫败天赋用破甲, 并上对Tank有利的Debuff:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip 破甲攻擊
+/cast 挫敗(等級 5)
+/cast 破甲攻擊
+/stopmacro [noharm]
+.aura 47437
+.aura 31589
+.aura 47502
+</pre></div>
+</div>
+</li>
+<li><p class="first">致死, 施放致死打擊技能, 并上对近战DPS有利的Debuff:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast 致死打擊
+/stopmacro [noharm]
+.aura 54499
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 16857
+.aura 58683
+.aura 33983
+.aura 20185 光明审判 战士 盗贼 野德
+</pre></div>
+</div>
+</li>
+<li><p class="first">嗜血, 施放嗜血技能, 并上对近战DPS有利的Debuff:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast 嗜血
+/stopmacro [noharm]
+.aura 54499
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 16857
+.aura 58683
+.aura 33983
+.aura 20185 光明审判 战士 盗贼 野德
+</pre></div>
+</div>
+</li>
+<li><p class="first">状态, <a class="reference internal" href="..\04-RaidBuff\index.htm#raidbuff-physicdps"><span>狂暴/武器战士有利的团队Buff</span></a></p>
+</li>
+<li><p class="first">状态, <a class="reference internal" href="..\04-RaidBuff\index.htm#raidbuff-tank"><span>防御战士有利的团队Buff</span></a></p>
+</li>
+<li><p class="first">补充, 为战士角色添加常用的药剂, 食物等物品:</p>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.add 46377 -20
+.add 46377 20 无尽
+.add 46379 -20
+.add 46379 20 石血
+.add 40211 -20
+.add 40211 20 速度
+.add 40093 -20
+.add 40093 20 不灭
+.add 42995 -20
+.add 42995 20 犀牛
+.add 42999 -20
+.add 42999 20 熏龙鱼
+.add 40771 -20
+.add 40771 20 手雷
+/targetlasttarget
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h3>猎人专用宏<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">毒蛇, 施放毒蛇釘刺, 按下Alt施放蝮蛇釘刺:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast [mod:alt]蝮蛇釘刺; 毒蛇釘刺(等級 12)
+/stopmacro [noharm]
+.aura 47437
+.aura 31589
+.aura 47502
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 54499
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 16857
+.aura 58683
+.aura 33983
+.aura 20185
+</pre></div>
+</div>
+</li>
+<li><p class="first">稳固, 施放稳固射击, 按下Alt施放奥术射击:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast [mod:alt]穩固射擊(等級 4); 秘法射擊(等級 11)
+/stopmacro [noharm]
+.aura 47437
+.aura 31589
+.aura 47502
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 54499
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 16857
+.aura 58683
+.aura 33983
+.aura 20185
+</pre></div>
+</div>
+</li>
+<li><p class="first">多瞄, 施放瞄准射击, 按下Alt施放多重射击:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast [mod:alt]多重射擊(等級 8); 瞄準射擊(等級 9)
+/stopmacro [noharm]
+.aura 47437
+.aura 31589
+.aura 47502
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 54499
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 16857
+.aura 58683
+.aura 33983
+.aura 20185
+</pre></div>
+</div>
+</li>
+<li><p class="first">冰冻, 施放冰冻陷阱, 并停止攻击, 宠物跟随自己, 也停止攻击:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast 冰凍陷阱(等級 3)
+/stopattack
+/petfollow
+</pre></div>
+</div>
+</li>
+<li><p class="first">猫鼬, 施放猫鼬撕咬和猛禽一击:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast 貓鼬撕咬(等級 6)
+/cast 猛禽一擊(等級 11)
+</pre></div>
+</div>
+</li>
+<li><p class="first">仇恨, 让玩家角色的仇恨值降低40%:</p>
+<div class="highlight-python"><div class="highlight"><pre> /target player
+.aura 25070
+.aura 25070
+.aura 25070
+.aura 25070
+.aura 25070
+.aura 25070
+.aura 25070
+.aura 25070
+.aura 25070
+.aura 25070
+.aura 25070
+.aura 25070
+.aura 25070
+.aura 25070
+.aura 25070
+.aura 25070
+.aura 25070
+.aura 25070
+.aura 25070
+.aura 25070
+</pre></div>
+</div>
+</li>
+<li><p class="first">补充, 为德魯伊角色添加常用的药剂, 食物等物品:</p>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.add 34722 -20
+.add 34722 20 绷带
+.add 40211 -20
+.add 40211 20 速度
+.add 42999 -20
+.add 42999 20 敏捷食物
+.add 42995 -20
+.add 42995 20 破甲食物
+.add 46377 -20
+.add 46377 20 无尽怒火
+.add 40771 -20
+.add 40771 20 手雷
+.add 52021 -9999
+.add 52021 9999 弹药
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h3>萨满专用宏<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">闪电箭, 施放闪电箭, 并上所有对法系DPS有利的Debuff:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltips
+/cast 閃電箭(等級 14)
+/stopmacro [noharm]
+.aura 54499
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 31589
+</pre></div>
+</div>
+</li>
+<li><p class="first">熔岩, 施放熔岩爆发, 并上所有团队Debuff:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast 熔岩爆發(等級 1)
+/stopmacro [noharm]
+.aura 47437
+.aura 31589
+.aura 47502
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 54499
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 16857
+.aura 58683
+.aura 33983
+.aura 20185
+</pre></div>
+</div>
+</li>
+<li><p class="first">风打, 施放风暴打击, 并上所有团队Debuff:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast 風暴打擊
+/stopmacro [noharm]
+.aura 47437
+.aura 31589
+.aura 47502
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 54499
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 16857
+.aura 58683
+.aura 33983
+.aura 20185
+</pre></div>
+</div>
+</li>
+<li><p class="first">指疗, 鼠标指向治疗宏:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast [target=mouseover,nomodifier,exists] 次級治療波(等級 9); 次級治療波(等級 9)
+</pre></div>
+</div>
+</li>
+<li><p class="first">状态, 增强萨有利的团队Buff:</p>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.aura 48161
+.aura 42995
+.aura 48469
+.aura 47436
+.aura 56525
+.aura 48942
+.aura 24932
+.unaura 34300
+.aura 34300
+.aura 75447
+.unaura 58646
+.aura 58646
+.unaura 57663
+.aura 57663
+.unaura 2895
+.aura 2895
+.aura 24907
+.aura 55610
+/targetlasttarget
+</pre></div>
+</div>
+</li>
+<li><p class="first">状态, <a class="reference internal" href="..\04-RaidBuff\index.htm#raidbuff-spelldps"><span>元素萨有利的团队Buff</span></a></p>
+</li>
+<li><p class="first">状态, <a class="reference internal" href="..\04-RaidBuff\index.htm#raidbuff-healer"><span>恢复萨有利的团队Buff</span></a></p>
+</li>
+<li><p class="first">补充, 为萨满角色添加常用的药剂, 食物等物品:</p>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.add 46376 -20
+.add 46376 20
+.add 40211 -20
+.add 40211 20
+.add 34767 -20
+.add 34767 20
+.add 46378 -20
+.add 46378 20
+.add 33448 -20
+.add 33448 20
+.add 42993 -20
+.add 42993 20
+.add 46377 -20
+.add 46377 20
+.add 34766 -20
+.add 34766 20
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h3>盗贼专用宏<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">邪恶, 使用邪恶攻击技能, 并上对盗贼有利的Debuff(由于毒药是自然伤害, 所有法系有利的Debuff也需要):</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast 邪惡攻擊
+/stopmacro [noharm]
+.aura 47437
+.aura 31589
+.aura 47502
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 54499
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 16857
+.aura 58683
+.aura 33983
+.aura 20185
+</pre></div>
+</div>
+</li>
+<li><p class="first">截肢, (国服为毁伤, 台服为截肢), 使用截肢技能, 并上对盗贼有利的Debuff(由于毒药是自然伤害, 所有法系有利的Debuff也需要):</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast 截肢
+/stopmacro [noharm]
+.aura 47437
+.aura 31589
+.aura 47502
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 54499
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 16857
+.aura 58683
+.aura 33983
+.aura 20185
+</pre></div>
+</div>
+</li>
+<li><p class="first">出血, 使用出血技能, 并上对盗贼有利的Debuff(由于毒药是自然伤害, 所有法系有利的Debuff也需要):</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast 出血
+/stopmacro [noharm]
+.aura 47437
+.aura 31589
+.aura 47502
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 54499
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 16857
+.aura 58683
+.aura 33983
+.aura 20185
+</pre></div>
+</div>
+</li>
+<li><p class="first">状态, <a class="reference internal" href="..\04-RaidBuff\index.htm#raidbuff-physicdps"><span>盗贼有利的团队Buff</span></a></p>
+</li>
+<li><p class="first">补充, 为盗贼角色添加常用的药剂, 食物等物品:</p>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.add 46377 -20
+.add 46377 20 无尽
+.add 40211 -20
+.add 40211 20 速度
+.add 34766 -20
+.add 34766 20 蚌背鱼
+.add 42995 -20
+.add 42995 20 犀牛
+.add 43231 -20
+.add 43231 20 速效
+.add 43233 -20
+.add 43233 20 致命
+.add 40771 -20
+.add 40771 20 手雷
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h3>德鲁伊专用宏<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">愤怒, 施放愤怒, 并上所有对法系DPS有利的Debuff:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast 憤怒(等級 12)
+/stopmacro [noharm]
+.aura 54499
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 31589
+</pre></div>
+</div>
+</li>
+<li><p class="first">星火, 施放星火术, 并上所有对法系DPS有利的Debuff:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast 星火術(等級 10)
+/stopmacro [noharm]
+.aura 54499
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 31589
+</pre></div>
+</div>
+</li>
+<li><p class="first">芒果, 释放芒果, 并上所有对近战物理DPS有利的Debuff:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast [stance:1] 割碎(熊形態)(等級 5)
+/cast [stance:3] 割碎(獵豹形態)(等級 5)
+/stopmacro [noharm]
+.aura 54499
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 16857
+.aura 58683
+.aura 33983
+.aura 20185
+</pre></div>
+</div>
+</li>
+<li><p class="first">精火, 根据形态使用对应的精灵之火技能:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast [nostance] 精靈之火
+/cast [stance:1] 精靈之火(野性)
+/cast [stance:3] 精靈之火(野性)
+/cast [stance:4] 精靈之火
+/cast [stance:5] 精靈之火
+</pre></div>
+</div>
+</li>
+<li><p class="first">嘲讽, 施放低吼(嘲讽), 按下Alt施放挑战咆哮(群嘲):</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast [mod:alt] 挑戰咆哮; 低吼
+</pre></div>
+</div>
+</li>
+<li><p class="first">挥击, 根据形态使用对应的挥击技能:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast [stance:1] 揮擊(熊形態)(等級 8)
+/cast [stance:3] 揮擊(獵豹形態)(等級 1)
+</pre></div>
+</div>
+</li>
+<li><p class="first">冲锋, 根据形态使用对应的冲锋技能:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast [stance:1] 野性衝鋒 - 熊形態
+/cast [stance:3] 野性衝鋒 - 獵豹形態
+</pre></div>
+</div>
+</li>
+<li><p class="first">指疗, 鼠标指向治疗宏:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast [target=mouseover,nomodifier,exists] 滋補術(等級 1); 滋補術(等級 1)
+</pre></div>
+</div>
+</li>
+<li><p class="first">状态, <a class="reference internal" href="..\04-RaidBuff\index.htm#raidbuff-tank"><span>熊Tank有利的团队Buff</span></a></p>
+</li>
+<li><p class="first">状态, <a class="reference internal" href="..\04-RaidBuff\index.htm#raidbuff-physicdps"><span>猫德有利的团队Buff</span></a></p>
+</li>
+<li><p class="first">状态, <a class="reference internal" href="..\04-RaidBuff\index.htm#raidbuff-spelldps"><span>平衡德有利的团队Buff</span></a></p>
+</li>
+<li><p class="first">状态, <a class="reference internal" href="..\04-RaidBuff\index.htm#raidbuff-spelldps"><span>恢复德有利的团队Buff</span></a>, 与平衡德相同。</p>
+</li>
+<li><p class="first">补充, 为德魯伊角色添加常用的药剂, 食物等物品:</p>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.add 46377 -20
+.add 46377 20
+.add 46378 -20
+.add 46378 20
+.add 46376 -20
+.add 46376 20
+.add 46379 -20
+.add 46379 20
+.add 40093 -20
+.add 40093 20
+.add 40211 -20
+.add 40211 20
+.add 33447 -20
+.add 33447 20
+.add 43268 -20
+.add 43268 20
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id10">
+<h3>法师专用宏<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">箭枪, 施放寒冰箭, 按下Alt施放冰枪, 并上所有对法系DPS有利的Debuff:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast [mod:alt] 冰霜長矛(等級 3); 寒冰箭(等級 16)
+/stopmacro [noharm]
+.aura 54499
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 31589
+</pre></div>
+</div>
+</li>
+<li><p class="first">霜枪, 施放霜火箭, 按下Alt施放冰枪, 并上所有对法系DPS有利的Debuff:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast [mod:alt] 冰霜長矛(等級 3); 霜火箭(等級 2)
+/stopmacro [noharm]
+.aura 54499
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 31589
+</pre></div>
+</div>
+</li>
+<li><p class="first">球爆, 施放火球术, 按下Alt施放炎爆术, 并上所有对法系DPS有利的Debuff:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast [mod:alt] 炎爆術(等級 12); 火球術(等級 16)
+/stopmacro [noharm]
+.aura 54499
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 31589
+</pre></div>
+</div>
+</li>
+<li><p class="first">冲枪, 释放奥术冲击, 按下Alt施放冰枪, 并上所有对法系DPS有利的Debuff:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast [mod:alt] 冰霜長矛(等級 3); 秘法衝擊(等級 4)
+/stopmacro [noharm]
+.aura 54499
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 31589
+</pre></div>
+</div>
+</li>
+<li><p class="first">水人, 无水元素时召唤水元素, 有水元素时使用冰冻术:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast [target=pet,nodead,exists] 冰凍術; 召喚水元素
+</pre></div>
+</div>
+</li>
+<li><p class="first">暴雪, 为自己增加一个吸收伤害, 免疫打断技能的护盾, 和一个伤害-90%的Buff, 然后释放暴风雪技能:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast 暴風雪(等級 9)
+/cleartarget
+/target player
+.aura 33147 防打断护盾
+.aura 71781 吸收伤害盾
+.aura 68037 超强恢复术
+.aura 66482 30%减伤, 叠加3次
+.aura 66482
+.aura 66482
+/targetlasttarget
+</pre></div>
+</div>
+</li>
+<li><p class="first">状态, <a class="reference internal" href="..\04-RaidBuff\index.htm#raidbuff-spelldps"><span>法师有利的团队Buff</span></a></p>
+</li>
+<li><p class="first">补充, 为法师角色添加常用的药剂, 食物等物品:</p>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.add 46376 -20
+.add 46376 20 冰龙
+.add 40211 -20
+.add 40211 20 速度
+.add 34767 -20
+.add 34767 20 鲑鱼
+.add 8529 -20
+.add 8529 20 诺格
+.add 6657 -20
+.add 6657 20 风蛇
+.add 40771 -20
+.add 40771 20 炸弹
+.add 17020 -20
+.add 17020 20 魔粉
+/targetlasttarget
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id11">
+<h3>牧师专用宏<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">痛灭, 施放暗言术：痛, 按下Alt施放暗言术：死, 并上所有对法系DPS有利的Debuff:</p>
+<div class="highlight-python"><div class="highlight"><pre> #showtooltip
+/cast [mod:alt] 暗言術:死(等級 4); 暗言術:痛(等級 12)
+/stopmacro [noharm]
+.aura 54499
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 31589
+</pre></div>
+</div>
+</li>
+<li><p class="first">鞭笞, 施放精神鞭笞, 并上所有对法系DPS有利的Debuff:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast 精神鞭笞(等級 9)
+/stopmacro [noharm]
+.aura 54499
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 31589
+</pre></div>
+</div>
+</li>
+<li><p class="first">吸触, 施放吸血之触, 并上所有对法系DPS有利的Debuff:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast 吸血之觸(等級 9)
+/stopmacro [noharm]
+.aura 54499
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 31589
+</pre></div>
+</div>
+</li>
+<li><p class="first">指疗, 鼠标指向治疗宏:</p>
+<div class="highlight-python"><div class="highlight"><pre>#showtooltip
+/cast [target=mouseover,nomodifier,exists] 快速治療(等級 11); 快速治療(等級 11)
+</pre></div>
+</div>
+</li>
+<li><p class="first">状态, <a class="reference internal" href="..\04-RaidBuff\index.htm#raidbuff-spelldps"><span>DPS和治疗牧师都有利的团队Buff</span></a></p>
+</li>
+<li><p class="first">补充, 为牧师角色添加常用的药剂, 食物等物品:</p>
+<div class="highlight-python"><div class="highlight"><pre>/target player
+.add 46376 -20
+.add 46376 20 冰龙合剂
+.add 40211 -20
+.add 40211 20 速度
+.add 34767 -20
+.add 34767 20 爆炒鲑鱼
+.add 46378 -20
+.add 46378 20 魔精合剂
+.add 33448 -20
+.add 33448 20 法力药水
+.add 42993 -20
+.add 42993 20 香辣油炸青鱼
+/targetlasttarget
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id12">
+<h3>圣骑士<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">补充: 给自己填充各种常用药水, Buff合剂, 食物, 工程炸弹。</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>/target player
+.add 42994 -20
+.add 42994 20 熟练食物
+.add 40211 -20
+.add 40211 20 速度药水
+.add 46377 -20
+.add 46377 20 无尽怒火合剂
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="id13">
+<h3>德鲁伊<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">挥击: 全形态下挥击</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>#showtooltips
+/cast [stance:1] 揮擊(熊形態)(等級8)
+/cast [stance:3] 揮擊(獵豹形態)(等級8)
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">精灵火: 全形态下精灵之火</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>#showtooltips
+/cast [nostance] 精靈之火
+/cast [stance:1] 精靈之火(野性)
+/cast [stance:3] 精靈之火(野性)
+/cast [stance:4] 精靈之火
+/cast [stance:5] 精靈之火
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">冲锋: 全形态下野性冲锋。</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>#showtooltips
+/cast [stance:1] 野性衝鋒 - 熊形態
+/cast [stance:3] 野性衝鋒 - 獵豹形态
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">猛虎之怒: 平时按释放狂暴, 按下Alt键释放猛虎之怒。</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>#showtooltips
+/cast [mod:alt] 狂暴;猛虎之怒(等級 6)
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">全形态芒果。</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>#showtooltips
+/cast [stance:1] 割碎(熊形态)(等级5)
+/cast [stance:3] 割碎(猎豹形态)(等级5)
+/stopmacro [noharm]
+.aura 54499
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 16857
+.aura 58683
+.aura 33983
+.aura 20185
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">愤怒:</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>#showtooltips
+/施放 憤怒(等級 12)
+/stopmacro [noharm]
+.aura 54499
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 31589
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">星火:</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>#showtooltips
+/施放 星火術(等級 10)
+/stopmacro [noharm]
+.aura 54499
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 31589
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">补充, 全类别天赋全药剂食物:</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>/target player
+.add 46377 -20
+.add 46377 20
+.add 46378 -20
+.add 46378 20
+.add 46376 -20
+.add 46376 20
+.add 46379 -20
+.add 46379 20
+.add 40211 -20
+.add 40211 20
+.add 40093 -20
+.add 40093 20
+.add 34754 -20
+.add 34754 20
+.add 34767 -20
+.add 34767 20
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="id14">
+<h3>盗贼专用宏<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">邪恶/截肢/出血:</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>#showtooltips
+/施放 邪恶攻击(等级 12)
+/stopmacro [noharm]
+.aura 54499
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 16857
+.aura 58683
+.aura 33983
+.aura 20185
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">补充: 给自己填充各种常用药水, Buff合剂, 食物, 工程炸弹。</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>/target player
+.add 43231 -20
+.add 43231 20
+.add 43233 -20
+.add 43233 20
+.add 46377 -20
+.add 46377 20
+.add 44330 -20
+.add 44330 20
+.add 42995 -20
+.add 42995 20
+.add 34757 -20
+.add 34757 20
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="id15">
+<h3>猎人<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">冰冻陷阱 + 宠物停止攻击。</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>#showtooltips
+/施放 冰冻陷阱(等级 3)
+/stopattack
+/petfollow
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">AOE技能绑定。</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>#showtooltips
+/施放 [mod:alt]亂射(等級 6); 爆炸陷阱(等級 6)
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">钉刺技能绑定。</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>#showtooltips
+/施放 [mod:alt]蝮蛇釘刺; 毒蛇釘刺(等級 12)
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">稳固奥射绑定。</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>#showtooltips
+/施放 [mod:alt]穩固射擊(等级 4); 秘法射擊(等級 11)
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">震荡 + 摔绊绑定。</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>#showtooltips
+/施放 [mod:alt]摔绊; 震荡射击
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">主打攻击技能 + 沉默射击 + 杀戮命令。</p>
+<blockquote>
+<div></div></blockquote>
+</li>
+<li><p class="first">近战。</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>#showtooltips
+/施放 猫鼬撕咬(等级 6)
+/施放 猛禽一击(等级 11)
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">射击天赋 奇美拉 + 击杀命令 + 沉默射击宏。</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>#showtooltips
+/cast [target=pettarget,exists] 击杀命令
+/施放 奇美拉射击(等级 1)
+/施放 沉默射击
+/stopmacro [noharm]
+.aura 54499
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 71554
+.aura 16857
+.aura 58683
+.aura 33983
+.aura 20186
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">补充: 给自己填充各种常用药水, Buff合剂, 食物, 工程炸弹。</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>/target player
+.add 34766 -20
+.add 34766 20 攻击强度
+.add 40211 -20
+.add 40211 20 速度药水
+.add 46377 -20
+.add 46377 20 无尽怒火合剂
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">宠物buff。</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>/target turtle
+.aura 48161
+.aura 48469
+.aura 47440
+.aura 25899
+.aura 48942
+.unaura 61688
+.aura 61688
+.aura 61688
+.aura 61688
+.aura 61688
+.aura 61688
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="id16">
+<h3>牧师<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">暗言术: 痛/暗言术: 灭</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>#showtooltips
+/cast [mod:alt] 暗言术: 死 (等级 4); 暗言术: 痛 (等级 12)
+/stopmacro [noharm]
+.aura 54499
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 31589
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">精神鞭笞</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>#showtooltips
+/cast 精神鞭笞 (等级 9)
+/stopmacro [noharm]
+.aura 54499
+.aura 47865
+.aura 22959
+.aura 33198
+.aura 31589
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">补充常用药剂食物。</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>/target player
+.add 46376 -20
+.add 46376 20 冰霜巨龙合剂
+.add 40211 -20
+.add 40211 20 速度药水
+.add 34767 -20
+.add 34767 20 爆炒鲑鱼
+.add 46378 -20
+.add 46378 20 纯净魔精合剂
+.add 33448 -20
+.add 33448 20 符文法力药水
+.add 42993 -20
+.add 42993 20 香辣油炸青鱼
+/targetlasttarget
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="gm">
+<h2>其他GM宏命令<a class="headerlink" href="#gm" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">添加NPC: 在玩家所在位置添加NPC, 通常是在地图上增加怪物群。</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>/target player
+.npc add 22313 地心震动者
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">设置NPC移动方式: 将选定NPC的移动方式修改为随机走动。并设置刷新时间为1分钟</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre>/target 地心震动者
+.npc set spawndist 20
+.npc set movetype random
+.npc set spawntime 60
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="..\..\index.htm">
+              <img class="logo" src="..\..\_static\WowWlkPrivateServerManual.jpg" alt="Logo">
+            </a></p>
+  <h3><a href="..\..\index.htm">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">宏命令指南(Macro)</a><ul>
+<li><a class="reference internal" href="#wlk">WLK单机版全角色通用的常用宏命令</a><ul>
+<li><a class="reference internal" href="#id1">新建角色测试通用</a></li>
+<li><a class="reference internal" href="#id2">常用特殊宏命令</a></li>
+<li><a class="reference internal" href="#buff">刷基础Buff以及回复生命和法力宏</a></li>
+<li><a class="reference internal" href="#id3">其他类</a></li>
+<li><a class="reference internal" href="#fox3-2">Fox3.2端机器人宏命令</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id4">各职业专用宏命令</a><ul>
+<li><a class="reference internal" href="#id5">战士专用宏</a></li>
+<li><a class="reference internal" href="#id6">猎人专用宏</a></li>
+<li><a class="reference internal" href="#id7">萨满专用宏</a></li>
+<li><a class="reference internal" href="#id8">盗贼专用宏</a></li>
+<li><a class="reference internal" href="#id9">德鲁伊专用宏</a></li>
+<li><a class="reference internal" href="#id10">法师专用宏</a></li>
+<li><a class="reference internal" href="#id11">牧师专用宏</a></li>
+<li><a class="reference internal" href="#id12">圣骑士</a></li>
+<li><a class="reference internal" href="#id13">德鲁伊</a></li>
+<li><a class="reference internal" href="#id14">盗贼专用宏</a></li>
+<li><a class="reference internal" href="#id15">猎人</a></li>
+<li><a class="reference internal" href="#id16">牧师</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#gm">其他GM宏命令</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="..\02-GMCommand\index.htm" title="previous chapter">GM命令(GM Command)</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="..\04-RaidBuff\index.htm" title="next chapter">团队副本Buff和Debuff</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="..\..\_sources\2-Fox32\03-Macro\index.txt" rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q">
+      <input type="submit" value="Go">
+      <input type="hidden" name="check_keywords" value="yes">
+      <input type="hidden" name="area" value="default">
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index">index</a></li>
+        <li class="right">
+          <a href="..\04-RaidBuff\index.htm" title="团队副本Buff和Debuff">next</a> |</li>
+        <li class="right">
+          <a href="..\02-GMCommand\index.htm" title="GM命令(GM Command)">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm">玩Fox3.2端的参考资料(Fox-3.2 Reference)</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, MacHuGWU.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

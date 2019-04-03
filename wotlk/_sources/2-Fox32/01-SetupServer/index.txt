@@ -1,0 +1,65 @@
+.. _SetupServer:
+
+搭建Fox-3.2端服务器
+===============================================================================
+所需要的文件:
+
+- Fox3.2服务端主程序: Fox-3.2.zip
+- 地图文件: ``dbc.zip``, ``maps.zip``, ``mmaps.zip``, ``vmaps.zip``
+
+1. 解压 ``Fox-3.2.zip`` 到全英文路径目录下, 例如: ``C:\xxx\Fox-3.2``。解压后Fox-3.2的目录结构是这个样子的:
+
+	.. code-block:: console
+
+		Fox-3.2
+		|--- Release
+		|--- Server
+		|--- RunServer.exe
+
+2. 解压所有地图文件 ``dbc.zip``, ``maps.zip``, ``mmaps.zip``, ``vmaps.zip`` 到 ``Fox-3.2/Release`` 目录下, 解压后看起来是这个样子:
+
+	.. code-block:: console
+
+		Fox-3.2
+		|--- Release
+			|--- dbc
+			|--- maps
+			|--- mmaps
+			|--- vmaps
+
+	有了这些地图文件, 地图渲染引擎才能正确实现视野遮挡(防止怪物穿墙), 位移技能计算(例如法师的闪现等)。注意, 在打某些剧情时, 例如ICC冰龙时, 需要关闭Vmaps的所有相关设置, 才能让冰龙成功落地。这个就需要玩家自己去摸索了。
+
+3. 为启动器 ``RunServer.exe`` 设置 ``Server Path``, ``MySQL Path``, ``Apache Path``::
+
+	Server Path = FOX-3.2\Release
+	MySQL Path = FOX-3.2\Server\Apache\bin
+	Apache Path = FOX-3.2\Server\Mysql\MySQL\bin
+
+4. 启动服务器:: 先运行 ``MySql Server`` 和 ``Apache Server`` 两者不分先后, 再运行 ``Auth Server`` 最后运行 ``World Server``。
+
+
+.. _account:
+
+附录:
+
+- 数据库账号: {"username": "root", "password": "fox888"}
+- 默认GM账号密码: {"username": "admin", "password": "admin"}
+
+
+如何将账号权限提高到GM
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+为了防止黑客的入侵, 修改数据库已经无法使自己变成GM了。了变成Gm，需要在worldserver console里输入命令行: ``.account set gmlevel <account_name> <gmlevel> <realm_id>``。
+
+- realm_id是服务器的映射, -1代表所有服务器。这个可以在 ``account_access`` 表里查到。
+- gmlevel是GM等级, 只有0, 1, 2, 3, 最高权限是3
+
+比如玩家账号名是 ``cat``, 那么命令就是 ``.account set gmlevel cat 3 -1``
+
+**注意: 一定不要再数据库里面改, 如果不小心改了, 删除条目之后再在控制台改就好。
+
+
+如何开外网
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+问题的核心在于如何获得你的public IP address。通常使用家用网络时, 你是无法获得public IP的。这时我们通常需要使用VPN的软件, 和外网玩家建立连接。一旦玩家连入VPN, 就可以使用局域网IP地址登陆游戏了。当然, 需要修改 ``auth/realmlist`` 中的 ``address`` 一栏为你的局域网IP地址。
+
+目前知道的免费VPN软件有: http://www.bizvnn.cn，根据自己的系统下载64位或者32

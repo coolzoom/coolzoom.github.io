@@ -1,0 +1,17 @@
+玩Fox3.2端的参考资料(Fox-3.2 Reference)
+===============================================================================
+
+.. toctree::
+	:maxdepth: 1
+
+	搭建Fox-3.2端服务器(Setup Server) <01-SetupServer/index.rst>
+	GM命令(GM Command) <02-GMCommand/index.rst>
+	宏命令指南(Macro) <03-Macro/index.rst>
+	团队副本Buff和Debuff(Raid Buff and Debuff) <04-RaidBuff/index.rst>
+	修改游戏中常用的Buff和Debuff(Buff and Debuff) <05-BTBuff/index.rst>
+	键位绑定参考(Key Binding) <06-KeyBinding/index.rst>
+	如何寻找想要的物品(Find Item) <07-FindItem/index.rst>
+	WowItemMaker软件说明 <08-WowItemMaker/index.rst>
+	日常任务(Daily Quest) <09-DailyQuest/index.rst>
+	Fox3.2端的机器人系统(Bot System) <10-BotSyste/index.rstm>
+	添加常用附魔物品的宏命令(Enchant Scoll) <11-Enchant/index.rst>

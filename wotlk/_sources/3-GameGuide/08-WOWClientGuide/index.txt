@@ -1,0 +1,33 @@
+.. _WOWClientGuide:
+
+魔兽世界客户端文件详解(WOW Client Guide)
+===============================================================================
+.. image:: WOWClientGuide.png
+
+
+键位信息
+-------------------------------------------------------------------------------
+``account_name`` 是你登陆游戏时的账号
+
+键位有两种设置, 通用设置和角色设置。
+
+- 通用设置文件保存在 ``World of Warcraft/WTF/Account/<account_name>/bindings-cache.wtf``
+- 角色设置文件保存在 ``World of Warcraft/WTF/Account/<account_name>/<server_name>/<character_name>/bindings-cache.wtf``
+
+
+宏命令信息
+-------------------------------------------------------------------------------
+宏命令也有两种设置, 通用设置和角色设置。
+
+- 通用设置文件保存在 ``World of Warcraft/WTF/Account/<account_name>/macros-cache.txt``
+- 角色设置文件保存在 ``World of Warcraft/WTF/Account/<account_name>/<server_name>/<character_name>/bindings-cache.wtf``, ``macros-cache.txt``
+
+
+插件设置
+-------------------------------------------------------------------------------
+魔兽世界的插件文件是以文件夹的形式保存在 ``World of Warcraft/Interface/AddOns`` 目录下的。插件产生的数据并不保存在这儿, 而是根据账号和角色名保存在 ``World of Warcraft/WTF`` 目录下。每次登陆游戏时, 系统会自动创建一系列以 ``Blizzard`` 开头的插件。
+
+
+游戏内数据缓存
+-------------------------------------------------------------------------------
+鼠标移动到item, npc, object上所显示的面板, 是用到了 ``World of Warcraft/Cache/WDB/zhTW`` 目录下的缓存文件。``itemcache.wdb`` 文件最大, 最有备份价值。台服, 美服, 国服的cache文件不可以通用。

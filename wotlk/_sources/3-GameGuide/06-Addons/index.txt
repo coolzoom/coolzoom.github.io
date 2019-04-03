@@ -1,0 +1,56 @@
+Addons
+===============================================================================
+要玩好魔兽世界, 怎么能没有插件? 以下列出了个人经过大量比较和试用之后, 个人最喜欢的实用插件列表和简要说明。
+
+.. toctree::
+	:maxdepth: 1
+
+	AckisRecipeList - 商业技能配方资料库 <01-AckisRecipeList/index.rst>
+	Altoholic - 全角色物品信息统计 <02-Altoholic/index.rst>
+	AtlasLoot - 副本装备掉落查询 <03-AtlasLoot/index.rst>
+	AtlasQuest - 副本相关任务提示 <04-AtlasQuest/index.rst>
+	Bagnon - 背包整合 <05-Bagnon/index.rst>
+	BigWigs - TBC副本首领模块 <06-BigWigs/index.rst>
+	BugSack - 错误信息隐藏 <07-BugSack/index.rst>
+	Combuctor - 背包整合插件 <08-Combuctor/index.rst>
+	DBM - 副本首领模块 <09-DBM/index.rst>
+	Domino - 多功能综合动作条 <10-Domino/index.rst>
+	Engravings - 装备出处插件 <11-Engravings/index.rst>
+	EveryQuest - 未做完的任务查询 <12-EveryQuest/index.rst>
+	GatherMate - 采集助手 <13-GatherMate/index.rst>
+	GearScore - 显示装备的GS评分 <14-GearScore/index.rst>
+	Grid - 团队战斗模块 <15-Grid/index.rst>
+	ItemDB - 内置物品缓存查询数据库 <16-ItemDB/index.rst>
+	JPack - 背包和银行一键整理 <17-JPack/index.rst>
+	LootFilter - 物品拾取过滤 <18-LootFilter/index.rst>
+	Mappy - 小地图美化 <19-Mappy/index.rst>
+	Mapster - 大地图增强 <20-Mapster/index.rst>
+	MobInfo - NPC信息增强插件 <21-MobInfo/index.rst>
+	oCC - 法术冷却时间计时和触发技能提醒 <22-oCC/index.rst>
+	Omen - 仇恨统计插件 <23-Omen/index.rst>
+	Outfitter - 一键换装备 <24-Outfitter/index.rst>
+	Parrot - 战斗信息增强 <25-Parrot/index.rst>
+	Perl - 头像增强 <26-Perl/index.rst>
+	Postal - 邮件功能增强 <27-Postal/index.rst>
+	Prat3 - 聊天窗口增强插件 <28-Prat3/index.rst>
+	Quartz3 - 施法动作条增强 <29-Quartz3/index.rst>
+	RatingBuster - 技能等级和百分比转换 <30-RatingBuster/index.rst>
+	Recounter - 团队伤害统计 <31-Recounter/index.rst>
+	ShadowedUF - 3D头像美化 <32-ShadowedUF/index.rst>
+	Skada - 团队伤害统计 <33-Skada/index.rst>
+	SpellID - 查看技能和法术ID <34-SpellID/index.rst>
+	TinyPad - 游戏内记事本插件 <35-TinyPad/index.rst>
+	Titan - 信息条面板 <36-Titan/index.rst>
+	TradeskillInfo - 商业技能资料库 <37-TradeskillInfo/index.rst>
+	VendOmatic - 自动出售, 补充物品 <38-VendOmatic/index.rst>
+	WebDKP <39-WebDKP/index.rst>
+	WoWPro - 专业玩家升级建议指引 <40-WoWPro/index.rst>
+	NPCScan - 稀有怪扫描 <41-_NPCScan/index.rst>
+
+注: 在单机版情况下通常我会禁用:
+
+- ``LootFilter``: 很少会大量Farmer巨量物品
+- ``Recounter``: 有Skada插件作为替代
+- ``Grid``: 不是治疗不打团队副本, 不需要团队战斗框架
+- ``Perl``, ``ShadowedUF``: 
+- ``WebDKP``: 单机不使用DKP系统

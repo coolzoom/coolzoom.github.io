@@ -1,0 +1,76 @@
+商业技能攻略
+============
+商业技能玩家主要关心这样几个问题:
+
+1. 如何能多快好省地将技能冲满?
+2. 特定的配方如何获取?
+3. 有哪些制品, 如何运作能给你带来利润?
+
+对于问题1, :ref:`TradeskillInfo` 能告诉你哪些配方适合用来冲技能。对于问题2, :ref:`AckisRecipeList` 能告诉你所有未学会的配方以及如何获得。对于问题3, 那就是仁者见仁智者见智了。
+
+
+综合
+----
+.. toctree::
+	:maxdepth: 1
+
+	炼金术 <Other/index.rst>
+
+商业技能
+--------
+.. toctree::
+	:maxdepth: 1
+
+	炼金术 (Alchemy) <Alchemy/index.rst>
+	锻造 (Blacksmithing) <Blacksmithing/index.rst>
+	附魔 (Enchanting) <Enchanting/index.rst>
+	工程学 (Engineering) <Engineering/index.rst>
+	铭文学 (Inscription) <Inscription/index.rst>
+	珠宝加工 (Jewlercrafting) <Jewlercrafting/index.rst>
+	制皮 (LeatherCraft) <LeatherCraft/index.rst>
+	裁缝 (Tailoring) <Tailoring/index.rst>
+
+
+生活技能
+--------
+
+.. toctree::
+	:maxdepth: 1
+
+	烹饪 (Cooking) <Cooking/index.rst>
+	钓鱼 (Fishing) <Fishing/index.rst>
+
+
+附录: 冲各技能大约需要花费的金钱
+--------------------------------
+裁缝
+
+- 1 - 450 花费 4000G
+
+制皮
+
+- 1 - 450 花费 3000G
+
+锻造
+
+- 1 - 450 花费 5000G
+
+炼金
+
+- 1 - 450 花费 3000G
+
+附魔
+
+- 1 - 450 花费 4000G
+
+工程
+
+- 1 - 450 花费 5000G
+
+珠宝
+
+- 1 - 450 花费 5000G
+
+铭文
+
+- 1 - 450 花费 5000G

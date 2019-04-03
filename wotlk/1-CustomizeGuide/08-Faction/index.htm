@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>声望修改(Faction) &mdash; wowWlkPrivateServerManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="..\..\_static\nature.css" type="text/css">
+    <link rel="stylesheet" href="..\..\_static\pygments.css" type="text/css">
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="..\..\_static\jquery.js"></script>
+    <script type="text/javascript" src="..\..\_static\underscore.js"></script>
+    <script type="text/javascript" src="..\..\_static\doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="wowWlkPrivateServerManual 0.0.1 documentation" href="..\..\index.htm">
+    <link rel="up" title="单机修改手册(Customize Guide)" href="..\index.htm">
+    <link rel="next" title="坐骑(Mount)" href="..\09-Mount\index.htm">
+    <link rel="prev" title="商业和生活技能代码(Trade and Living Skill ID)" href="..\07-TradeAndLivingSkillID\index.htm"> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="..\09-Mount\index.htm" title="坐骑(Mount)" accesskey="N">next</a> |</li>
+        <li class="right">
+          <a href="..\07-TradeAndLivingSkillID\index.htm" title="商业和生活技能代码(Trade and Living Skill ID)" accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm" accesskey="U">单机修改手册(Customize Guide)</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="faction">
+<span id="id1"></span><h1>声望修改(Faction)<a class="headerlink" href="#faction" title="Permalink to this headline">¶</a></h1>
+<img alt="../../_images/Reputation.png" src="..\..\_images\Reputation.png">
+<ul class="simple">
+<li><a class="reference internal" href="#id2">经典旧世声望</a></li>
+<li><a class="reference internal" href="#tbc">燃烧的远征TBC声望</a></li>
+<li><a class="reference internal" href="#wlk">巫妖王之怒WLK声望</a></li>
+</ul>
+<p>声望有关的单机版修改:</p>
+<ul class="simple">
+<li>使用GM命令搜索声望ID: <code class="docutils literal"><span class="pre">.lookup</span> <span class="pre">faction</span> <span class="pre">&lt;faction_name&gt;</span></code>, 声望名称需要是英文。</li>
+<li>使用GM命令修改声望: <code class="docutils literal"><span class="pre">.modify</span> <span class="pre">rep</span> <span class="pre">&lt;faction_id&gt;</span> <span class="pre">&lt;value&gt;</span></code></li>
+</ul>
+<p>还有另外一种方法可以获得声望ID: 使用 <code class="docutils literal"><span class="pre">MyDbcEditor</span></code> 软件打开位于WOW游戏目录下的 <code class="docutils literal"><span class="pre">dbc/Faction.dbc</span></code> 文件进行查看。</p>
+<div class="section" id="id2">
+<h2>经典旧世声望<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>经典旧世声望的正常冲法请参考 <a class="reference internal" href="..\..\3-GameGuide\03-Reputation\Common\index.htm#originfraction"><span>此链接</span></a></p>
+<p>联盟:</p>
+<div class="highlight-python"><div class="highlight"><pre>.modify rep 47 100000 铁炉堡 矮人
+.modify rep 72 100000 暴风城 人类
+.modify rep 69 100000 达纳苏斯 暗夜精灵
+.modify rep 54 100000 诺莫瑞根流亡者 侏儒
+
+.modify rep 890 100000 银翼哨兵 战歌峡谷
+.modify rep 509 100000 阿拉索联军 阿拉希高地
+.modify rep 730 100000 雷矛卫队 奥特兰克山谷
+</pre></div>
+</div>
+<p>部落:</p>
+<div class="highlight-python"><div class="highlight"><pre>.modify rep 76 100000 奥格玛 兽人
+.modify rep 68 100000 幽暗城 亡灵
+.modify rep 81 100000 雷霆崖 牛头人
+.modify rep 530 100000 暗矛巨魔 巨魔
+
+.modify rep 889 100000 战歌先遣队 战歌峡谷
+.modify rep 510 100000 污染者 阿拉希高地
+.modify rep 729 100000 霜狼氏族 奥特兰克山谷
+</pre></div>
+</div>
+<p>四大地精城市:</p>
+<div class="highlight-python"><div class="highlight"><pre>.modify rep 577 100000 永望镇
+.modify rep 470 100000 棘齿城
+.modify rep 369 100000 加基森
+.modify rep 21 100000 藏宝海湾
+</pre></div>
+</div>
+<p>其他:</p>
+<div class="highlight-python"><div class="highlight"><pre>.modify rep 576 100000 木喉要塞
+.modify rep 529 100000 银色黎明
+.modify rep 59 100000 瑟银兄梯会
+.modify rep 270 100000 赞达拉部族
+.modify rep 609 100000 塞纳里奥议会
+.modify rep 910 100000 诺斯多姆的子嗣
+
+.modify rep 749 100000 海达希亚水元素
+.modify rep 809 100000 辛德拉
+.modify rep 909 100000 暗月马戏团
+.modify rep 169 100000 热砂港
+.modify rep 589 100000 冬刃豹训练师
+.modify rep 92 100000 吉尔吉斯半人马
+.modify rep 93 100000 玛格拉姆半人马
+</pre></div>
+</div>
+</div>
+<div class="section" id="tbc">
+<h2>燃烧的远征TBC声望<a class="headerlink" href="#tbc" title="Permalink to this headline">¶</a></h2>
+<p>燃烧的远征声望的正常冲法请参考 <a class="reference internal" href="..\..\3-GameGuide\03-Reputation\TBC\index.htm#tbcfraction"><span>此链接</span></a></p>
+<p>燃烧的远征所有声望:</p>
+<div class="highlight-python"><div class="highlight"><pre># 附魔
+.modify rep 946 100000 荣耀堡           治疗附魔
+.modify rep 947 100000 索尔玛           治疗附魔
+.modify rep 942 100000 塞纳里奥远征队   物理DPS附魔
+.modify rep 1011 100000 阴郁城          魔战士附魔
+.modify rep 935 100000 萨塔             法系DPS附魔
+.modify rep 989 100000 时光守望者       坦克附魔
+
+.modify rep 932 100000 奥多尔           肩膀附魔
+.modify rep 934 100000 占卜者           肩膀附魔
+
+# 副本
+.modify rep 967 100000 紫罗兰之眼       卡拉赞声望戒指
+.modify rep 990 100000 流沙之鳞         海加尔山声望戒指
+.modify rep 1012 100000 灰舌死誓者      黑暗神庙声望饰品
+.modify rep 1077 100000 破碎之日        黑暗神殿珠宝配方
+
+# 其他
+
+.modify rep 933 100000 联合团(星界财团) 珠宝专业
+.modify rep 970 100000 孢子村(斯博格尔) 特殊配方和饰品
+.modify rep 978 100000 库雷尼           联盟塔布羊坐骑
+.modify rep 941 100000 玛格哈           部落塔布羊坐骑
+
+.modify rep 1031 100000 萨塔御空者      虚空鳐坐骑
+.modify rep 1015 100000 虚空之翼        灵翼游龙坐骑
+.modify rep 1050 100000 歐格利拉        剑刃山脉挖水晶
+
+.modify rep 936 100000 萨城所有声望(奥多尔、占卜者、萨塔、萨塔御天者、破碎之日)
+</pre></div>
+</div>
+</div>
+<div class="section" id="wlk">
+<h2>巫妖王之怒WLK声望<a class="headerlink" href="#wlk" title="Permalink to this headline">¶</a></h2>
+<p>巫妖王之怒声望的正常冲法请参考 <a class="reference internal" href="..\..\3-GameGuide\03-Reputation\WLK\index.htm#wlkfraction"><span>此链接</span></a></p>
+<p>巫妖王之怒所有声望:</p>
+<div class="highlight-python"><div class="highlight"><pre># 附魔和装备
+.modify rep 1090 100000 祈伦托          法系DPS附魔
+.modify rep 1091 100000 龙眠协调者      治疗附魔
+.modify rep 1098 100000 黯刃骑士团      物理DPS附魔
+.modify rep 1106 100000 银白十字军      坦克附魔
+.modify rep 1119 100000 霍迪尔之子      肩膀附魔
+.modify rep 1156 100000 灰烬裁决军      ICC声望戒指
+
+.modify rep 1073 100000 卡鲁耶克        海象人钓鱼竿
+.modify rep 1104 100000 狂心部族
+.modify rep 1105 100000 神谕者
+
+# 联盟先锋PVP
+.modify rep 1037 100000 联盟先锋
+.modify rep 1050 100000 骁勇远征军
+.modify rep 1068 100000 探险者协会
+.modify rep 1126 100000 霜诞矮人
+
+# 部落远征军PVP
+.modify rep 1052 100000 部落远征军
+.modify rep 1064 100000 坦卡族
+.modify rep 1067 100000 复仇之手
+.modify rep 1085 100000 战歌进攻部队
+
+# 其他
+.modify rep 1094 100000 白银誓盟        联盟龙鹰和陆行鸟坐骑
+.modify rep 1124 100000 夺日者          部落龙鹰和陆行鸟坐骑
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="..\..\index.htm">
+              <img class="logo" src="..\..\_static\WowWlkPrivateServerManual.jpg" alt="Logo">
+            </a></p>
+  <h3><a href="..\..\index.htm">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">声望修改(Faction)</a><ul>
+<li><a class="reference internal" href="#id2">经典旧世声望</a></li>
+<li><a class="reference internal" href="#tbc">燃烧的远征TBC声望</a></li>
+<li><a class="reference internal" href="#wlk">巫妖王之怒WLK声望</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="..\07-TradeAndLivingSkillID\index.htm" title="previous chapter">商业和生活技能代码(Trade and Living Skill ID)</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="..\09-Mount\index.htm" title="next chapter">坐骑(Mount)</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="..\..\_sources\1-CustomizeGuide\08-Faction\index.txt" rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q">
+      <input type="submit" value="Go">
+      <input type="hidden" name="check_keywords" value="yes">
+      <input type="hidden" name="area" value="default">
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index">index</a></li>
+        <li class="right">
+          <a href="..\09-Mount\index.htm" title="坐骑(Mount)">next</a> |</li>
+        <li class="right">
+          <a href="..\07-TradeAndLivingSkillID\index.htm" title="商业和生活技能代码(Trade and Living Skill ID)">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm">单机修改手册(Customize Guide)</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, MacHuGWU.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+综合精品文章
+============
+
+.. toctree::
+	:maxdepth: 1
+
+	Wotlk装备收集之路 <EpicItem/index.rst>
+	施法打断机制 <InterruptCasting/index.rst>
+	抗性机制 <Resistance/index.rst>	
+	坦克职业发展史 <TankClassEvolution/index.rst>
+	WLK团队副本4大坦克选择建议 <WLK团队副本4大坦克选择建议/index.rst>
+	魔兽世界经典旧世人副本背后的故事 <魔兽世界经典旧世人副本背后的故事/index.rst>
+	命中与熟练属性详解 <命中与熟练属性详解/index.rst>
+	WLK3.3.5版本治疗职业面面观 <WLK3.3.5版本治疗职业面面观.rst>

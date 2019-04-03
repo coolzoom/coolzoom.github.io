@@ -1,0 +1,825 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>职业技能代码(Class Spell) &mdash; wowWlkPrivateServerManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="..\..\_static\nature.css" type="text/css">
+    <link rel="stylesheet" href="..\..\_static\pygments.css" type="text/css">
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="..\..\_static\jquery.js"></script>
+    <script type="text/javascript" src="..\..\_static\underscore.js"></script>
+    <script type="text/javascript" src="..\..\_static\doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="wowWlkPrivateServerManual 0.0.1 documentation" href="..\..\index.htm">
+    <link rel="up" title="单机修改手册(Customize Guide)" href="..\index.htm">
+    <link rel="next" title="职业天赋代码(Talent Spell)" href="..\04-Talent\index.htm">
+    <link rel="prev" title="药剂和食物(Elixir And Food)" href="..\02-ElixirAndFood\index.htm"> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="..\04-Talent\index.htm" title="职业天赋代码(Talent Spell)" accesskey="N">next</a> |</li>
+        <li class="right">
+          <a href="..\02-ElixirAndFood\index.htm" title="药剂和食物(Elixir And Food)" accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm" accesskey="U">单机修改手册(Customize Guide)</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="class-spell">
+<span id="classspell"></span><h1>职业技能代码(Class Spell)<a class="headerlink" href="#class-spell" title="Permalink to this headline">¶</a></h1>
+<img alt="../../_images/classAll.png" src="..\..\_images\ClassAll.png">
+<p>对于同一个技能的不同等级, 主要有两种方法可以获得技能ID:</p>
+<ol class="arabic simple">
+<li>使用 <code class="docutils literal"><span class="pre">.lookup</span> <span class="pre">spell</span> <span class="pre">&lt;name&gt;</span></code> GM命令通过技能英文名搜索。</li>
+<li>在 <a class="reference external" href="http://wotlk.openwow.com/">http://wotlk.openwow.com/</a> 网站上通过技能分类搜搜。</li>
+</ol>
+<p>注: 安装了SpellID插件之后, 即可在游戏中看到所有技能的ID, 即可不依赖此表格。</p>
+<div class="section" id="warrior">
+<h2>战士(Warrior)<a class="headerlink" href="#warrior" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="..\..\_images\ClassWarrior.png"><img alt="../../_images/ClassWarrior.png" src="..\..\_images\ClassWarrior.png" style="width: 128px; height: 128px;"></a>
+<div class="section" id="arm">
+<h3>武器(Arm)<a class="headerlink" href="#arm" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>战斗姿态(Battle Stance), 2457</li>
+<li>英勇打击(Heroic Strike), 30324</li>
+<li>撕裂(Rend), 25208</li>
+<li>雷霆一击(Thunder Clap), 47502</li>
+<li>冲锋(Charge), 11578</li>
+<li>致死打击(Mortal Strike), 30330</li>
+<li>英勇投掷(Heroic Throw), 57755</li>
+<li>惩戒痛击(Mocking Blow), 694</li>
+<li>反击风暴(Retaliation), 20230</li>
+<li>断筋(Hamstring), 1715</li>
+<li>姿态掌握(Stance Mastery), 12678</li>
+</ul>
+</div>
+<div class="section" id="fury">
+<h3>狂暴(Fury)<a class="headerlink" href="#fury" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>狂暴姿态(Berserker Stance), 2458</li>
+<li>拦截(Intercept), 20252</li>
+<li>刺耳嚎叫(Piercing Howl), 12323</li>
+<li>战斗怒吼(Battle Shout), 2048</li>
+<li>挫志怒吼(Demoralizing Shout), 25203</li>
+<li>挑战怒吼(Challenging Shout), 1161</li>
+<li>破胆怒吼(Intimidating Shout), 5246</li>
+<li>命令怒吼(Commanding Shout), 469</li>
+<li>血性狂暴(Bloodrage), 2687</li>
+<li>狂暴之怒(Berserker Rage), 18499</li>
+<li>鲁莽(Recklessness), 1719</li>
+<li>拳击(Pummel), 6552</li>
+<li>猛击(Slam), 25242</li>
+<li>旋风斩(Whirlwind), 1680</li>
+<li>顺劈斩(Cleave), 25231</li>
+<li>乘胜追击(Victory Rush), 34428</li>
+<li>斩杀(Execute), 25236</li>
+<li>嗜血(Bloodthirst), 30335</li>
+</ul>
+</div>
+<div class="section" id="protection">
+<h3>保护(Protection)<a class="headerlink" href="#protection" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>防御姿态(Defensive Stance), 71</li>
+<li>嘲讽(Taunt), 355</li>
+<li>破甲攻击(Sunder Armor), 25225</li>
+<li>盾牌格挡(Shield Block), 2565</li>
+<li>复仇(Revenge), 30357</li>
+<li>盾击(Shield Bash), 29704</li>
+<li>盾牌猛击(Shield Slam), 30356</li>
+<li>缴械(Disarm), 676</li>
+<li>盾墙(Shield Wall), 871</li>
+<li>震荡猛击(Concussion Blow), 12809</li>
+<li>援护(Intervene), 3411</li>
+<li>冲击波(Shockwave), 46968</li>
+<li>毁灭打击(Devastate), 30022</li>
+<li>法术反射(Spell Reflection), 23920</li>
+</ul>
+</div>
+</div>
+<div class="section" id="paladin">
+<h2>圣骑士(Paladin)<a class="headerlink" href="#paladin" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="..\..\_images\ClassPaladin.png"><img alt="../../_images/ClassPaladin.png" src="..\..\_images\ClassPaladin.png" style="width: 128px; height: 128px;"></a>
+<div class="section" id="blessing">
+<h3>祝福(Blessing)<a class="headerlink" href="#blessing" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>力量祝福(Blessing of Might), 27140</li>
+<li>强效力量祝福(Greater Blessing of Might) 27141</li>
+<li>智慧祝福(Blessing of Wisdom), 27142</li>
+<li>强效智慧祝福(Greater Blessing of Wisdom) 27143</li>
+<li>王者祝福(Blessing of Kings), 20217</li>
+<li>强效王者祝福(Greater Blessing of Kings), 25898</li>
+<li>庇护祝福(Blessing of Sanctuary), 67480</li>
+<li>强效庇护祝福(Greater Blessing of Sanctuary), 25899</li>
+</ul>
+</div>
+<div class="section" id="aura">
+<h3>光环(Aura)<a class="headerlink" href="#aura" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>虔诚光环(Devotion Aura), 48942</li>
+<li>火焰抗性光环(Fire Resistance Aura), 27153</li>
+<li>冰霜抗性光环(Frost Resistance Aura), 27152</li>
+<li>暗影抗性光环(Shadow Resistance Aura), 27151</li>
+<li>惩戒光环(Retribution Aura), 27150</li>
+<li>专注光环(Concentration Aura) 19746</li>
+<li>十字军光环(Crusader Aura), 32223</li>
+</ul>
+</div>
+<div class="section" id="seal">
+<h3>圣印(Seal)<a class="headerlink" href="#seal" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>正义圣印(Seal of Righteousness), 21084</li>
+<li>光明圣印(Seal of Light), 20165</li>
+<li>公正圣印(Seal of Justice), 20164</li>
+<li>智慧圣印(Seal of Wisdom), 20166</li>
+<li>命令圣印(Seal of Command), 20375</li>
+<li>殉难圣印(Seal of the Martyr), 53720</li>
+<li>复仇圣印(Seal of Vengeance), 31801</li>
+</ul>
+</div>
+<div class="section" id="judgement">
+<h3>审判(Judgement)<a class="headerlink" href="#judgement" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>光明审判(Judgement of Light), 20271</li>
+<li>智慧审判(Judgement of Wisdom), 53408</li>
+<li>公正审判(Judgement of Justice), 53407</li>
+</ul>
+</div>
+<div class="section" id="retribution">
+<h3>惩戒(Retribution)<a class="headerlink" href="#retribution" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>奉献(Consecration), 48819</li>
+<li>复仇之怒(Avenging Wrath), 31884</li>
+<li>愤怒之锤(Hammer of Wrath), 27180</li>
+<li>战争艺术(The Art of War), 59578</li>
+<li>神性风暴(Divine Storm), 53385</li>
+<li>十字军打击(Crusader Strike), 35395</li>
+<li>忏悔(Repentance), 20066</li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h3>防护(Protection)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>制裁之锤(Hammer of Justice), 10308</li>
+<li>圣盾术(Divine Shield), 642</li>
+<li>圣佑术(Divine Protection), 498</li>
+<li>自由之手(Hand of Freedom), 1044</li>
+<li>牺牲之手(Hand of Sacrifice), 6940</li>
+<li>保护之手(Hand of Protection), 10278</li>
+<li>拯救之手(Hand of Salvation), 1038</li>
+<li>神圣之盾(Holy Shield), 27179</li>
+<li>复仇者之盾(Avenger&#8217;s Shield), 32700</li>
+<li>正义之锤(Hammer of the Righteous), 53595</li>
+<li>神圣干涉(Divine Intervention), 19752</li>
+<li>正义之怒(Righteous Fury), 25780</li>
+<li>正义防御(Righteous Defense), 31789</li>
+<li>灵魂协调(Spiritual Attunement), 33776</li>
+</ul>
+</div>
+<div class="section" id="holy">
+<h3>神圣(Holy)<a class="headerlink" href="#holy" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>神圣震击(Holy Shock), 33074</li>
+<li>神圣愤怒(Holy Wrath), 27139</li>
+<li>圣光术(Holy Light), 27136</li>
+<li>圣光闪现(Flash of Light), 27137</li>
+<li>圣疗术(Lay on Hands), 27154</li>
+<li>神性祈求(Divine Plea), 54428</li>
+<li>圣光信标(Light&#8217;s Beacon), 53651</li>
+<li>圣洁之盾(Sacred Shield), 53601</li>
+<li>救赎(Redemption), 20773</li>
+<li>清洁术(Cleanse), 498</li>
+<li>纯净术(Purify), 1152</li>
+<li>驱邪术(Exorcism), 27138</li>
+<li>超度邪恶(Turn Evil), 10326</li>
+<li>感知亡灵(Sense Undead), 5502</li>
+</ul>
+</div>
+</div>
+<div class="section" id="hunter">
+<h2>猎人(Hunter)<a class="headerlink" href="#hunter" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="..\..\_images\ClassHunter.png"><img alt="../../_images/ClassHunter.png" src="..\..\_images\ClassHunter.png" style="width: 128px; height: 128px;"></a>
+<ul class="simple">
+<li>瞄准射击(skillname), 27065</li>
+<li>翼龙钉刺(skillname), 27069</li>
+<li>误导(skillname), 34477</li>
+<li>猫鼬撕咬(skillname), 36916</li>
+<li>爆炸射击(skillname), 60051</li>
+<li>奥术射击(skillname), 27019</li>
+<li>雄鹰守护(skillname), 27044</li>
+<li>野性守护(skillname), 27045</li>
+<li>治疗宠物(skillname), 27046</li>
+<li>毒蛇陷阱(skillname), 34600</li>
+<li>毒蛇钉刺(skillname), 27016</li>
+<li>多重射击(skillname), 27021</li>
+<li>乱射(skillname), 27022</li>
+<li>蝰蛇钉刺(skillname), 27018</li>
+<li>反击(skillname), 27067</li>
+<li>杀戮命令(skillname), 34026</li>
+<li>献祭陷阱(skillname), 27023</li>
+<li>猛禽一击(skillname), 27014</li>
+<li>稳固射击(skillname), 34120</li>
+<li>爆炸陷阱(skillname), 27025</li>
+<li>冰冻陷阱(skillname), 14311</li>
+<li>威慑(skillname), 19263</li>
+<li>宁神射击(skillname), 19801</li>
+<li>瞄准射击(skillname), 20904</li>
+<li>翼龙钉刺(skillname), 24135</li>
+<li>多重射击(skillname), 25294</li>
+<li>冰冻之箭(skillname), 60202</li>
+<li>猫鼬撕咬(skillname), 14271</li>
+<li>猎人印记(skillname), 14325</li>
+<li>献祭陷阱(skillname), 14305</li>
+<li>追踪龙类(skillname), 19879</li>
+<li>豹群守护(skillname), 13159</li>
+<li>追踪巨人(skillname), 19882</li>
+<li>照明弹(skillname), 1543</li>
+<li>追踪恶魔(skillname), 19878</li>
+<li>假死(skillname), 5384</li>
+<li>野兽守护(skillname), 13161</li>
+<li>恐吓野兽(skillname), 14326</li>
+<li>急速射击(skillname), 3045</li>
+<li>追踪元素生物(skillname), 19880</li>
+<li>野兽知识(skillname), 1462</li>
+<li>追踪隐藏生物(skillname), 19885</li>
+<li>毒蝎钉刺(skillname), 3043</li>
+<li>逃脱(skillname), 781</li>
+<li>猎豹守护(skillname), 5118</li>
+<li>蝰蛇守护(skillname), 34074</li>
+<li>追踪亡灵(skillname), 19884</li>
+<li>野兽之眼(skillname), 1002</li>
+<li>鹰眼术(skillname), 6197</li>
+<li>摔绊(skillname), 2974</li>
+<li>扰乱射击(skillname), 20736</li>
+<li>召唤宠物(skillname), 883</li>
+<li>复活宠物(skillname), 882</li>
+<li>驯服野兽(skillname), 1515</li>
+<li>解散野兽(skillname), 2641</li>
+<li>喂养宠物(skillname), 6991</li>
+<li>追踪人型生物(skillname), 19883</li>
+<li>震荡射击(skillname), 5116</li>
+<li>灵猴守护(skillname), 13163</li>
+<li>自动射击(skillname), 75</li>
+<li>追踪野兽(skillname), 1494</li>
+</ul>
+<div class="section" id="beast-mastery">
+<h3>野兽掌握(Beast Mastery)<a class="headerlink" href="#beast-mastery" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="marksmanship">
+<h3>射击(Marksmanship)<a class="headerlink" href="#marksmanship" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="survival">
+<h3>生存(Survival)<a class="headerlink" href="#survival" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="shaman">
+<h2>萨满祭司(Shaman)<a class="headerlink" href="#shaman" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="..\..\_images\ClassShaman.png"><img alt="../../_images/ClassShaman.png" src="..\..\_images\ClassShaman.png" style="width: 128px; height: 128px;"></a>
+<p>.add 46978 [大地之环图腾] 可替代所有的4种图腾使用</p>
+<ul class="simple">
+<li>治疗波(skillname), 25396</li>
+<li>闪电链(skillname), 25442</li>
+<li>烈焰震击(skillname), 25457</li>
+<li>闪电之盾(skillname), 25472</li>
+<li>石肤图腾(skillname), 25509</li>
+<li>火焰新星图腾(skillname), 25547</li>
+<li>英勇(skillname), 32182</li>
+<li>大地之盾(skillname), 32594</li>
+<li>大地生命武器(skillname), 51993</li>
+<li>天怒图腾(skillname), 57721</li>
+<li>雷霆风暴(skillname), 59156</li>
+<li>激流(skillname), 61299</li>
+<li>大地震击(skillname), 25454</li>
+<li>灼热图腾(skillname), 25533</li>
+<li>治疗之泉图腾(skillname), 25567</li>
+<li>自然抗性图腾(skillname), 25574</li>
+<li>先祖之魂(skillname), 25590</li>
+<li>水之护盾(skillname), 33736</li>
+<li>火元素图腾(skillname), 2894</li>
+<li>治疗链(skillname), 25423</li>
+<li>冰霜震击(skillname), 25464</li>
+<li>风怒武器(skillname), 25505</li>
+<li>抗火图腾(skillname), 25563</li>
+<li>闪电箭(skillname), 25449</li>
+<li>石爪图腾(skillname), 25525</li>
+<li>火舌图腾(skillname), 25557</li>
+<li>抗寒图腾(skillname), 25560</li>
+<li>土元素图腾(skillname), 2062</li>
+<li>次级治疗波(skillname), 25420</li>
+<li>冰封武器(skillname), 25500</li>
+<li>大地之力图腾(skillname), 25528</li>
+<li>熔岩图腾(skillname), 25552</li>
+<li>法力之泉图腾(skillname), 25570</li>
+<li>空气之怒图腾(skillname), 3738</li>
+<li>火舌武器(skillname), 25489</li>
+<li>烈焰震击(skillname), 29228</li>
+<li>先祖之魂(skillname), 20776</li>
+<li>祛病图腾(skillname), 8170</li>
+<li>岗哨图腾(skillname), 6495</li>
+<li>净化术(skillname), 8012</li>
+<li>风怒图腾(skillname), 8512</li>
+<li>星界传送(skillname), 556</li>
+<li>根基图腾(skillname), 8177</li>
+<li>复生(skillname), 20608</li>
+<li>图腾召唤(skillname), 36936</li>
+<li>水上行走(skillname), 546</li>
+<li>视界术(skillname), 6196</li>
+<li>石化武器(skillname), 10399</li>
+<li>水下呼吸(skillname), 131</li>
+<li>祛病术(skillname), 2870</li>
+<li>清毒图腾(skillname), 8166</li>
+<li>幽魂之狼(skillname), 2645</li>
+<li>战栗图腾(skillname), 8184</li>
+<li>消毒术(skillname), 526</li>
+<li>地缚图腾(skillname), 2484</li>
+<li>愤怒图腾(skillname), 30706</li>
+<li>风惩图腾(skillname), 3738</li>
+<li>法力之泉图腾(skillname), 58777</li>
+<li>元素呼唤(skillname), 66842</li>
+</ul>
+<div class="section" id="elemental">
+<h3>元素(Elemental)<a class="headerlink" href="#elemental" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="enhancement">
+<h3>增强(Enhancement)<a class="headerlink" href="#enhancement" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="restoration">
+<h3>恢复(Restoration)<a class="headerlink" href="#restoration" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="rogue">
+<h2>盗贼(Rogue)<a class="headerlink" href="#rogue" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="..\..\_images\ClassRouge.png"><img alt="../../_images/ClassRouge.png" src="..\..\_images\ClassRouge.png" style="width: 128px; height: 128px;"></a>
+<ul class="simple">
+<li>毒刃(skillname), 5938</li>
+<li>影袭(skillname), 26862</li>
+<li>出血(skillname), 26864</li>
+<li>锁喉(skillname), 26884</li>
+<li>毁伤(skillname), 34413</li>
+<li>致命投掷(skillname), 48673</li>
+<li>伏击(skillname), 48689</li>
+<li>毒伤(skillname), 32684</li>
+<li>背刺(skillname), 26863</li>
+<li>割裂(skillname), 26867</li>
+<li>破甲(skillname), 26866</li>
+<li>暗影斗篷(skillname), 31224</li>
+<li>刺骨(skillname), 26865</li>
+<li>佯攻(skillname), 27448</li>
+<li>消失(skillname), 26889</li>
+<li>潜行(skillname), 1787</li>
+<li>毁伤(skillname), 34412</li>
+<li>疾跑(skillname), 11305</li>
+<li>肾击(skillname), 8643</li>
+<li>闪避(skillname), 26669</li>
+<li>闷棍(skillname), 11297</li>
+<li>切割(skillname), 6774</li>
+<li>安全降落(skillname), 1860</li>
+<li>致盲(skillname), 2094</li>
+<li>解除陷阱(skillname), 1842</li>
+<li>偷袭(skillname), 1833</li>
+<li>侦测陷阱(skillname), 2836</li>
+<li>扰乱(skillname), 1725</li>
+<li>拆卸(skillname), 51722</li>
+<li>脚踢(skillname), 1766</li>
+<li>凿击(skillname), 1776</li>
+<li>偷窃(skillname), 921</li>
+</ul>
+<div class="section" id="assassination">
+<h3>刺杀(Assassination)<a class="headerlink" href="#assassination" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="combat">
+<h3>战斗(Combat)<a class="headerlink" href="#combat" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="subtlety">
+<h3>敏锐(Subtlety)<a class="headerlink" href="#subtlety" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="druid">
+<h2>德鲁伊(Druid)<a class="headerlink" href="#druid" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="..\..\_images\ClassDruid.png"><img alt="../../_images/ClassDruid.png" src="..\..\_images\ClassDruid.png" style="width: 128px; height: 128px;"></a>
+<ul class="simple">
+<li>宁静(skillname), 26983</li>
+<li>月火术(skillname), 26988</li>
+<li>野性印记(skillname), 26990</li>
+<li>野性赐福(skillname), 26991</li>
+<li>安抚动物(skillname), 26995</li>
+<li>撕碎(skillname), 27002</li>
+<li>飓风(skillname), 27012</li>
+<li>虫群(skillname), 27013</li>
+<li>旋风(skillname), 33786</li>
+<li>迅捷飞行形态(skillname), 40120</li>
+<li>星辰坠落(skillname), 53199</li>
+<li>野性成长(skillname), 53248</li>
+<li>治疗之触(skillname), 26979</li>
+<li>回春术(skillname), 26982</li>
+<li>愤怒(skillname), 26985</li>
+<li>复生(skillname), 26994</li>
+<li>畏缩(skillname), 27004</li>
+<li>起死回生(skillname), 50764</li>
+<li>纠缠根须(skillname), 26989</li>
+<li>自然之握(skillname), 27009</li>
+<li>飞行形态(skillname), 33943</li>
+<li>裂伤-豹(skillname), 33983</li>
+<li>裂伤-熊(skillname), 33987</li>
+<li>星火术(skillname), 26986</li>
+<li>重殴(skillname), 26996</li>
+<li>爪击(skillname), 27000</li>
+<li>割裂(skillname), 27008</li>
+<li>精灵之火(skillname), 26993</li>
+<li>毁灭(skillname), 27005</li>
+<li>突袭(skillname), 27006</li>
+<li>精灵之火野性(skillname), 27011</li>
+<li>割伤(skillname), 33745</li>
+<li>愈合(skillname), 26980</li>
+<li>急奔(skillname), 33357</li>
+<li>荆棘术(skillname), 26992</li>
+<li>横扫(skillname), 26997</li>
+<li>斜掠(skillname), 27003</li>
+<li>生命绽放(skillname), 33763</li>
+<li>凶猛撕咬(skillname), 24248</li>
+<li>挫志咆哮(skillname), 26998</li>
+<li>猛虎之怒(skillname), 9846</li>
+<li>愈合(skillname), 9858</li>
+<li>潜行(skillname), 9913</li>
+<li>畏缩(skillname), 31709</li>
+<li>休眠(skillname), 18658</li>
+<li>荆棘术(skillname), 9910</li>
+<li>斜掠(skillname), 1824</li>
+<li>树皮术(skillname), 22812</li>
+<li>巨熊形态(skillname), 9634</li>
+<li>豹之优雅(skillname), 20719</li>
+<li>激活(skillname), 29166</li>
+<li>狂暴回复(skillname), 22842</li>
+<li>追踪人型生物(skillname), 5225</li>
+<li>旅行形态(skillname), 783</li>
+<li>挑战咆哮(skillname), 5209</li>
+<li>驱毒术(skillname), 2893</li>
+<li>解除诅咒(skillname), 2782</li>
+<li>猎豹形态(skillname), 768</li>
+<li>水栖形态(skillname), 1066</li>
+<li>消毒术(skillname), 8946</li>
+<li>猛击(skillname), 5211</li>
+<li>低吼(skillname), 6795</li>
+</ul>
+<div class="section" id="balance">
+<h3>平衡(Balance)<a class="headerlink" href="#balance" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="feral-combat">
+<h3>野性战斗(Feral Combat)<a class="headerlink" href="#feral-combat" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id2">
+<h3>恢复(Restoration)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="mage">
+<h2>法师(Mage)<a class="headerlink" href="#mage" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="..\..\_images\ClassMage.png"><img alt="../../_images/ClassMage.png" src="..\..\_images\ClassMage.png" style="width: 128px; height: 128px;"></a>
+<ul class="simple">
+<li>灼烧(skillname), 27074</li>
+<li>火焰冲击(skillname), 27079</li>
+<li>魔爆术(skillname), 27082</li>
+<li>造水术(skillname), 27090</li>
+<li>奥术智慧(skillname), 27126</li>
+<li>奥术光辉(skillname), 27127</li>
+<li>法术偷取(skillname), 30449</li>
+<li>防护冰霜结界(skillname), 32796</li>
+<li>龙息术(skillname), 33043</li>
+<li>寒冰护体(skillname), 33405</li>
+<li>造食术(skillname), 33717</li>
+<li>冲击波(skillname), 33933</li>
+<li>炎爆术(skillname), 33938</li>
+<li>火球术(skillname), 38692</li>
+<li>寒冰箭(skillname), 38697</li>
+<li>奥术飞弹(skillname), 38704</li>
+<li>召唤餐桌(skillname), 43787</li>
+<li>奥术弹幕(skillname), 44780</li>
+<li>活动炸弹(skillname), 55359</li>
+<li>冰甲术(skillname), 27124</li>
+<li>法师护甲(skillname), 27125</li>
+<li>防护火焰结界(skillname), 27128</li>
+<li>魔法增效(skillname), 33946</li>
+<li>隐形术(skillname), 66</li>
+<li>暴风雪(skillname), 27085</li>
+<li>制造法力宝石(skillname), 27101</li>
+<li>法力护盾(skillname), 27131</li>
+<li>冰霜新星(skillname), 27088</li>
+<li>魔法抑制(skillname), 33944</li>
+<li>冰枪术(skillname), 30455</li>
+<li>冰锥术(skillname), 27087</li>
+<li>传送门：沙塔斯(skillname), 35717</li>
+<li>烈焰风暴(skillname), 27086</li>
+<li>奥术冲击(skillname), 30451</li>
+<li>魔法增效(skillname), 27130</li>
+<li>传送门：铁炉堡(skillname), 11416</li>
+<li>寒冰屏障(skillname), 45438</li>
+<li>法术反制(skillname), 2139</li>
+<li>闪现术(skillname), 1953</li>
+<li>唤醒(skillname), 12051</li>
+<li>解除诅咒(skillname), 475</li>
+<li>缓落术(skillname), 130</li>
+<li>变形术(skillname), 12826</li>
+<li>熔岩护甲(skillname), 30482</li>
+<li>传送-沙塔斯(skillname), 35715</li>
+<li>传送-铁炉堡(skillname), 3562</li>
+</ul>
+<div class="section" id="arcane">
+<h3>奥术(Arcane)<a class="headerlink" href="#arcane" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="fire">
+<h3>火焰(Fire)<a class="headerlink" href="#fire" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="frost">
+<h3>冰霜(Frost)<a class="headerlink" href="#frost" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="warlock">
+<h2>术士(Warlock)<a class="headerlink" href="#warlock" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="..\..\_images\ClassWarlock.png"><img alt="../../_images/ClassWarlock.png" src="..\..\_images\ClassWarlock.png" style="width: 128px; height: 128px;"></a>
+<ul class="simple">
+<li>制造灵魂石(skillname), 27238</li>
+<li>腐蚀之种(skillname), 27243</li>
+<li>魔甲术(skillname), 27260</li>
+<li>黑暗契约(skillname), 27265</li>
+<li>痛苦无常(skillname), 30405</li>
+<li>暗影之怒(skillname), 30414</li>
+<li>灼热之痛(skillname), 30459</li>
+<li>灵魂之火(skillname), 30545</li>
+<li>暗影灼烧(skillname), 30546</li>
+<li>吸取法力(skillname), 30908</li>
+<li>厄运诅咒(skillname), 30910</li>
+<li>生命虹吸(skillname), 30911</li>
+<li>燃烧(skillname), 30912</li>
+<li>烧尽(skillname), 32231</li>
+<li>鬼影缠身(skillname), 59161</li>
+<li>混乱之箭(skillname), 59170</li>
+<li>暗影箭(skillname), 27209</li>
+<li>火焰之雨(skillname), 27212</li>
+<li>献祭(skillname), 27215</li>
+<li>吸取生命(skillname), 27220</li>
+<li>鲁莽诅咒(skillname), 27226</li>
+<li>元素诅咒(skillname), 27228</li>
+<li>邪甲术(skillname), 28189</li>
+<li>虚弱诅咒(skillname), 30909</li>
+<li>地狱烈焰(skillname), 27213</li>
+<li>生命分流(skillname), 27222</li>
+<li>死亡缠绕(skillname), 27223</li>
+<li>制造治疗石(skillname), 27230</li>
+<li>灵魂仪式(skillname), 29893</li>
+<li>吸取灵魂(skillname), 27217</li>
+<li>痛苦诅咒(skillname), 27218</li>
+<li>生命通道(skillname), 27259</li>
+<li>制造火焰石(skillname), 27250</li>
+<li>制造法术石(skillname), 28172</li>
+<li>灵魂碎裂(skillname), 29858</li>
+<li>腐蚀术(skillname), 27216</li>
+<li>虚弱诅咒(skillname), 27224</li>
+<li>末日仪式(skillname), 18540</li>
+<li>暗影防护结界(skillname), 28610</li>
+<li>奴役恶魔(skillname), 11726</li>
+<li>死亡缠绕(skillname), 17926</li>
+<li>恐惧(skillname), 6215</li>
+<li>恐惧嚎叫(skillname), 17928</li>
+<li>地狱火(skillname), 1122</li>
+<li>语言诅咒(skillname), 11719</li>
+<li>放逐术(skillname), 18647</li>
+<li>召唤地狱猎犬(skillname), 691</li>
+<li>侦测隐形(skillname), 132</li>
+<li>感知恶魔(skillname), 5500</li>
+<li>基尔罗格之眼(skillname), 126</li>
+<li>召唤仪式(skillname), 698</li>
+<li>召唤魅魔(skillname), 712</li>
+<li>魔息术(skillname), 5697</li>
+<li>召唤虚空行者(skillname), 697</li>
+<li>召唤小鬼(skillname), 688</li>
+</ul>
+<div class="section" id="affliction">
+<h3>痛苦(Affliction)<a class="headerlink" href="#affliction" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="demonology">
+<h3>恶魔(Demonology)<a class="headerlink" href="#demonology" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="destruction">
+<h3>毁灭(Destruction)<a class="headerlink" href="#destruction" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="priest">
+<h2>牧师(Priest)<a class="headerlink" href="#priest" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="..\..\_images\ClassPresis.png"><img alt="../../_images/ClassPresis.png" src="..\..\_images\ClassPresis.png" style="width: 128px; height: 128px;"></a>
+<ul class="simple">
+<li>真言术：盾(skillname), 25218</li>
+<li>恢复(skillname), 25222</li>
+<li>神圣之灵(skillname), 25312</li>
+<li>暗言术：痛(skillname), 25368</li>
+<li>法力燃烧(skillname), 25380</li>
+<li>真言术：韧(skillname), 25389</li>
+<li>坚韧祷言(skillname), 25392</li>
+<li>光明之泉(skillname), 28275</li>
+<li>群体驱散(skillname), 32375</li>
+<li>暗言术：灭(skillname), 32996</li>
+<li>精神祷言(skillname), 32999</li>
+<li>治疗之环(skillname), 34866</li>
+<li>吸血鬼之触(skillname), 34917</li>
+<li>暗影防护祷言(skillname), 39374</li>
+<li>惩击(skillname), 25364</li>
+<li>心灵震爆(skillname), 25375</li>
+<li>心灵之火(skillname), 25431</li>
+<li>强效治疗术(skillname), 25213</li>
+<li>治疗祷言(skillname), 25308</li>
+<li>神圣新星(skillname), 25331</li>
+<li>精神鞭笞(skillname), 25387</li>
+<li>防护暗影(skillname), 25433</li>
+<li>复活术(skillname), 25435</li>
+<li>噬灵瘟疫(skillname), 25467</li>
+<li>愈合祷言(skillname), 33076</li>
+<li>快速治疗(skillname), 25235</li>
+<li>神圣之火(skillname), 25384</li>
+<li>绝望祷言(skillname), 25437</li>
+<li>暗影恶魔(skillname), 34433</li>
+<li>联结治疗(skillname), 32546</li>
+<li>束缚亡灵(skillname), 10955</li>
+<li>心灵尖啸(skillname), 10888</li>
+<li>漂浮术(skillname), 1706</li>
+<li>驱除疾病(skillname), 552</li>
+<li>精神控制(skillname), 605</li>
+<li>心灵视界(skillname), 10909</li>
+<li>安抚心灵(skillname), 453</li>
+<li>防护恐惧结界(skillname), 6346</li>
+<li>祛病术(skillname), 528</li>
+<li>渐隐术(skillname), 586</li>
+<li>次级治疗术(skillname), 2053</li>
+<li>治疗术(skillname), 6064</li>
+</ul>
+<div class="section" id="discipline">
+<h3>戒律(Discipline)<a class="headerlink" href="#discipline" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id3">
+<h3>神圣(Holy)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="shadow">
+<h3>暗影(Shadow)<a class="headerlink" href="#shadow" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="death-knight">
+<h2>死亡骑士(Death Knight)<a class="headerlink" href="#death-knight" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="..\..\_images\ClassDeathKnight.png"><img alt="../../_images/ClassDeathKnight.png" src="..\..\_images\ClassDeathKnight.png" style="width: 128px; height: 128px;"></a>
+<div class="section" id="blood">
+<h3>鲜血(Blood)<a class="headerlink" href="#blood" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id4">
+<h3>冰霜(Frost)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="unholy">
+<h3>邪恶(Unholy)<a class="headerlink" href="#unholy" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="..\..\index.htm">
+              <img class="logo" src="..\..\_static\WowWlkPrivateServerManual.jpg" alt="Logo">
+            </a></p>
+  <h3><a href="..\..\index.htm">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">职业技能代码(Class Spell)</a><ul>
+<li><a class="reference internal" href="#warrior">战士(Warrior)</a><ul>
+<li><a class="reference internal" href="#arm">武器(Arm)</a></li>
+<li><a class="reference internal" href="#fury">狂暴(Fury)</a></li>
+<li><a class="reference internal" href="#protection">保护(Protection)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#paladin">圣骑士(Paladin)</a><ul>
+<li><a class="reference internal" href="#blessing">祝福(Blessing)</a></li>
+<li><a class="reference internal" href="#aura">光环(Aura)</a></li>
+<li><a class="reference internal" href="#seal">圣印(Seal)</a></li>
+<li><a class="reference internal" href="#judgement">审判(Judgement)</a></li>
+<li><a class="reference internal" href="#retribution">惩戒(Retribution)</a></li>
+<li><a class="reference internal" href="#id1">防护(Protection)</a></li>
+<li><a class="reference internal" href="#holy">神圣(Holy)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#hunter">猎人(Hunter)</a><ul>
+<li><a class="reference internal" href="#beast-mastery">野兽掌握(Beast Mastery)</a></li>
+<li><a class="reference internal" href="#marksmanship">射击(Marksmanship)</a></li>
+<li><a class="reference internal" href="#survival">生存(Survival)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#shaman">萨满祭司(Shaman)</a><ul>
+<li><a class="reference internal" href="#elemental">元素(Elemental)</a></li>
+<li><a class="reference internal" href="#enhancement">增强(Enhancement)</a></li>
+<li><a class="reference internal" href="#restoration">恢复(Restoration)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#rogue">盗贼(Rogue)</a><ul>
+<li><a class="reference internal" href="#assassination">刺杀(Assassination)</a></li>
+<li><a class="reference internal" href="#combat">战斗(Combat)</a></li>
+<li><a class="reference internal" href="#subtlety">敏锐(Subtlety)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#druid">德鲁伊(Druid)</a><ul>
+<li><a class="reference internal" href="#balance">平衡(Balance)</a></li>
+<li><a class="reference internal" href="#feral-combat">野性战斗(Feral Combat)</a></li>
+<li><a class="reference internal" href="#id2">恢复(Restoration)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#mage">法师(Mage)</a><ul>
+<li><a class="reference internal" href="#arcane">奥术(Arcane)</a></li>
+<li><a class="reference internal" href="#fire">火焰(Fire)</a></li>
+<li><a class="reference internal" href="#frost">冰霜(Frost)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#warlock">术士(Warlock)</a><ul>
+<li><a class="reference internal" href="#affliction">痛苦(Affliction)</a></li>
+<li><a class="reference internal" href="#demonology">恶魔(Demonology)</a></li>
+<li><a class="reference internal" href="#destruction">毁灭(Destruction)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#priest">牧师(Priest)</a><ul>
+<li><a class="reference internal" href="#discipline">戒律(Discipline)</a></li>
+<li><a class="reference internal" href="#id3">神圣(Holy)</a></li>
+<li><a class="reference internal" href="#shadow">暗影(Shadow)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#death-knight">死亡骑士(Death Knight)</a><ul>
+<li><a class="reference internal" href="#blood">鲜血(Blood)</a></li>
+<li><a class="reference internal" href="#id4">冰霜(Frost)</a></li>
+<li><a class="reference internal" href="#unholy">邪恶(Unholy)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="..\02-ElixirAndFood\index.htm" title="previous chapter">药剂和食物(Elixir And Food)</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="..\04-Talent\index.htm" title="next chapter">职业天赋代码(Talent Spell)</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="..\..\_sources\1-CustomizeGuide\03-ClassSpell\index.txt" rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q">
+      <input type="submit" value="Go">
+      <input type="hidden" name="check_keywords" value="yes">
+      <input type="hidden" name="area" value="default">
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index">index</a></li>
+        <li class="right">
+          <a href="..\04-Talent\index.htm" title="职业天赋代码(Talent Spell)">next</a> |</li>
+        <li class="right">
+          <a href="..\02-ElixirAndFood\index.htm" title="药剂和食物(Elixir And Food)">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm">单机修改手册(Customize Guide)</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, MacHuGWU.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

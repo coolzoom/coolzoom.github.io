@@ -1,0 +1,782 @@
+.. _Fox32Macro:
+
+宏命令指南(Macro)
+===============================================================================
+.. image:: Macro.png
+
+
+WLK单机版全角色通用的常用宏命令
+-------------------------------------------------------------------------------
+
+
+新建角色测试通用
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1. 新人 - 在Fox3.2端中, 学习60%陆地坐骑, 100%陆地坐骑, 150%飞行坐骑都不要钱。而280%坐骑需要3000金, 诺森德飞行需要300金币
+
+	.. image:: Newbie.png
+
+	::
+
+		/target player
+		.modify money 50000000 // 增加5000金币
+		.add 23162 4  // 增加4个36格包包
+		/targetlasttarget
+
+2. 飞起 - 所有地区通用坐骑: 安其拉飞行坦克
+
+	.. image:: FlyUp.png
+
+	::
+
+		/target player
+		.aura 31700 乘坐其拉飞行坦克
+		/targetlasttarget
+
+3. 飞落 - 离开坐骑, 给予4倍移动速度
+
+	.. image:: FlyUp.png
+
+	::
+
+		/target player
+		/dismount 下坐骑
+		.modify speed all 1
+		.unaura 39870 暴速
+		.aura 39870 暴速
+		/targetlasttarget
+
+4. X01 - 移动速度x1, 恢复正常速度
+
+	.. image:: ModifySpeed.png
+
+	::
+
+		/target player
+		.modify speed all 1
+		/targetlasttarget
+
+5. X03 - 移动速度x3
+
+	.. image:: ModifySpeed.png
+
+	::
+
+		/target player
+		.modify speed all 3
+		/targetlasttarget
+
+6. X16 - 移动速度x16
+
+	.. image:: ModifySpeed.png
+
+	::
+
+		/target player
+		.modify speed all 16
+		/targetlasttarget
+
+7. X32 - 移动速度x32
+
+	.. image:: ModifySpeed.png
+
+	::
+
+		/target player
+		.modify speed all 32
+		/targetlasttarget
+
+8. 加速 - 移动速度x2, 被打晕后不会出错
+
+	.. image:: SpeedX2.png
+
+	::
+
+		/target player
+		.unaura 62375
+		.aura 62375
+		.aura 62375
+		.aura 62375
+		.aura 62375
+		.aura 62375
+		.aura 62375
+		.aura 62375
+		.aura 62375
+		.aura 62375
+		.aura 62375
+		/targetlastt
+
+
+常用特殊宏命令
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+01. 刷怪 - 附近所有怪物刷新
+
+	.. image:: Respawn.png
+
+	::
+
+		/cleartarget
+		.respawn
+
+02. On - 伤害免疫模式(但会吸引仇恨)
+
+	.. image:: Overwhelming.png
+
+	::
+
+		/target player
+		.learn 39804 伤害免疫:魔法
+		.learn 34311 伤害免疫:物理
+		/targetlasttarget
+
+03. Off - 关闭伤害免疫模式
+
+	.. image:: Overwhelming.png
+
+	::
+
+		/target player
+		.unlearn 39804 伤害免疫:魔法
+		.unlearn 34311 伤害免疫:物理
+		/targetlasttarget
+
+04. 假死 - 假死并脱离战斗状态
+
+	.. image:: Feign.png
+
+	::
+
+		/target player
+		.aura 5384 假死
+		/targetlasttarget
+
+05. 冷却 - 所有技能CD冷却
+
+	.. image:: RefreshCooldown.png
+
+	::
+
+		/target player
+		.cooldown
+		/targetlasttarget
+
+06. 清除 - 清除身上所有debuff并且无敌, 再按一下解除无敌
+
+	.. image:: CleanDebuffAndImmuneDamage.png
+
+	::
+
+		/target player
+		.aura 45438
+		.unaura 45438
+		/targetlasttarget
+
+07. 隐身 - 瞬间隐身并脱离战斗
+
+	.. image:: Invisible.png
+
+	::
+
+		/target player
+		.npcbot command stay
+		.aura 32612 隐身
+
+08. 复活 - 复活当前玩家
+
+	.. image:: Revive.png
+
+	::
+
+		/g .revive
+
+09. 重置 - 所有副本重置
+
+	.. image:: ResetDungeon.png
+
+	::
+
+		.instance unbind all
+
+10. DB - 打开数据库查询
+
+	.. image:: Itemdb.png
+
+	::
+
+		/itemdb
+
+
+刷基础Buff以及回复生命和法力宏
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1. 状态 - 基础属性状态, 王者, 耐力, 智力, 精神, 野性印记
+
+	.. image:: BasicBuff.png
+
+	60级::
+
+		# Lv60 Basic Buff
+		/target player
+		.aura 56525 wangzhe
+		.aura 10938 naili
+		.aura 10157 zhili
+		.aura 27841 jingshen
+		.aura 9885 zhuazi
+		.aura 24932 shouqun
+		.aura 24907 xiaoshou
+		/targetlasttaget
+
+	70级::
+
+		# Lv70 Basic Buff
+		/target player
+		.aura 56525 wangzhe
+		.aura 25389 naili
+		.aura 27126 zhili
+		.aura 25312 jingshen
+		.aura 26990 zhuazi
+		.aura 24932 shouqun
+		.aura 24907 xiaoshou
+		/targetlasttaget
+
+	80级::
+
+		# Lv80 Basic Buff
+		/target player
+		.aura 56525 wangzhe
+		.aura 48161 naili
+		.aura 42995 zhili
+		.aura 48073 jingshen
+		.aura 48469 zhuazi
+		.aura 24932 shouqun
+		.aura 24907 xiaoshou
+		/targetlasttaget
+
+2. 恢复 - 慢慢回满生命和法力宏
+
+	.. image:: Regeneration.png
+
+	::
+
+		/target player
+		.aura 68037 恢复 15秒内恢复347k-403k点生命
+		.aura 29166 激活 法力回复速度+400%, 持续10秒
+		.aura 64901 希望礼颂
+		/targetlasttarget
+
+3. 回血 - 紧急回复生命宏
+
+	.. image:: RegenerateLife.png
+
+	::
+
+		/target player
+		.aura 48066
+		.aura 871
+		.aura 48068
+		.aura 48441
+		.aura 48443
+		.aura 61301
+		.aura 48451
+		.aura 48451
+		.aura 48451
+		.aura 53251
+		.aura 51972
+		.aura 48085
+		.aura 64843
+		/targetlasttarget
+
+4. 回蓝 - 紧急回复法力宏
+
+	.. image:: RegenerateMana.png
+
+	::
+
+		/target player
+		.aura 15271
+		.aura 29166
+		.aura 64901
+		/targetlasttarget
+
+5. 补充 - 补充常用药品食物, 具体药剂请参考 :ref:`ElixirAndFood` 部分
+
+	.. image:: Refill.png
+
+	四大合剂, 红瓶蓝瓶, 速度药水, 通用食物::
+
+		/target player
+		.add 46377 -20
+		.add 46377 20
+		.add 46378 -20
+		.add 46378 20
+		.add 46376 -20
+		.add 46376 20
+		.add 46379 -20
+		.add 46379 20
+		.add 40093 -20
+		.add 40093 20
+		.add 40211 -20
+		.add 40211 20
+		.add 33447 -20
+		.add 33447 20
+		.add 43268 -20
+		.add 43268 20
+
+6. 嗜血术
+	
+	.. image:: BloodThirst.png
+
+	::
+
+		/target player
+		.aura 2825 嗜血术
+		/targetlasttarget
+
+其他类
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. 变羊 - 清除目标身上所有debuff, 然后将其变羊
+
+	.. image:: Polymorph.png
+
+	::
+
+		/stopmacro [noharm]
+		.aura 45438 冰箱
+		.unaura 45438 取消冰箱
+		.aura 12826 变羊
+
+2. Pad - 打开写字本App
+
+	.. image:: Pad.png
+
+	::
+		/pad
+
+3. Shop - 刷新中立修装备NPC
+
+	.. image:: ShopNPC.png
+
+	::
+
+		/clear target
+		/target 里札雷克斯
+		.npc delete
+		/target player
+		.npc add 3658 棘齿城坡上的武器商NPC
+
+
+Fox3.2端机器人宏命令
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+B跟 - 机器人跟随玩家:
+
+	.. image:: Bot.png
+
+	::
+
+		/target player
+		.npcbot juli 1
+		.npcbot command follow
+		/targetlasttarget
+
+B待 - 机器人原地待命:
+
+	.. image:: Bot.png
+
+	::
+
+		/target player
+		.npcbot juli 40
+		.npcbot command stay
+		/targetlasttarget
+
+B刷 - 机器人全部刷新:
+
+	.. image:: Bot.png
+
+	::
+
+		/target player
+		.aura 5384 假死
+		.npcbot shuaxin
+		/targetlasttarget
+
+
+MT - 设定当前选中的机器人为MT
+
+	.. image:: MT.png
+	
+	::
+
+		/target xxx
+		.mt
+
+团盾 - 给团队中所有成员上盾, 保护自己和机器人, 上那种盾请参考 :ref:`技能ID部分 <BTSheild>`:
+
+	.. image:: RaidShield.png
+
+	::
+
+		/targetraid
+		.aura 71781
+		/targetraid
+		.aura 71781
+		/targetraid
+		.aura 71781
+		/targetraid
+		.aura 71781
+		/targetraid
+		.aura 71781
+		/targetraid
+		.aura 71781
+		/targetraid
+		.aura 71781
+		/targetraid
+		.aura 71781
+		/targetraid
+		.aura 71781
+		/targetraid
+		.aura 71781
+
+
+各职业专用宏命令
+-------------------------------------------------------------------------------
+.. include::  Warrior.rst
+.. include::  Paladin.rst
+.. include::  DeathKnight.rst
+.. include::  Hunter.rst
+.. include::  Shaman.rst
+.. include::  Rogue.rst
+.. include::  Druid.rst
+.. include::  Mage.rst
+.. include::  Presis.rst
+.. include::  Warlock.rst
+
+
+圣骑士
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- 补充: 给自己填充各种常用药水, Buff合剂, 食物, 工程炸弹。
+
+	::
+
+		/target player
+		.add 42994 -20
+		.add 42994 20 熟练食物
+		.add 40211 -20
+		.add 40211 20 速度药水
+		.add 46377 -20
+		.add 46377 20 无尽怒火合剂
+
+
+德鲁伊
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- 挥击: 全形态下挥击
+
+	::
+
+		#showtooltips
+		/cast [stance:1] 揮擊(熊形態)(等級8)
+		/cast [stance:3] 揮擊(獵豹形態)(等級8)
+
+- 精灵火: 全形态下精灵之火
+
+	::
+
+		#showtooltips
+		/cast [nostance] 精靈之火
+		/cast [stance:1] 精靈之火(野性)
+		/cast [stance:3] 精靈之火(野性)
+		/cast [stance:4] 精靈之火
+		/cast [stance:5] 精靈之火
+
+- 冲锋: 全形态下野性冲锋。
+
+	::
+
+		#showtooltips
+		/cast [stance:1] 野性衝鋒 - 熊形態
+		/cast [stance:3] 野性衝鋒 - 獵豹形态
+
+- 猛虎之怒: 平时按释放狂暴, 按下Alt键释放猛虎之怒。
+
+	::
+
+		#showtooltips
+		/cast [mod:alt] 狂暴;猛虎之怒(等級 6)
+
+- 全形态芒果。
+
+	::
+
+		#showtooltips
+		/cast [stance:1] 割碎(熊形态)(等级5)
+		/cast [stance:3] 割碎(猎豹形态)(等级5)
+		/stopmacro [noharm]
+		.aura 54499
+		.aura 71554
+		.aura 71554
+		.aura 71554
+		.aura 71554
+		.aura 71554
+		.aura 16857
+		.aura 58683
+		.aura 33983
+		.aura 20185
+
+- 愤怒:
+
+	::
+
+		#showtooltips
+		/施放 憤怒(等級 12)
+		/stopmacro [noharm]
+		.aura 54499
+		.aura 47865
+		.aura 22959
+		.aura 33198
+		.aura 31589
+
+- 星火:
+
+	::
+
+		#showtooltips
+		/施放 星火術(等級 10)
+		/stopmacro [noharm]
+		.aura 54499
+		.aura 47865
+		.aura 22959
+		.aura 33198
+		.aura 31589
+
+- 补充, 全类别天赋全药剂食物:
+
+	::
+
+		/target player
+		.add 46377 -20
+		.add 46377 20
+		.add 46378 -20
+		.add 46378 20
+		.add 46376 -20
+		.add 46376 20
+		.add 46379 -20
+		.add 46379 20
+		.add 40211 -20
+		.add 40211 20
+		.add 40093 -20
+		.add 40093 20
+		.add 34754 -20
+		.add 34754 20
+		.add 34767 -20
+		.add 34767 20
+
+盗贼专用宏
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- 邪恶/截肢/出血:
+
+	::
+
+		#showtooltips
+		/施放 邪恶攻击(等级 12)
+		/stopmacro [noharm]
+		.aura 54499
+		.aura 71554
+		.aura 71554
+		.aura 71554
+		.aura 71554
+		.aura 71554
+		.aura 16857
+		.aura 58683
+		.aura 33983
+		.aura 20185
+
+- 补充: 给自己填充各种常用药水, Buff合剂, 食物, 工程炸弹。
+
+	::
+
+		/target player
+		.add 43231 -20
+		.add 43231 20
+		.add 43233 -20
+		.add 43233 20
+		.add 46377 -20
+		.add 46377 20
+		.add 44330 -20
+		.add 44330 20
+		.add 42995 -20
+		.add 42995 20
+		.add 34757 -20
+		.add 34757 20
+
+
+猎人
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- 冰冻陷阱 + 宠物停止攻击。
+
+	::
+
+		#showtooltips
+		/施放 冰冻陷阱(等级 3)
+		/stopattack
+		/petfollow
+
+- AOE技能绑定。
+
+	::
+
+		#showtooltips
+		/施放 [mod:alt]亂射(等級 6); 爆炸陷阱(等級 6)
+
+- 钉刺技能绑定。
+
+	::
+
+		#showtooltips
+		/施放 [mod:alt]蝮蛇釘刺; 毒蛇釘刺(等級 12)
+
+- 稳固奥射绑定。
+
+	::
+
+		#showtooltips
+		/施放 [mod:alt]穩固射擊(等级 4); 秘法射擊(等級 11)
+
+- 震荡 + 摔绊绑定。
+
+	::
+
+		#showtooltips
+		/施放 [mod:alt]摔绊; 震荡射击
+
+
+- 主打攻击技能 + 沉默射击 + 杀戮命令。
+
+	::
+
+
+
+- 近战。
+
+	::
+
+		#showtooltips
+		/施放 猫鼬撕咬(等级 6)
+		/施放 猛禽一击(等级 11)
+
+- 射击天赋 奇美拉 + 击杀命令 + 沉默射击宏。
+
+	::
+
+		#showtooltips
+		/cast [target=pettarget,exists] 击杀命令
+		/施放 奇美拉射击(等级 1)
+		/施放 沉默射击
+		/stopmacro [noharm]
+		.aura 54499
+		.aura 71554
+		.aura 71554
+		.aura 71554
+		.aura 71554
+		.aura 71554
+		.aura 16857
+		.aura 58683
+		.aura 33983
+		.aura 20186
+
+- 补充: 给自己填充各种常用药水, Buff合剂, 食物, 工程炸弹。
+
+	::
+
+		/target player
+		.add 34766 -20
+		.add 34766 20 攻击强度
+		.add 40211 -20
+		.add 40211 20 速度药水
+		.add 46377 -20
+		.add 46377 20 无尽怒火合剂
+
+- 宠物buff。
+
+	::
+
+		/target turtle
+		.aura 48161
+		.aura 48469
+		.aura 47440
+		.aura 25899
+		.aura 48942
+		.unaura 61688
+		.aura 61688
+		.aura 61688
+		.aura 61688
+		.aura 61688
+		.aura 61688
+
+
+
+牧师
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- 暗言术: 痛/暗言术: 灭
+
+	::
+
+		#showtooltips
+		/cast [mod:alt] 暗言术: 死 (等级 4); 暗言术: 痛 (等级 12)
+		/stopmacro [noharm]
+		.aura 54499
+		.aura 47865
+		.aura 22959
+		.aura 33198
+		.aura 31589
+
+- 精神鞭笞
+
+	::
+
+		#showtooltips
+		/cast 精神鞭笞 (等级 9)
+		/stopmacro [noharm]
+		.aura 54499
+		.aura 47865
+		.aura 22959
+		.aura 33198
+		.aura 31589
+
+- 补充常用药剂食物。
+
+	::
+
+		/target player
+		.add 46376 -20
+		.add 46376 20 冰霜巨龙合剂
+		.add 40211 -20
+		.add 40211 20 速度药水
+		.add 34767 -20
+		.add 34767 20 爆炒鲑鱼
+		.add 46378 -20
+		.add 46378 20 纯净魔精合剂
+		.add 33448 -20
+		.add 33448 20 符文法力药水
+		.add 42993 -20
+		.add 42993 20 香辣油炸青鱼
+		/targetlasttarget
+
+
+其他GM宏命令
+-------------------------------------------------------------------------------
+- 添加NPC: 在玩家所在位置添加NPC, 通常是在地图上增加怪物群。
+
+	::
+
+		/target player
+		.npc add 22313 地心震动者
+
+- 设置NPC移动方式: 将选定NPC的移动方式修改为随机走动。并设置刷新时间为1分钟
+
+	::
+
+		/target 地心震动者
+		.npc set spawndist 20
+		.npc set movetype random
+		.npc set spawntime 60

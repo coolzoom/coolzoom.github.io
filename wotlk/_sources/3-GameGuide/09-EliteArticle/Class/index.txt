@@ -1,0 +1,16 @@
+各职业精华帖
+============
+
+.. toctree::
+	:maxdepth: 1
+
+	战士区 <Warrior/index.rst>
+	圣骑士区 <Paladin/index.rst>
+	死亡骑士区 <DeathKnight/index.rst>
+	猎人区 <Hunter/index.rst>
+	萨满区 <Shaman/index.rst>
+	盗贼区 <Rogue/index.rst>
+	德鲁伊区 <Druid/index.rst>
+	法师区 <Mage/index.rst>
+	牧师区 <Presis/index.rst>
+	术士区 <Warlock/index.rst>

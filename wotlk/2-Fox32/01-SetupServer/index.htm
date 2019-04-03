@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>搭建Fox-3.2端服务器 &mdash; wowWlkPrivateServerManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="..\..\_static\nature.css" type="text/css">
+    <link rel="stylesheet" href="..\..\_static\pygments.css" type="text/css">
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="..\..\_static\jquery.js"></script>
+    <script type="text/javascript" src="..\..\_static\underscore.js"></script>
+    <script type="text/javascript" src="..\..\_static\doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="wowWlkPrivateServerManual 0.0.1 documentation" href="..\..\index.htm">
+    <link rel="up" title="玩Fox3.2端的参考资料(Fox-3.2 Reference)" href="..\index.htm">
+    <link rel="next" title="GM命令(GM Command)" href="..\02-GMCommand\index.htm">
+    <link rel="prev" title="玩Fox3.2端的参考资料(Fox-3.2 Reference)" href="..\index.htm"> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="..\02-GMCommand\index.htm" title="GM命令(GM Command)" accesskey="N">next</a> |</li>
+        <li class="right">
+          <a href="..\index.htm" title="玩Fox3.2端的参考资料(Fox-3.2 Reference)" accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm" accesskey="U">玩Fox3.2端的参考资料(Fox-3.2 Reference)</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="fox-3-2">
+<span id="setupserver"></span><h1>搭建Fox-3.2端服务器<a class="headerlink" href="#fox-3-2" title="Permalink to this headline">¶</a></h1>
+<p>所需要的文件:</p>
+<ul class="simple">
+<li>Fox3.2服务端主程序: Fox-3.2.zip</li>
+<li>地图文件: <code class="docutils literal"><span class="pre">dbc.zip</span></code>, <code class="docutils literal"><span class="pre">maps.zip</span></code>, <code class="docutils literal"><span class="pre">mmaps.zip</span></code>, <code class="docutils literal"><span class="pre">vmaps.zip</span></code></li>
+</ul>
+<ol class="arabic">
+<li><p class="first">解压 <code class="docutils literal"><span class="pre">Fox-3.2.zip</span></code> 到全英文路径目录下, 例如: <code class="docutils literal"><span class="pre">C:\xxx\Fox-3.2</span></code>。解压后Fox-3.2的目录结构是这个样子的:</p>
+<blockquote>
+<div><div class="highlight-console"><div class="highlight"><pre><span class="go">Fox-3.2</span>
+<span class="go">|--- Release</span>
+<span class="go">|--- Server</span>
+<span class="go">|--- RunServer.exe</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">解压所有地图文件 <code class="docutils literal"><span class="pre">dbc.zip</span></code>, <code class="docutils literal"><span class="pre">maps.zip</span></code>, <code class="docutils literal"><span class="pre">mmaps.zip</span></code>, <code class="docutils literal"><span class="pre">vmaps.zip</span></code> 到 <code class="docutils literal"><span class="pre">Fox-3.2/Release</span></code> 目录下, 解压后看起来是这个样子:</p>
+<blockquote>
+<div><div class="highlight-console"><div class="highlight"><pre><span class="go">Fox-3.2</span>
+<span class="go">|--- Release</span>
+<span class="go">        |--- dbc</span>
+<span class="go">        |--- maps</span>
+<span class="go">        |--- mmaps</span>
+<span class="go">        |--- vmaps</span>
+</pre></div>
+</div>
+<p>有了这些地图文件, 地图渲染引擎才能正确实现视野遮挡(防止怪物穿墙), 位移技能计算(例如法师的闪现等)。注意, 在打某些剧情时, 例如ICC冰龙时, 需要关闭Vmaps的所有相关设置, 才能让冰龙成功落地。这个就需要玩家自己去摸索了。</p>
+</div></blockquote>
+</li>
+<li><p class="first">为启动器 <code class="docutils literal"><span class="pre">RunServer.exe</span></code> 设置 <code class="docutils literal"><span class="pre">Server</span> <span class="pre">Path</span></code>, <code class="docutils literal"><span class="pre">MySQL</span> <span class="pre">Path</span></code>, <code class="docutils literal"><span class="pre">Apache</span> <span class="pre">Path</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre>Server Path = FOX-3.2\Release
+MySQL Path = FOX-3.2\Server\Apache\bin
+Apache Path = FOX-3.2\Server\Mysql\MySQL\bin
+</pre></div>
+</div>
+</li>
+<li><p class="first">启动服务器:: 先运行 <code class="docutils literal"><span class="pre">MySql</span> <span class="pre">Server</span></code> 和 <code class="docutils literal"><span class="pre">Apache</span> <span class="pre">Server</span></code> 两者不分先后, 再运行 <code class="docutils literal"><span class="pre">Auth</span> <span class="pre">Server</span></code> 最后运行 <code class="docutils literal"><span class="pre">World</span> <span class="pre">Server</span></code>。</p>
+</li>
+</ol>
+<p id="account">附录:</p>
+<ul class="simple">
+<li>数据库账号: {&#8220;username&#8221;: &#8220;root&#8221;, &#8220;password&#8221;: &#8220;fox888&#8221;}</li>
+<li>默认GM账号密码: {&#8220;username&#8221;: &#8220;admin&#8221;, &#8220;password&#8221;: &#8220;admin&#8221;}</li>
+</ul>
+<div class="section" id="gm">
+<h2>如何将账号权限提高到GM<a class="headerlink" href="#gm" title="Permalink to this headline">¶</a></h2>
+<p>为了防止黑客的入侵, 修改数据库已经无法使自己变成GM了。了变成Gm，需要在worldserver console里输入命令行: <code class="docutils literal"><span class="pre">.account</span> <span class="pre">set</span> <span class="pre">gmlevel</span> <span class="pre">&lt;account_name&gt;</span> <span class="pre">&lt;gmlevel&gt;</span> <span class="pre">&lt;realm_id&gt;</span></code>。</p>
+<ul class="simple">
+<li>realm_id是服务器的映射, -1代表所有服务器。这个可以在 <code class="docutils literal"><span class="pre">account_access</span></code> 表里查到。</li>
+<li>gmlevel是GM等级, 只有0, 1, 2, 3, 最高权限是3</li>
+</ul>
+<p>比如玩家账号名是 <code class="docutils literal"><span class="pre">cat</span></code>, 那么命令就是 <code class="docutils literal"><span class="pre">.account</span> <span class="pre">set</span> <span class="pre">gmlevel</span> <span class="pre">cat</span> <span class="pre">3</span> <span class="pre">-1</span></code></p>
+<p><a href="#id1"><span class="problematic" id="id2">**</span></a>注意: 一定不要再数据库里面改, 如果不小心改了, 删除条目之后再在控制台改就好。</p>
+</div>
+<div class="section" id="id3">
+<h2>如何开外网<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>问题的核心在于如何获得你的public IP address。通常使用家用网络时, 你是无法获得public IP的。这时我们通常需要使用VPN的软件, 和外网玩家建立连接。一旦玩家连入VPN, 就可以使用局域网IP地址登陆游戏了。当然, 需要修改 <code class="docutils literal"><span class="pre">auth/realmlist</span></code> 中的 <code class="docutils literal"><span class="pre">address</span></code> 一栏为你的局域网IP地址。</p>
+<p>目前知道的免费VPN软件有: <a class="reference external" href="http://www.bizvnn.cn">http://www.bizvnn.cn</a>，根据自己的系统下载64位或者32</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="..\..\index.htm">
+              <img class="logo" src="..\..\_static\WowWlkPrivateServerManual.jpg" alt="Logo">
+            </a></p>
+  <h3><a href="..\..\index.htm">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">搭建Fox-3.2端服务器</a><ul>
+<li><a class="reference internal" href="#gm">如何将账号权限提高到GM</a></li>
+<li><a class="reference internal" href="#id3">如何开外网</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="..\index.htm" title="previous chapter">玩Fox3.2端的参考资料(Fox-3.2 Reference)</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="..\02-GMCommand\index.htm" title="next chapter">GM命令(GM Command)</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="..\..\_sources\2-Fox32\01-SetupServer\index.txt" rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q">
+      <input type="submit" value="Go">
+      <input type="hidden" name="check_keywords" value="yes">
+      <input type="hidden" name="area" value="default">
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index">index</a></li>
+        <li class="right">
+          <a href="..\02-GMCommand\index.htm" title="GM命令(GM Command)">next</a> |</li>
+        <li class="right">
+          <a href="..\index.htm" title="玩Fox3.2端的参考资料(Fox-3.2 Reference)">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm">玩Fox3.2端的参考资料(Fox-3.2 Reference)</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, MacHuGWU.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

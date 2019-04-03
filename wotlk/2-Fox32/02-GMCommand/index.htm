@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>GM命令(GM Command) &mdash; wowWlkPrivateServerManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="..\..\_static\nature.css" type="text/css">
+    <link rel="stylesheet" href="..\..\_static\pygments.css" type="text/css">
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="..\..\_static\jquery.js"></script>
+    <script type="text/javascript" src="..\..\_static\underscore.js"></script>
+    <script type="text/javascript" src="..\..\_static\doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="wowWlkPrivateServerManual 0.0.1 documentation" href="..\..\index.htm">
+    <link rel="up" title="玩Fox3.2端的参考资料(Fox-3.2 Reference)" href="..\index.htm">
+    <link rel="next" title="宏命令指南(Macro)" href="..\03-Macro\index.htm">
+    <link rel="prev" title="搭建Fox-3.2端服务器" href="..\01-SetupServer\index.htm"> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="..\03-Macro\index.htm" title="宏命令指南(Macro)" accesskey="N">next</a> |</li>
+        <li class="right">
+          <a href="..\01-SetupServer\index.htm" title="搭建Fox-3.2端服务器" accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm" accesskey="U">玩Fox3.2端的参考资料(Fox-3.2 Reference)</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="gm-gm-command">
+<span id="gmcommand"></span><h1>GM命令(GM Command)<a class="headerlink" href="#gm-gm-command" title="Permalink to this headline">¶</a></h1>
+<img alt="../../_images/GM.png" src="..\..\_images\GM.png">
+<div class="section" id="add">
+<h2>add添加命令<a class="headerlink" href="#add" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">.add</span> <span class="pre">&lt;item_id&gt;</span> <span class="pre">&lt;amount&gt;</span></code>: 添加xx个xx物品给当前选中的角色, 可以使用负数的amount删除物品, 请注意, 玩家身上已装备的物品和已装备的背包也会被删除, 但银行里的物品不会被删除。</li>
+<li><code class="docutils literal"><span class="pre">.additem</span> <span class="pre">&lt;item_id&gt;</span> <span class="pre">&lt;amount&gt;</span></code>: 和 <code class="docutils literal"><span class="pre">.add</span></code> 相同</li>
+<li><code class="docutils literal"><span class="pre">.additemset</span> <span class="pre">&lt;itemset_id&gt;</span></code>: 添加一个套装的所有物品给当前选中的角色。注意, 当一个套装的物品有多个物品等级版本时, 例如T10有三个版本, 该命令会一次性添加全部3个版本的15件装备。下面的例子是添加法师T2灵风套装:</li>
+</ul>
+</div>
+<div class="section" id="modify">
+<h2>modify修改命令<a class="headerlink" href="#modify" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">.modify</span> <span class="pre">money</span> <span class="pre">money</span> <span class="pre">&lt;amount&gt;</span></code>: 添加&lt;amount&gt;个铜币, 值可以是负数。</li>
+</ul>
+<p>以下命令见文生意:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">.modify</span> <span class="pre">hp</span> <span class="pre">&lt;value&gt;</span></code>:</li>
+<li><code class="docutils literal"><span class="pre">.modify</span> <span class="pre">mana</span> <span class="pre">&lt;value&gt;</span></code>:</li>
+<li><code class="docutils literal"><span class="pre">.modify</span> <span class="pre">rage</span> <span class="pre">&lt;value&gt;</span></code>:</li>
+<li><code class="docutils literal"><span class="pre">.modify</span> <span class="pre">energy</span> <span class="pre">&lt;value&gt;</span></code>:</li>
+<li><code class="docutils literal"><span class="pre">.modify</span> <span class="pre">runicpower</span> <span class="pre">&lt;value&gt;</span></code>:</li>
+<li><code class="docutils literal"><span class="pre">.modify</span> <span class="pre">speed</span> <span class="pre">&lt;value&gt;</span></code>:</li>
+<li><code class="docutils literal"><span class="pre">.modify</span> <span class="pre">faction</span> <span class="pre">&lt;value&gt;</span></code>:</li>
+<li><code class="docutils literal"><span class="pre">.modify</span> <span class="pre">reputation</span> <span class="pre">&lt;value&gt;</span></code>:</li>
+<li><code class="docutils literal"><span class="pre">.modify</span> <span class="pre">honor</span> <span class="pre">&lt;value&gt;</span></code>:</li>
+<li><code class="docutils literal"><span class="pre">.modify</span> <span class="pre">arenapoints</span> <span class="pre">&lt;value&gt;</span></code>:</li>
+<li><code class="docutils literal"><span class="pre">.modify</span> <span class="pre">drunk</span> <span class="pre">&lt;value&gt;</span></code>:</li>
+<li><code class="docutils literal"><span class="pre">.modify</span> <span class="pre">talentpoints</span> <span class="pre">&lt;amount&gt;</span></code>:</li>
+</ul>
+</div>
+<div class="section" id="lookup">
+<h2>lookup查找命令<a class="headerlink" href="#lookup" title="Permalink to this headline">¶</a></h2>
+<p>在Fox3.2 WLK端下, <code class="docutils literal"><span class="pre">.lookup</span></code> 命令的语法特殊说明一览:</p>
+<ul>
+<li><p class="first"><code class="docutils literal"><span class="pre">.lookup</span> <span class="pre">item</span> <span class="pre">&lt;item_name&gt;</span></code>: 返回所有名称中含有&lt;item_name&gt;的物品, Fox3.2端支持简体中文。例如搜索逐风者的祝福之剑:</p>
+<div class="highlight-python"><div class="highlight"><pre>.lookup item 逐风者
+</pre></div>
+</div>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">.lookup</span> <span class="pre">creature</span> <span class="pre">&lt;creature_name&gt;</span></code>: 返回所有名称中含有&lt;creature_name&gt;的NPC和怪物, Fox3.2端支持简体中文。例如搜索巫妖王:</p>
+<div class="highlight-python"><div class="highlight"><pre>.lookup creature 巫妖王
+</pre></div>
+</div>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">.lookup</span> <span class="pre">object</span> <span class="pre">&lt;object_name&gt;</span></code>: 返回所有名称中含有&lt;object_name&gt;的物体和对象, 例如矿石, 草药, 宝箱, 机关等, Fox3.2端支持简体中文。例如搜索瑟银矿脉:</p>
+<div class="highlight-python"><div class="highlight"><pre>.lookup object 瑟银
+</pre></div>
+</div>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">.lookup</span> <span class="pre">spell</span> <span class="pre">&lt;spell_name&gt;</span></code>: 返回所有名称中含有&lt;spell_name&gt;的法术和技能, Fox3.2端支持英文, 因为源数据是从spell.dbc文件中读取的。例如搜索火焰冲击技能:</p>
+<div class="highlight-python"><div class="highlight"><pre>.lookup spell fire blast
+</pre></div>
+</div>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">.lookup</span> <span class="pre">spell</span> <span class="pre">&lt;skill_name&gt;</span></code>: 返回所有名称中含有&lt;skill_name&gt;的专业技能和武器技能, Fox3.2端支持英文。例如搜索挖矿技能:</p>
+<div class="highlight-python"><div class="highlight"><pre>.lookup spell mining
+</pre></div>
+</div>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">.lookup</span> <span class="pre">quest</span> <span class="pre">&lt;quest_name&gt;</span></code>: 返回所有名称中含有&lt;quest_name&gt;的任务ID, <strong>注意, 该命令在Fox-3.2端中会造成服务端崩溃重启, 请不要使用</strong></p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">.lookup</span> <span class="pre">faction</span> <span class="pre">&lt;faction_name&gt;</span></code>:  返回所有名称中含有&lt;faction_name&gt;的阵营ID。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="go">
+<h2>go传送命令<a class="headerlink" href="#go" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">.go</span> <span class="pre">&lt;x&gt;</span> <span class="pre">&lt;y&gt;</span> <span class="pre">&lt;z&gt;</span> <span class="pre">&lt;map_id&gt;</span></code>: 前往坐标所在</li>
+<li><code class="docutils literal"><span class="pre">.go</span> <span class="pre">creature</span> <span class="pre">&lt;creature_id&gt;</span></code>: 前往&lt;creature_id&gt;所在的坐标, 通常用于先使用 <code class="docutils literal"><span class="pre">.lookup</span> <span class="pre">creature</span> <span class="pre">&lt;creature_name&gt;</span></code> 查找某个NPC, 然后再直接前往该NPC的位置。</li>
+<li><code class="docutils literal"><span class="pre">.go</span> <span class="pre">object</span> <span class="pre">&lt;object_id&gt;</span></code>: 前往&lt;object_id&gt;所在的坐标, 通常用于先使用 <code class="docutils literal"><span class="pre">.lookup</span> <span class="pre">object</span> <span class="pre">&lt;object_name&gt;</span></code> 查找某个对象, 然后再直接前往该对象的位置。</li>
+</ul>
+</div>
+<div class="section" id="npcnpc">
+<h2>npc怪物和NPC命令<a class="headerlink" href="#npcnpc" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first"><code class="docutils literal"><span class="pre">.npc</span> <span class="pre">info</span></code>: 查询当前选定NPC的详细信息</p>
+<blockquote>
+<div><ul class="simple">
+<li>GUID是当前这个生物的全局ID, 可以根据GUID定位到具体大陆上的某个NPC, 同一个NPC可以在服务器上出现在多个地点, 但GUID是唯一的</li>
+<li>DisplayID是这个生物的 <code class="docutils literal"><span class="pre">creature_template</span></code> 表中的ID。<code class="docutils literal"><span class="pre">.npc</span> <span class="pre">add</span> <span class="pre">&lt;creature_template_id&gt;</span></code> 命令中使用的就是DisplayID</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">.npc</span> <span class="pre">add</span> <span class="pre">&lt;creature_template_id&gt;</span></code>: 在当前所选中的目标位置处创建一个NPC</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">.npc</span> <span class="pre">delete</span></code>: 删除当前所选中的NPC</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">.npc</span> <span class="pre">set</span> <span class="pre">movetype</span> <span class="pre">&lt;type&gt;</span></code>: 设置怪物行走模式。有效的&lt;type&gt;有: random(随机走动), stay(停留), way(设定的路线)</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">.npc</span> <span class="pre">set</span> <span class="pre">spawndist</span> <span class="pre">&lt;value&gt;</span></code>: 设置随机走动半径。&lt;value&gt;是Npc随机走动和随机刷新的半径范围</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">.npc</span> <span class="pre">set</span> <span class="pre">spawntime</span> <span class="pre">&lt;value&gt;</span></code>: 设置尸体小时后Npc再次刷新所需时间。&lt;value&gt;的单位是秒</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">.npc</span> <span class="pre">add</span> <span class="pre">item</span> <span class="pre">&lt;item_id&gt;</span> <span class="pre">&lt;max_count&gt;</span> <span class="pre">&lt;incrtime&gt;</span> <span class="pre">&lt;extendedcost&gt;</span></code>: 如果npc是商人, 则给销售列表中添加&lt;item_id&gt;的物品, 最大持有数量为&lt;max_count&gt;, 再次补充一个该物品的所需时间&lt;incrtime&gt;。根据&lt;extendedcost&gt;中的定义, 启动以物换物的兑换脚本。例如拿已有的太阳井高地副本的装备加太阳井高地副本中的道具找日岛上的NPC升级装备</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">.npc</span> <span class="pre">delete</span> <span class="pre">item</span> <span class="pre">&lt;item_id&gt;</span></code>: 如果npc是商人, 则从销售列表中删除#itemID的物品</p>
+</li>
+</ul>
+</div>
+<div class="section" id="quest">
+<h2>quest任务命令<a class="headerlink" href="#quest" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">quest</span> <span class="pre">add</span> <span class="pre">&lt;quest_id&gt;</span></code>: 为当前选中目标添加一个任务</li>
+<li><code class="docutils literal"><span class="pre">quest</span> <span class="pre">complete</span> <span class="pre">&lt;quest_id&gt;</span></code>: 完成当前选中目标已有的某个任务, 如果还没有接则没有效果</li>
+<li><code class="docutils literal"><span class="pre">quest</span> <span class="pre">remove</span> <span class="pre">&lt;quest_id&gt;</span></code>: 移除当前选中目标已有的某个任务</li>
+<li><code class="docutils literal"><span class="pre">quest</span> <span class="pre">reward</span> <span class="pre">&lt;quest_id&gt;</span></code>: 给玩家一个任务奖励, <strong>注意, 该命令在Fox3.2端中会使服务器崩溃</strong></li>
+</ul>
+</div>
+<div class="section" id="gobject">
+<h2>gobject游戏对象命令<a class="headerlink" href="#gobject" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">.gobject</span> <span class="pre">activate</span> <span class="pre">&lt;guid&gt;</span></code>: 激活/启动一个object, 与之进行互动</li>
+<li><code class="docutils literal"><span class="pre">.gobject</span> <span class="pre">info</span></code>: 查询选中的object的信息, 或是使用 <code class="docutils literal"><span class="pre">.gobject</span> <span class="pre">info</span> <span class="pre">&lt;object_id&gt;</span></code> 查询详细信息</li>
+<li><code class="docutils literal"><span class="pre">.gobject</span> <span class="pre">near</span></code>: 返回附近的object的ID和内容信息, <strong>注意! 该命令会导致Fox3.2服务器崩溃</strong></li>
+<li><code class="docutils literal"><span class="pre">.gobject</span> <span class="pre">add</span> <span class="pre">&lt;object_id&gt;</span></code>: 在选中的目标处添加一个object, 常用于添加草药, 矿石等。</li>
+<li><code class="docutils literal"><span class="pre">.gobject</span> <span class="pre">delete</span> <span class="pre">&lt;object_guid&gt;:</span> <span class="pre">删除</span> <span class="pre">``object_guid</span></code> 对应的object。</li>
+</ul>
+<p>注意：每一个id对应着一个目标，比如铁矿。但是地图上有很多铁矿，所以每一个铁矿都有一个guid（全局唯一标识符）。添加的时候，当然是按照id添加。删除则是按照guid删除
+- <code class="docutils literal"><span class="pre">.gobject</span> <span class="pre">target</span></code>: 显示最近的一个object的名字和ID, 例如选中的铁矿床, 草药, 或是机关, 常用于用该命令找到附近看不见的门的GUID, 然后再使用 <code class="docutils literal"><span class="pre">.gobject</span> <span class="pre">activate</span> <span class="pre">&lt;guid&gt;</span></code> 打开这个门或机关。<strong>非常重要的命令</strong></p>
+</div>
+<div class="section" id="learn">
+<h2>learn学习命令<a class="headerlink" href="#learn" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="reset">
+<h2>reset重置命令<a class="headerlink" href="#reset" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">.reset</span> <span class="pre">achievements</span></code>: 重置所有成就</li>
+<li><code class="docutils literal"><span class="pre">.reset</span> <span class="pre">all</span></code>: 重置所有法术和天赋到初始状态, 相当于 <code class="docutils literal"><span class="pre">.reset</span> <span class="pre">spells</span></code> + <code class="docutils literal"><span class="pre">.reset</span> <span class="pre">talents</span></code>.</li>
+<li><code class="docutils literal"><span class="pre">.reset</span> <span class="pre">honor</span></code>: 重置荣誉</li>
+<li><code class="docutils literal"><span class="pre">.reset</span> <span class="pre">level</span></code>: 重置等级到1级, 如果身上装备了需求装备等级超过1级的装备, 会全部丢失</li>
+<li><code class="docutils literal"><span class="pre">.reset</span> <span class="pre">spells</span></code>: 重置法术技能</li>
+<li><code class="docutils literal"><span class="pre">.reset</span> <span class="pre">stats</span></code>: 重置属性点</li>
+<li><code class="docutils literal"><span class="pre">.reset</span> <span class="pre">talents</span></code>: 重置天赋</li>
+</ul>
+</div>
+<div class="section" id="aura">
+<h2>aura命令<a class="headerlink" href="#aura" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">.aura</span> <span class="pre">&lt;spell_id&gt;</span></code>: 给当前目标赋予一个魔法效果(可以是Buff, 也可以是Debuff, 光环效果在小退后消失)</li>
+<li><code class="docutils literal"><span class="pre">.unaura</span> <span class="pre">&lt;spell_id&gt;</span></code>: 取消当前目标身上的某一魔法效果。</li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h2>其他命令<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">.gps</span></code>: 查询当前选择的目标的坐标</li>
+<li><code class="docutils literal"><span class="pre">.revive</span></code>: 复活当前玩家。如果自己已经死亡了, 则需要使用 <code class="docutils literal"><span class="pre">/g</span> <span class="pre">.revive</span></code></li>
+<li><code class="docutils literal"><span class="pre">.wchange</span> <span class="pre">&lt;type&gt;</span> <span class="pre">&lt;status&gt;</span></code>: 改变当前天气设置, type = {0: 晴天, 1: 下雨, 2: 下雪, 3: 沙尘暴}, status = {0: 禁止, 1: 允许}</li>
+<li><code class="docutils literal"><span class="pre">.respawn</span></code>: 瞬间刷新周围的npc和object, 需要在不选中任何目标的情况下使用。可以用来刷新NPC, 怪物, 副本怪物和Boss, 还有机关, 矿石, 草药等。</li>
+<li><code class="docutils literal"><span class="pre">.instance</span> <span class="pre">unbind</span> <span class="pre">all</span></code>: 重置所有副本。</li>
+<li><code class="docutils literal"><span class="pre">.bank</span></code>: 打开银行。</li>
+<li><code class="docutils literal"><span class="pre">.cooldown</span></code>: 重置选中目标的所有技能Cooldown, 包括专业技能。</li>
+<li><code class="docutils literal"><span class="pre">.cheat</span> <span class="pre">taxi</span> <span class="pre">on/off</span></code> 激活所有飞行点。</li>
+<li><code class="docutils literal"><span class="pre">.die</span></code>: 杀死目标。</li>
+<li><code class="docutils literal"><span class="pre">.levelup</span> <span class="pre">&lt;number&gt;</span></code>: 增加或减少等级, 当number为负数时是降级。</li>
+<li><code class="docutils literal"><span class="pre">.maxskill</span></code>: 所有武器和防御技能全满(对专业技能无效), 等效于 <code class="docutils literal"><span class="pre">.max</span></code>。</li>
+<li><code class="docutils literal"><span class="pre">.setskill</span> <span class="pre">&lt;skill_id&gt;</span> <span class="pre">&lt;number&gt;</span></code>: 设定某个生活技能或专业技能到某个数。</li>
+</ul>
+<div class="section" id="id2">
+<h3>附录<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="..\..\index.htm">
+              <img class="logo" src="..\..\_static\WowWlkPrivateServerManual.jpg" alt="Logo">
+            </a></p>
+  <h3><a href="..\..\index.htm">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">GM命令(GM Command)</a><ul>
+<li><a class="reference internal" href="#add">add添加命令</a></li>
+<li><a class="reference internal" href="#modify">modify修改命令</a></li>
+<li><a class="reference internal" href="#lookup">lookup查找命令</a></li>
+<li><a class="reference internal" href="#go">go传送命令</a></li>
+<li><a class="reference internal" href="#npcnpc">npc怪物和NPC命令</a></li>
+<li><a class="reference internal" href="#quest">quest任务命令</a></li>
+<li><a class="reference internal" href="#gobject">gobject游戏对象命令</a></li>
+<li><a class="reference internal" href="#learn">learn学习命令</a></li>
+<li><a class="reference internal" href="#reset">reset重置命令</a></li>
+<li><a class="reference internal" href="#aura">aura命令</a></li>
+<li><a class="reference internal" href="#id1">其他命令</a><ul>
+<li><a class="reference internal" href="#id2">附录</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="..\01-SetupServer\index.htm" title="previous chapter">搭建Fox-3.2端服务器</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="..\03-Macro\index.htm" title="next chapter">宏命令指南(Macro)</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="..\..\_sources\2-Fox32\02-GMCommand\index.txt" rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q">
+      <input type="submit" value="Go">
+      <input type="hidden" name="check_keywords" value="yes">
+      <input type="hidden" name="area" value="default">
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index">index</a></li>
+        <li class="right">
+          <a href="..\03-Macro\index.htm" title="宏命令指南(Macro)">next</a> |</li>
+        <li class="right">
+          <a href="..\01-SetupServer\index.htm" title="搭建Fox-3.2端服务器">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm">玩Fox3.2端的参考资料(Fox-3.2 Reference)</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, MacHuGWU.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

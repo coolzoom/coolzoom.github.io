@@ -1,0 +1,18 @@
+单机修改手册(Customize Guide)
+===============================================================================
+
+本章主要给出了巫妖王之怒单机版中, 常用于单机修改或GM命令中的各项代码。在各巫妖王之怒的服务端中通用。
+
+.. toctree::
+	:maxdepth: 1
+
+	传送点坐标汇总(Teleport) <01-Teleport/index.rst>
+	药剂和食物(Elixir And Food) <02-ElixirAndFood/index.rst>
+	职业技能代码(Class Spell) <03-ClassSpell/index.rst>
+	职业天赋代码(Talent Spell) <04-Talent/index.rst>
+	种族天赋技能(Racial Trait Spell ID) <05-RacialTraitSpellID/index.rst>
+	武器和防具技能代码(Weapon and Armor Spell ID) <06-WeaponAndArmorSpellID/index.rst>
+	商业和生活技能代码(Trade and Living Skill ID) <07-TradeAndLivingSkillID/index.rst>
+	声望修改(Faction) <08-Faction/index.rst>
+	坐骑(Mount) <09-Mount/index.rst>
+	装备属性的代码(Stats ID) <10-Stats/index.rst>

@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>如何寻找想要的物品(Find Item) &mdash; wowWlkPrivateServerManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="..\..\_static\nature.css" type="text/css">
+    <link rel="stylesheet" href="..\..\_static\pygments.css" type="text/css">
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="..\..\_static\jquery.js"></script>
+    <script type="text/javascript" src="..\..\_static\underscore.js"></script>
+    <script type="text/javascript" src="..\..\_static\doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="wowWlkPrivateServerManual 0.0.1 documentation" href="..\..\index.htm">
+    <link rel="up" title="玩Fox3.2端的参考资料(Fox-3.2 Reference)" href="..\index.htm">
+    <link rel="next" title="WowItemMaker装备修改软件介绍" href="..\08-WowItemMaker\index.htm">
+    <link rel="prev" title="键位设置(Keybinding)" href="..\06-KeyBinding\index.htm"> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="..\08-WowItemMaker\index.htm" title="WowItemMaker装备修改软件介绍" accesskey="N">next</a> |</li>
+        <li class="right">
+          <a href="..\06-KeyBinding\index.htm" title="键位设置(Keybinding)" accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm" accesskey="U">玩Fox3.2端的参考资料(Fox-3.2 Reference)</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="find-item">
+<span id="finditem"></span><h1>如何寻找想要的物品(Find Item)<a class="headerlink" href="#find-item" title="Permalink to this headline">¶</a></h1>
+<p>总之, 善用Altasloot和ItemDB这两个插件</p>
+<div class="section" id="id1">
+<h2>副本掉落装备<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>方法1: 打开Altaloots插件, 在副本内进行搜索(推荐)</li>
+<li>方法2: 打开ItemDB插件, 根据等级, 名称, 类别, 品质等进行搜索。需要加载对应客户端版本的缓存文件。</li>
+<li>方法3: 直接用命令.lookup item搜索。或者用navicat连接数据库, 打开item_template表格查询</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>商业技能物品<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>如果要直接使用某些专业技能的成品, 对装备或者角色进行强化, 我们可以利用Altasloot这个插件中进行查找。</p>
+<ol class="arabic simple">
+<li>首先打开Altaloots插件设置选项, 勾选 <code class="docutils literal"><span class="pre">显示物品ID</span></code>, 交易技能呈现方式 <code class="docutils literal"><span class="pre">制成品</span></code>。</li>
+<li>Altasloot =&gt; 交易技能物品 =&gt; 专业技能 菜单下面找到所需的制成品。</li>
+</ol>
+<p>附魔专业比较特殊, 有两种方法, 比较推荐第一种。</p>
+<ol class="arabic simple">
+<li>在ItemDB插件中, 选择 <code class="docutils literal"><span class="pre">消耗品</span></code> -&gt; <code class="docutils literal"><span class="pre">物品附魔</span></code> 一项, 即可找到自己需要的附魔卷轴的item_id。</li>
+<li>比如给胸甲附魔, 则搜索 <code class="docutils literal"><span class="pre">.lookup</span> <span class="pre">item</span> <span class="pre">卷轴:</span> <span class="pre">附魔胸甲</span></code>, 用附魔卷轴的方式进行附魔。</li>
+<li>通过搜索 <code class="docutils literal"><span class="pre">.lookup</span> <span class="pre">spell</span> <span class="pre">附魔胸甲</span></code>, 然后.learn 技能id, 使用技能给自己附魔。但这样做会给角色添加了很多本不该存在在面板中的技能, <strong>非常不推荐这么做</strong></li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h2>声望奖励物品<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>打开 Altasloots =&gt; 阵营 即可自行浏览查找。</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="..\..\index.htm">
+              <img class="logo" src="..\..\_static\WowWlkPrivateServerManual.jpg" alt="Logo">
+            </a></p>
+  <h3><a href="..\..\index.htm">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">如何寻找想要的物品(Find Item)</a><ul>
+<li><a class="reference internal" href="#id1">副本掉落装备</a></li>
+<li><a class="reference internal" href="#id2">商业技能物品</a></li>
+<li><a class="reference internal" href="#id3">声望奖励物品</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="..\06-KeyBinding\index.htm" title="previous chapter">键位设置(Keybinding)</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="..\08-WowItemMaker\index.htm" title="next chapter">WowItemMaker装备修改软件介绍</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="..\..\_sources\2-Fox32\07-FindItem\index.txt" rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q">
+      <input type="submit" value="Go">
+      <input type="hidden" name="check_keywords" value="yes">
+      <input type="hidden" name="area" value="default">
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index">index</a></li>
+        <li class="right">
+          <a href="..\08-WowItemMaker\index.htm" title="WowItemMaker装备修改软件介绍">next</a> |</li>
+        <li class="right">
+          <a href="..\06-KeyBinding\index.htm" title="键位设置(Keybinding)">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm">玩Fox3.2端的参考资料(Fox-3.2 Reference)</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, MacHuGWU.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

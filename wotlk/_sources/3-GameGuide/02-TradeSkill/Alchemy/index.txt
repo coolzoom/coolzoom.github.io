@@ -1,0 +1,10 @@
+炼金术 (Alchemy)
+================
+
+.. toctree::
+	:maxdepth: 1
+
+	Alchemy-1-to-375 <Alchemy-1-to-375.rst>
+	Alchemy-375-to-450 <Alchemy-375-to-450.rst>
+	Alchemy-专精选择方法攻略 <Alchemy-专精选择方法攻略.rst>
+	Alchemy-防护药水配方出处 <Alchemy-防护药水配方出处.rst>

@@ -1,0 +1,10 @@
+.. _OriginFraction:
+
+经典旧世
+========
+
+.. toctree::
+	:maxdepth: 1
+
+	cenarion-circle 塞纳里奥议会 <cenarion-circle.rst>
+	thorium-brotherhood 瑟银兄弟会 <thorium-brotherhood.rst>

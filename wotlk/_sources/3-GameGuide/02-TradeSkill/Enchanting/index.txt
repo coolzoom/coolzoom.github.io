@@ -1,0 +1,9 @@
+附魔 (Enchanting)
+=================
+
+.. toctree::
+	:maxdepth: 1
+
+	Enchanting-1-to-300 <Enchanting-1-to-300.rst>
+	Enchanting-1-to-375 <Enchanting-1-to-375.rst>
+	Enchanting-1-to-450 <Enchanting-1-to-450.rst>

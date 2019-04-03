@@ -1,0 +1,2497 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>坐骑(Mount) &mdash; wowWlkPrivateServerManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="..\..\_static\nature.css" type="text/css">
+    <link rel="stylesheet" href="..\..\_static\pygments.css" type="text/css">
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="..\..\_static\jquery.js"></script>
+    <script type="text/javascript" src="..\..\_static\underscore.js"></script>
+    <script type="text/javascript" src="..\..\_static\doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="wowWlkPrivateServerManual 0.0.1 documentation" href="..\..\index.htm">
+    <link rel="up" title="单机修改手册(Customize Guide)" href="..\index.htm">
+    <link rel="next" title="装备属性的代码(Stats ID)" href="..\10-Stats\index.htm">
+    <link rel="prev" title="声望修改(Faction)" href="..\08-Faction\index.htm"> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="..\10-Stats\index.htm" title="装备属性的代码(Stats ID)" accesskey="N">next</a> |</li>
+        <li class="right">
+          <a href="..\08-Faction\index.htm" title="声望修改(Faction)" accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm" accesskey="U">单机修改手册(Customize Guide)</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="mount">
+<span id="id1"></span><h1>坐骑(Mount)<a class="headerlink" href="#mount" title="Permalink to this headline">¶</a></h1>
+<img alt="../../_images/Horse.png" src="..\..\_images\Horse.png">
+<img alt="../../_images/Wolf.png" src="..\..\_images\Wolf.png">
+<p>其他坐骑请在ItemDB插件中的 <code class="docutils literal"><span class="pre">杂项\坐骑(Miscellaneous\Mounts)</span></code> 分类中查询。或者在AtlasLoots插件面板中的 <code class="docutils literal"><span class="pre">套装/特殊物品</span></code> -&gt; <code class="docutils literal"><span class="pre">坐骑</span></code> 中查看。查看到了想要的坐骑后用 <code class="docutils literal"><span class="pre">.add</span> <span class="pre">&lt;item_id&gt;</span></code> 添加。</p>
+<table border="1" class="docutils" id="id2">
+<caption><span class="caption-text">巫妖王之怒全坐骑一览表</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="15%">
+<col width="15%">
+<col width="31%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="15%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">AddItem</th>
+<th class="head">Name</th>
+<th class="head">Description</th>
+<th class="head">Quality</th>
+<th class="head">RequiredLevel</th>
+<th class="head">ItemLevel</th>
+<th class="head">RideMount</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>.add 50250</td>
+<td>大型爱心火箭</td>
+<td>教你学会如何召唤这个坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>80</td>
+<td>80</td>
+<td>.aura 71342</td>
+</tr>
+<tr class="row-odd"><td>.add 44557</td>
+<td>迅捷黯纹飞毯</td>
+<td>教你学会如何召唤这种飞毯。只能在外域或诺森德使用。这是一种速度非常快的飞毯。</td>
+<td>4</td>
+<td>70</td>
+<td>80</td>
+<td>.aura 0</td>
+</tr>
+<tr class="row-even"><td>.add 44556</td>
+<td>迅捷魔焰飞毯</td>
+<td>教你学会如何召唤这种飞毯。只能在外域或诺森德使用。这是一种速度非常快的飞毯。</td>
+<td>4</td>
+<td>70</td>
+<td>80</td>
+<td>.aura 61446</td>
+</tr>
+<tr class="row-odd"><td>.add 44555</td>
+<td>迅捷月布飞毯</td>
+<td>教你学会如何召唤这种飞毯。只能在外域或诺森德使用。这是一种速度非常快的飞毯。</td>
+<td>4</td>
+<td>70</td>
+<td>80</td>
+<td>.aura 61442</td>
+</tr>
+<tr class="row-even"><td>.add 44413</td>
+<td>机械师的摩托车</td>
+<td>教你学会驾驶这种摩托车。</td>
+<td>4</td>
+<td>40</td>
+<td>80</td>
+<td>.aura 60424</td>
+</tr>
+<tr class="row-odd"><td>.add 41508</td>
+<td>机械路霸</td>
+<td>教你学会驾驶这种超酷的摩托车。</td>
+<td>4</td>
+<td>40</td>
+<td>80</td>
+<td>.aura 55531</td>
+</tr>
+<tr class="row-even"><td>.add 39303</td>
+<td>迅捷飞毯</td>
+<td>&nbsp;</td>
+<td>4</td>
+<td>70</td>
+<td>80</td>
+<td>.aura 0</td>
+</tr>
+<tr class="row-odd"><td>.add 46109</td>
+<td>海龟</td>
+<td>教你学会召唤海龟坐骑。这种坐骑在陆地上的移动速度不是很快，但在水里就大不一样了。</td>
+<td>3</td>
+<td>0</td>
+<td>80</td>
+<td>.aura 64731</td>
+</tr>
+<tr class="row-even"><td>.add 44229</td>
+<td>出租驭风者的缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑</td>
+<td>1</td>
+<td>77</td>
+<td>77</td>
+<td>.aura 0</td>
+</tr>
+<tr class="row-odd"><td>.add 44221</td>
+<td>出租狮鹫的缰绳</td>
+<td>&nbsp;</td>
+<td>1</td>
+<td>77</td>
+<td>77</td>
+<td>.aura 0</td>
+</tr>
+<tr class="row-even"><td>.add 54797</td>
+<td>寒霜飞毯</td>
+<td>教你学会召唤这种坐骑。这种坐骑的速度会根据你的骑术等级和所在区域改变。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 75596</td>
+</tr>
+<tr class="row-odd"><td>.add 51955</td>
+<td>冰锢霜育镇压者缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种飞行坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 72807</td>
+</tr>
+<tr class="row-even"><td>.add 51954</td>
+<td>浴血霜育镇压者缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种飞行坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 72808</td>
+</tr>
+<tr class="row-odd"><td>.add 49636</td>
+<td>奥妮克希亚座龙缰绳</td>
+<td>教你学会如何召唤这个坐骑。它只能在外域或北裂境召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 69395</td>
+</tr>
+<tr class="row-even"><td>.add 49286</td>
+<td>X-51型虚空火箭极限版</td>
+<td>教你学会如何召唤这个坐骑。它只能在外域或北裂境召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 46199</td>
+</tr>
+<tr class="row-odd"><td>.add 47840</td>
+<td>无情角斗士的冰霜巨龙</td>
+<td>教你学会如何召唤这个坐骑。它只能在外域或北裂境召唤。这是一种速度极快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 67336</td>
+</tr>
+<tr class="row-even"><td>.add 46814</td>
+<td>夺日者龙鹰</td>
+<td>教你学会如何召唤这个坐骑。它只能在外域或北裂境召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 66088</td>
+</tr>
+<tr class="row-odd"><td>.add 46813</td>
+<td>银色盟约角鹰兽</td>
+<td>教你学会如何召唤这个坐骑。它只能在外域或北裂境召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 66087</td>
+</tr>
+<tr class="row-even"><td>.add 46708</td>
+<td>致命角斗士的冰霜巨龙</td>
+<td>教你学会如何召唤这个坐骑。它只能在外域或北裂境召唤。这是一种速度极快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 64927</td>
+</tr>
+<tr class="row-odd"><td>.add 46171</td>
+<td>致命角斗士的冰霜巨龙</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度极快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 65439</td>
+</tr>
+<tr class="row-even"><td>.add 45802</td>
+<td>铁锈始祖幼龙的缰绳</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 63963</td>
+</tr>
+<tr class="row-odd"><td>.add 45801</td>
+<td>铁箍始祖幼龙的缰绳</td>
+<td>教你学会如何召唤这个坐骑。它只能在外域或北裂境召唤。这是一种速度极快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 63956</td>
+</tr>
+<tr class="row-even"><td>.add 45725</td>
+<td>银色角鹰兽</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 63844</td>
+</tr>
+<tr class="row-odd"><td>.add 45693</td>
+<td>米米尔隆的徽记</td>
+<td>教你学会如何召唤这个装置。它只能在外域或诺森德召唤。这是一颗速度非常快的…头。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 63796</td>
+</tr>
+<tr class="row-even"><td>.add 44843</td>
+<td>蓝色龙鹰坐骑</td>
+<td>教你学会如何召唤这个坐骑。它只能在外域或北裂境召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 61996</td>
+</tr>
+<tr class="row-odd"><td>.add 44842</td>
+<td>红色龙鹰坐骑</td>
+<td>教你学会如何召唤这个坐骑。它只能在外域或北裂境召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 61997</td>
+</tr>
+<tr class="row-even"><td>.add 44707</td>
+<td>绿色始祖幼龙的缰绳</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 61294</td>
+</tr>
+<tr class="row-odd"><td>.add 44690</td>
+<td>装甲蓝色驭风者</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 61230</td>
+</tr>
+<tr class="row-even"><td>.add 44689</td>
+<td>装甲雪色狮鹫</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 61229</td>
+</tr>
+<tr class="row-odd"><td>.add 44558</td>
+<td>华丽的飞毯</td>
+<td>教你学会如何召唤这种飞毯。只能在外域或诺森德使用。这是一种速度非常快的飞毯。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 61309</td>
+</tr>
+<tr class="row-even"><td>.add 44178</td>
+<td>白色幼龙的缰绳</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 60025</td>
+</tr>
+<tr class="row-odd"><td>.add 44177</td>
+<td>紫色始祖幼龙的缰绳</td>
+<td>教你学会如何召唤这个坐骑。它只能在外域或北裂境召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 60024</td>
+</tr>
+<tr class="row-even"><td>.add 44175</td>
+<td>瘟疫始祖幼龙的缰绳</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 60021</td>
+</tr>
+<tr class="row-odd"><td>.add 44168</td>
+<td>迷失始祖幼龙的缰绳</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 60002</td>
+</tr>
+<tr class="row-even"><td>.add 44164</td>
+<td>黑色始祖幼龙的缰绳</td>
+<td>教你学会如何召唤这个坐骑。它只能在外域或北裂境召唤。这是一种速度极快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 59976</td>
+</tr>
+<tr class="row-odd"><td>.add 44160</td>
+<td>红色始祖幼龙的缰绳</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 59961</td>
+</tr>
+<tr class="row-even"><td>.add 44151</td>
+<td>蓝色始祖幼龙的缰绳</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 59996</td>
+</tr>
+<tr class="row-odd"><td>.add 43986</td>
+<td>黑色幼龙的缰绳</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 59650</td>
+</tr>
+<tr class="row-even"><td>.add 43955</td>
+<td>红色幼龙的缰绳</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 59570</td>
+</tr>
+<tr class="row-odd"><td>.add 43954</td>
+<td>暮光幼龙的缰绳</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 59571</td>
+</tr>
+<tr class="row-even"><td>.add 43953</td>
+<td>蓝色幼龙的缰绳</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 59568</td>
+</tr>
+<tr class="row-odd"><td>.add 43952</td>
+<td>天蓝幼龙的缰绳</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 59567</td>
+</tr>
+<tr class="row-even"><td>.add 43951</td>
+<td>青铜幼龙的缰绳</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 59569</td>
+</tr>
+<tr class="row-odd"><td>.add 43516</td>
+<td>野蛮角斗士的虚空幼龙</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度极快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 58615</td>
+</tr>
+<tr class="row-even"><td>.add 37676</td>
+<td>复仇角斗士的虚空幼龙</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度极快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 49193</td>
+</tr>
+<tr class="row-odd"><td>.add 35226</td>
+<td>X-51虚空火箭特别加强版</td>
+<td>&nbsp;</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 46199</td>
+</tr>
+<tr class="row-even"><td>.add 34092</td>
+<td>残酷角斗士的虚空幼龙</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 44744</td>
+</tr>
+<tr class="row-odd"><td>.add 34061</td>
+<td>涡轮加速飞行器控制台</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 44151</td>
+</tr>
+<tr class="row-even"><td>.add 33999</td>
+<td>塞纳里奥作战角鹰兽</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 43927</td>
+</tr>
+<tr class="row-odd"><td>.add 33809</td>
+<td>阿曼尼战熊</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 43688</td>
+</tr>
+<tr class="row-even"><td>.add 32862</td>
+<td>红色灵翼幼龙的缰绳</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 41518</td>
+</tr>
+<tr class="row-odd"><td>.add 32861</td>
+<td>绿色灵翼幼龙的缰绳</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 41517</td>
+</tr>
+<tr class="row-even"><td>.add 32860</td>
+<td>紫色灵翼幼龙的缰绳</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 41516</td>
+</tr>
+<tr class="row-odd"><td>.add 32859</td>
+<td>蓝色灵翼幼龙的缰绳</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 41515</td>
+</tr>
+<tr class="row-even"><td>.add 32858</td>
+<td>青色灵翼幼龙的缰绳</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 41514</td>
+</tr>
+<tr class="row-odd"><td>.add 32857</td>
+<td>黑色灵翼幼龙的缰绳</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 41513</td>
+</tr>
+<tr class="row-even"><td>.add 32458</td>
+<td>奥的灰烬</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 40192</td>
+</tr>
+<tr class="row-odd"><td>.add 32319</td>
+<td>蓝色骑乘虚空鳐</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 39803</td>
+</tr>
+<tr class="row-even"><td>.add 32318</td>
+<td>银色骑乘虚空鳐</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 39802</td>
+</tr>
+<tr class="row-odd"><td>.add 32317</td>
+<td>红色骑乘虚空鳐</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 39800</td>
+</tr>
+<tr class="row-even"><td>.add 32316</td>
+<td>紫色骑乘虚空鳐</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 39801</td>
+</tr>
+<tr class="row-odd"><td>.add 32314</td>
+<td>绿色骑乘虚空鳐</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 39798</td>
+</tr>
+<tr class="row-even"><td>.add 30609</td>
+<td>迅捷虚空幼龙</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度极快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 37015</td>
+</tr>
+<tr class="row-odd"><td>.add 25533</td>
+<td>迅捷紫色驭风者</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 32297</td>
+</tr>
+<tr class="row-even"><td>.add 25532</td>
+<td>迅捷黄色驭风者</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 32296</td>
+</tr>
+<tr class="row-odd"><td>.add 25531</td>
+<td>迅捷绿色驭风者</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 32295</td>
+</tr>
+<tr class="row-even"><td>.add 25529</td>
+<td>迅捷紫色狮鹫</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 32292</td>
+</tr>
+<tr class="row-odd"><td>.add 25528</td>
+<td>迅捷绿色狮鹫</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 32290</td>
+</tr>
+<tr class="row-even"><td>.add 25527</td>
+<td>迅捷红色狮鹫</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 32289</td>
+</tr>
+<tr class="row-odd"><td>.add 25477</td>
+<td>迅捷红色驭风者</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 32246</td>
+</tr>
+<tr class="row-even"><td>.add 25473</td>
+<td>迅捷蓝色狮鹫</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>70</td>
+<td>70</td>
+<td>.aura 32242</td>
+</tr>
+<tr class="row-odd"><td>.add 54860</td>
+<td>X-53型观光火箭</td>
+<td>教你学会召唤这种坐骑。这种坐骑的速度会根据你的骑术等级和所在区域改变。</td>
+<td>4</td>
+<td>60</td>
+<td>60</td>
+<td>.aura 75973</td>
+</tr>
+<tr class="row-even"><td>.add 54069</td>
+<td>炽热的角鹰兽</td>
+<td>教你学会召唤这种坐骑。这是一种飞行坐骑。</td>
+<td>4</td>
+<td>60</td>
+<td>60</td>
+<td>.aura 74856</td>
+</tr>
+<tr class="row-odd"><td>.add 46778</td>
+<td>魔法鸡蛋</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>60</td>
+<td>60</td>
+<td>.aura 65917</td>
+</tr>
+<tr class="row-even"><td>.add 46101</td>
+<td>蓝色骷髅战马</td>
+<td>&nbsp;</td>
+<td>4</td>
+<td>60</td>
+<td>60</td>
+<td>.aura 0</td>
+</tr>
+<tr class="row-odd"><td>.add 40775</td>
+<td>黑锋骸骨狮鹫</td>
+<td>速度随骑术技能等级变化。</td>
+<td>4</td>
+<td>60</td>
+<td>60</td>
+<td>.aura 54729</td>
+</tr>
+<tr class="row-even"><td>.add 49285</td>
+<td>X-51型虚空火箭</td>
+<td>教你学会如何召唤这个坐骑。它只能在外域或北裂境召唤。</td>
+<td>3</td>
+<td>60</td>
+<td>60</td>
+<td>.aura 46197</td>
+</tr>
+<tr class="row-odd"><td>.add 44554</td>
+<td>飞毯</td>
+<td>教你学会召唤这种飞毯。只能在外域或诺森德使用。</td>
+<td>3</td>
+<td>60</td>
+<td>60</td>
+<td>.aura 61451</td>
+</tr>
+<tr class="row-even"><td>.add 35225</td>
+<td>X-51虚空火箭</td>
+<td>&nbsp;</td>
+<td>3</td>
+<td>60</td>
+<td>60</td>
+<td>.aura 46197</td>
+</tr>
+<tr class="row-odd"><td>.add 34060</td>
+<td>飞行器控制台</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德使用。</td>
+<td>3</td>
+<td>60</td>
+<td>60</td>
+<td>.aura 44153</td>
+</tr>
+<tr class="row-even"><td>.add 25476</td>
+<td>绿色驭风者</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。</td>
+<td>3</td>
+<td>60</td>
+<td>60</td>
+<td>.aura 32245</td>
+</tr>
+<tr class="row-odd"><td>.add 25475</td>
+<td>蓝色驭风者</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。</td>
+<td>3</td>
+<td>60</td>
+<td>60</td>
+<td>.aura 32244</td>
+</tr>
+<tr class="row-even"><td>.add 25474</td>
+<td>茶色驭风者</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。</td>
+<td>3</td>
+<td>60</td>
+<td>60</td>
+<td>.aura 32243</td>
+</tr>
+<tr class="row-odd"><td>.add 25472</td>
+<td>雪色狮鹫</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德进行召唤。</td>
+<td>3</td>
+<td>60</td>
+<td>60</td>
+<td>.aura 32240</td>
+</tr>
+<tr class="row-even"><td>.add 25471</td>
+<td>黑色狮鹫</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德使用。</td>
+<td>3</td>
+<td>60</td>
+<td>60</td>
+<td>.aura 32239</td>
+</tr>
+<tr class="row-odd"><td>.add 25470</td>
+<td>金色狮鹫</td>
+<td>教你学会召唤这种坐骑。只能在外域或诺森德使用。</td>
+<td>3</td>
+<td>60</td>
+<td>60</td>
+<td>.aura 32235</td>
+</tr>
+<tr class="row-even"><td>.add 21176</td>
+<td>黑色其拉共鸣水晶</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>5</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 26656</td>
+</tr>
+<tr class="row-odd"><td>.add 54068</td>
+<td>白色蓬毛犀牛</td>
+<td>教你如何召唤你的小伙伴。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 74918</td>
+</tr>
+<tr class="row-even"><td>.add 49290</td>
+<td>魔法猛鸡蛋</td>
+<td>教你学会如何召唤这个坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 65917</td>
+</tr>
+<tr class="row-odd"><td>.add 49284</td>
+<td>迅捷鬼灵之虎缰绳</td>
+<td>教你学会如何召唤这个坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 42777</td>
+</tr>
+<tr class="row-even"><td>.add 49282</td>
+<td>大型战斗熊</td>
+<td>教你学会如何召唤这个坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 51412</td>
+</tr>
+<tr class="row-odd"><td>.add 49098</td>
+<td>黑色十字军战马</td>
+<td>教你学会如何召唤这个坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 68188</td>
+</tr>
+<tr class="row-even"><td>.add 49096</td>
+<td>白色十字军战马</td>
+<td>教你学会如何召唤这个坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 68187</td>
+</tr>
+<tr class="row-odd"><td>.add 49046</td>
+<td>迅捷部落战狼</td>
+<td>教你学会如何召唤这个坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 68056</td>
+</tr>
+<tr class="row-even"><td>.add 49044</td>
+<td>迅捷联盟战马</td>
+<td>教你学会如何召唤这个坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 68057</td>
+</tr>
+<tr class="row-odd"><td>.add 47180</td>
+<td>银色战马</td>
+<td>教你学会如何召唤这个坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 67466</td>
+</tr>
+<tr class="row-even"><td>.add 47179</td>
+<td>银色军马</td>
+<td>教你学会如何召唤这个坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 66906</td>
+</tr>
+<tr class="row-odd"><td>.add 47101</td>
+<td>赭色白骨战马</td>
+<td>教你学会如何召唤这个坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 66846</td>
+</tr>
+<tr class="row-even"><td>.add 46816</td>
+<td>夺日者陆行鸟</td>
+<td>教你学会如何召唤这个坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 66091</td>
+</tr>
+<tr class="row-odd"><td>.add 46815</td>
+<td>奎尔多雷战马</td>
+<td>教你学会如何召唤这个坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 66090</td>
+</tr>
+<tr class="row-even"><td>.add 46764</td>
+<td>白骨战马</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 65645</td>
+</tr>
+<tr class="row-odd"><td>.add 46763</td>
+<td>涡轮机械陆行鸟</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 65642</td>
+</tr>
+<tr class="row-even"><td>.add 46762</td>
+<td>迅捷紫色战羊</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 65643</td>
+</tr>
+<tr class="row-odd"><td>.add 46761</td>
+<td>迅捷红色陆行鸟</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 65639</td>
+</tr>
+<tr class="row-even"><td>.add 46760</td>
+<td>迅捷紫色迅猛龙</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 65644</td>
+</tr>
+<tr class="row-odd"><td>.add 46759</td>
+<td>迅捷月刃豹</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 65638</td>
+</tr>
+<tr class="row-even"><td>.add 46758</td>
+<td>迅捷灰色战马</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 65640</td>
+</tr>
+<tr class="row-odd"><td>.add 46757</td>
+<td>迅捷紫鬃战狼</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 65646</td>
+</tr>
+<tr class="row-even"><td>.add 46756</td>
+<td>重型红色雷象</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 65637</td>
+</tr>
+<tr class="row-odd"><td>.add 46755</td>
+<td>大型金色科多兽</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 65641</td>
+</tr>
+<tr class="row-even"><td>.add 46752</td>
+<td>迅捷灰色战马</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 65640</td>
+</tr>
+<tr class="row-odd"><td>.add 46751</td>
+<td>迅捷红色陆行鸟</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 65639</td>
+</tr>
+<tr class="row-even"><td>.add 46750</td>
+<td>大型金色科多兽</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 65641</td>
+</tr>
+<tr class="row-odd"><td>.add 46749</td>
+<td>迅捷紫鬃战狼</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 65646</td>
+</tr>
+<tr class="row-even"><td>.add 46748</td>
+<td>迅捷紫色战羊</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 65643</td>
+</tr>
+<tr class="row-odd"><td>.add 46747</td>
+<td>涡轮机械陆行鸟</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 65642</td>
+</tr>
+<tr class="row-even"><td>.add 46746</td>
+<td>白骨战马</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 65645</td>
+</tr>
+<tr class="row-odd"><td>.add 46745</td>
+<td>重型红色雷象</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 65637</td>
+</tr>
+<tr class="row-even"><td>.add 46744</td>
+<td>迅捷月刃豹</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 65638</td>
+</tr>
+<tr class="row-odd"><td>.add 46743</td>
+<td>迅捷紫色迅猛龙</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 65644</td>
+</tr>
+<tr class="row-even"><td>.add 46102</td>
+<td>毒皮暴掠龙哨</td>
+<td>教你学会如何召唤这个坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 64659</td>
+</tr>
+<tr class="row-odd"><td>.add 45597</td>
+<td>被遗忘者战马</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 63643</td>
+</tr>
+<tr class="row-even"><td>.add 45596</td>
+<td>银月城陆行鸟</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 63642</td>
+</tr>
+<tr class="row-odd"><td>.add 45595</td>
+<td>奥格瑞玛战狼</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 63640</td>
+</tr>
+<tr class="row-even"><td>.add 45593</td>
+<td>暗矛迅猛龙</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 63635</td>
+</tr>
+<tr class="row-odd"><td>.add 45592</td>
+<td>雷霆崖科多兽</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 63641</td>
+</tr>
+<tr class="row-even"><td>.add 45591</td>
+<td>达纳苏斯夜刃豹</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 63637</td>
+</tr>
+<tr class="row-odd"><td>.add 45590</td>
+<td>埃索达雷象</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 63639</td>
+</tr>
+<tr class="row-even"><td>.add 45589</td>
+<td>诺莫瑞根机械陆行鸟</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 63638</td>
+</tr>
+<tr class="row-odd"><td>.add 45586</td>
+<td>铁炉堡战羊</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 63636</td>
+</tr>
+<tr class="row-even"><td>.add 45125</td>
+<td>暴风城战马</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 63232</td>
+</tr>
+<tr class="row-odd"><td>.add 44235</td>
+<td>旅行者的苔原猛犸象缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的三人坐骑，可以运载乘客。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 61425</td>
+</tr>
+<tr class="row-even"><td>.add 44234</td>
+<td>旅行者的苔原猛犸象缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的三人坐骑，可以运载乘客。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 61447</td>
+</tr>
+<tr class="row-odd"><td>.add 44231</td>
+<td>长毛猛犸象的缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 59793</td>
+</tr>
+<tr class="row-even"><td>.add 44230</td>
+<td>长毛猛犸象的缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 59791</td>
+</tr>
+<tr class="row-odd"><td>.add 44226</td>
+<td>装甲棕熊的缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 60116</td>
+</tr>
+<tr class="row-even"><td>.add 44225</td>
+<td>装甲棕熊的缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 60114</td>
+</tr>
+<tr class="row-odd"><td>.add 44224</td>
+<td>黑色战熊的缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 60119</td>
+</tr>
+<tr class="row-even"><td>.add 44223</td>
+<td>黑色战熊的缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 60118</td>
+</tr>
+<tr class="row-odd"><td>.add 44086</td>
+<td>重型冰雪猛犸象的缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 61469</td>
+</tr>
+<tr class="row-even"><td>.add 44083</td>
+<td>重型黑色猛犸战象的缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 61467</td>
+</tr>
+<tr class="row-odd"><td>.add 44080</td>
+<td>冰雪猛犸象的缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 59797</td>
+</tr>
+<tr class="row-even"><td>.add 44077</td>
+<td>黑色猛犸战象的缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 59788</td>
+</tr>
+<tr class="row-odd"><td>.add 43962</td>
+<td>白色北极熊的缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 54753</td>
+</tr>
+<tr class="row-even"><td>.add 43961</td>
+<td>重型冰雪猛犸象的缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 61470</td>
+</tr>
+<tr class="row-odd"><td>.add 43959</td>
+<td>重型黑色猛犸战象的缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 61465</td>
+</tr>
+<tr class="row-even"><td>.add 43958</td>
+<td>冰雪猛犸象的缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 59799</td>
+</tr>
+<tr class="row-odd"><td>.add 43956</td>
+<td>黑色猛犸战象的缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 59785</td>
+</tr>
+<tr class="row-even"><td>.add 38576</td>
+<td>大战熊</td>
+<td>&nbsp;</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 51412</td>
+</tr>
+<tr class="row-odd"><td>.add 37828</td>
+<td>大型美酒节科多兽</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 49379</td>
+</tr>
+<tr class="row-even"><td>.add 37719</td>
+<td>迅捷斑马</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 49322</td>
+</tr>
+<tr class="row-odd"><td>.add 35906</td>
+<td>黑色作战雷象的缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 48027</td>
+</tr>
+<tr class="row-even"><td>.add 35513</td>
+<td>迅捷白色陆行鸟</td>
+<td>教你学会召唤这种凯尔萨斯·逐日者的坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 46628</td>
+</tr>
+<tr class="row-odd"><td>.add 34129</td>
+<td>迅捷作战陆行鸟</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 35028</td>
+</tr>
+<tr class="row-even"><td>.add 33977</td>
+<td>迅捷美酒节赛羊</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 43900</td>
+</tr>
+<tr class="row-odd"><td>.add 33225</td>
+<td>迅捷幽灵虎缰绳</td>
+<td>&nbsp;</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 42777</td>
+</tr>
+<tr class="row-even"><td>.add 32768</td>
+<td>乌鸦之神的缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 41252</td>
+</tr>
+<tr class="row-odd"><td>.add 31836</td>
+<td>白色骑乘塔布羊缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 39319</td>
+</tr>
+<tr class="row-even"><td>.add 31835</td>
+<td>白色骑乘塔布羊缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 39319</td>
+</tr>
+<tr class="row-odd"><td>.add 31834</td>
+<td>褐色骑乘塔布羊缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 39318</td>
+</tr>
+<tr class="row-even"><td>.add 31833</td>
+<td>褐色骑乘塔布羊缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 39318</td>
+</tr>
+<tr class="row-odd"><td>.add 31832</td>
+<td>银色骑乘塔布羊缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 39317</td>
+</tr>
+<tr class="row-even"><td>.add 31831</td>
+<td>银色骑乘塔布羊缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 39317</td>
+</tr>
+<tr class="row-odd"><td>.add 31830</td>
+<td>蓝色骑乘塔布羊缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 39315</td>
+</tr>
+<tr class="row-even"><td>.add 31829</td>
+<td>蓝色骑乘塔布羊缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 39315</td>
+</tr>
+<tr class="row-odd"><td>.add 30480</td>
+<td>炽热战马的缰绳</td>
+<td>教你学会召唤猎手阿图门的战马。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 36702</td>
+</tr>
+<tr class="row-even"><td>.add 29747</td>
+<td>重型紫色雷象</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 35714</td>
+</tr>
+<tr class="row-odd"><td>.add 29746</td>
+<td>重型绿色雷象</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 35712</td>
+</tr>
+<tr class="row-even"><td>.add 29745</td>
+<td>重型蓝色雷象</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 35713</td>
+</tr>
+<tr class="row-odd"><td>.add 29472</td>
+<td>黑色军用迅猛龙哨</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 22721</td>
+</tr>
+<tr class="row-even"><td>.add 29471</td>
+<td>黑色军用座虎缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 22723</td>
+</tr>
+<tr class="row-odd"><td>.add 29470</td>
+<td>红色军用骷髅战马</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 22722</td>
+</tr>
+<tr class="row-even"><td>.add 29469</td>
+<td>黑色军用座狼号角</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 22724</td>
+</tr>
+<tr class="row-odd"><td>.add 29468</td>
+<td>黑色军用战马缰绳</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 22717</td>
+</tr>
+<tr class="row-even"><td>.add 29467</td>
+<td>黑色战羊</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 22720</td>
+</tr>
+<tr class="row-odd"><td>.add 29466</td>
+<td>黑色军用科多兽</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 22718</td>
+</tr>
+<tr class="row-even"><td>.add 29465</td>
+<td>黑色军用机械陆行鸟</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 22719</td>
+</tr>
+<tr class="row-odd"><td>.add 29231</td>
+<td>白色作战塔布羊缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 34897</td>
+</tr>
+<tr class="row-even"><td>.add 29230</td>
+<td>褐色作战塔布羊缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 34899</td>
+</tr>
+<tr class="row-odd"><td>.add 29229</td>
+<td>银色作战塔布羊缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 34898</td>
+</tr>
+<tr class="row-even"><td>.add 29228</td>
+<td>暗色作战塔布羊缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 34790</td>
+</tr>
+<tr class="row-odd"><td>.add 29227</td>
+<td>蓝色作战塔布羊缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 34896</td>
+</tr>
+<tr class="row-even"><td>.add 29224</td>
+<td>迅捷紫色陆行鸟</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 35027</td>
+</tr>
+<tr class="row-odd"><td>.add 29223</td>
+<td>迅捷绿色陆行鸟</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 35025</td>
+</tr>
+<tr class="row-even"><td>.add 29105</td>
+<td>褐色作战塔布羊缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 34899</td>
+</tr>
+<tr class="row-odd"><td>.add 29104</td>
+<td>银色作战塔布羊缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 34898</td>
+</tr>
+<tr class="row-even"><td>.add 29103</td>
+<td>白色作战塔布羊缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 34897</td>
+</tr>
+<tr class="row-odd"><td>.add 29102</td>
+<td>蓝色作战塔布羊缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 34896</td>
+</tr>
+<tr class="row-even"><td>.add 28936</td>
+<td>迅捷粉色陆行鸟</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 33660</td>
+</tr>
+<tr class="row-odd"><td>.add 28915</td>
+<td>暗色骑乘塔布羊缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 39316</td>
+</tr>
+<tr class="row-even"><td>.add 19902</td>
+<td>迅捷祖利安猛虎</td>
+<td>教你学会召唤高阶祭司塞卡尔的猛虎。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 24252</td>
+</tr>
+<tr class="row-odd"><td>.add 19872</td>
+<td>拉扎什迅猛龙</td>
+<td>教你学会召唤血领主曼多基尔的迅猛龙。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 24242</td>
+</tr>
+<tr class="row-even"><td>.add 19030</td>
+<td>雷矛军用坐骑</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23510</td>
+</tr>
+<tr class="row-odd"><td>.add 19029</td>
+<td>霜狼嗥叫者的号角</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23509</td>
+</tr>
+<tr class="row-even"><td>.add 18902</td>
+<td>迅捷雷刃豹缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23338</td>
+</tr>
+<tr class="row-odd"><td>.add 18798</td>
+<td>迅捷灰狼号角</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23252</td>
+</tr>
+<tr class="row-even"><td>.add 18797</td>
+<td>迅捷森林狼号角</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23251</td>
+</tr>
+<tr class="row-odd"><td>.add 18796</td>
+<td>迅捷棕狼号角</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23250</td>
+</tr>
+<tr class="row-even"><td>.add 18795</td>
+<td>大型灰色科多兽</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23248</td>
+</tr>
+<tr class="row-odd"><td>.add 18794</td>
+<td>大型棕色科多兽</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23249</td>
+</tr>
+<tr class="row-even"><td>.add 18793</td>
+<td>大型白色科多兽</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23247</td>
+</tr>
+<tr class="row-odd"><td>.add 18791</td>
+<td>紫色骷髅战马</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23246</td>
+</tr>
+<tr class="row-even"><td>.add 18790</td>
+<td>迅捷橙色迅猛龙</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23243</td>
+</tr>
+<tr class="row-odd"><td>.add 18789</td>
+<td>迅捷绿色迅猛龙</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23242</td>
+</tr>
+<tr class="row-even"><td>.add 18788</td>
+<td>迅捷蓝色迅猛龙</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23241</td>
+</tr>
+<tr class="row-odd"><td>.add 18787</td>
+<td>迅捷灰山羊</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23239</td>
+</tr>
+<tr class="row-even"><td>.add 18786</td>
+<td>迅捷棕山羊</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23238</td>
+</tr>
+<tr class="row-odd"><td>.add 18785</td>
+<td>迅捷白山羊</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23240</td>
+</tr>
+<tr class="row-even"><td>.add 18778</td>
+<td>迅捷白马</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23228</td>
+</tr>
+<tr class="row-odd"><td>.add 18777</td>
+<td>迅捷棕马</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23229</td>
+</tr>
+<tr class="row-even"><td>.add 18776</td>
+<td>迅捷褐色马</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23227</td>
+</tr>
+<tr class="row-odd"><td>.add 18774</td>
+<td>迅捷黄色机械陆行鸟</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23222</td>
+</tr>
+<tr class="row-even"><td>.add 18773</td>
+<td>迅捷白色机械陆行鸟</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23223</td>
+</tr>
+<tr class="row-odd"><td>.add 18772</td>
+<td>迅捷绿色机械陆行鸟</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23225</td>
+</tr>
+<tr class="row-even"><td>.add 18767</td>
+<td>迅捷雾刃豹缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23219</td>
+</tr>
+<tr class="row-odd"><td>.add 18766</td>
+<td>迅捷霜刃豹缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 23221</td>
+</tr>
+<tr class="row-even"><td>.add 18248</td>
+<td>红色骷髅战马</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 22722</td>
+</tr>
+<tr class="row-odd"><td>.add 18247</td>
+<td>黑色作战科多兽</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 22718</td>
+</tr>
+<tr class="row-even"><td>.add 18246</td>
+<td>黑色战斗迅猛龙之哨</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 22721</td>
+</tr>
+<tr class="row-odd"><td>.add 18245</td>
+<td>黑色战狼号角</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 22724</td>
+</tr>
+<tr class="row-even"><td>.add 18244</td>
+<td>黑色战羊</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 22720</td>
+</tr>
+<tr class="row-odd"><td>.add 18243</td>
+<td>黑色作战机械陆行鸟</td>
+<td>&nbsp;</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 22719</td>
+</tr>
+<tr class="row-even"><td>.add 18242</td>
+<td>黑色军用座虎缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 22723</td>
+</tr>
+<tr class="row-odd"><td>.add 18241</td>
+<td>黑色战驹缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 22717</td>
+</tr>
+<tr class="row-even"><td>.add 15293</td>
+<td>蓝色科多兽</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 18992</td>
+</tr>
+<tr class="row-odd"><td>.add 15292</td>
+<td>绿色科多兽</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 18991</td>
+</tr>
+<tr class="row-even"><td>.add 13335</td>
+<td>死亡军马的缰绳</td>
+<td>教你学会召唤瑞文戴尔男爵的死亡战马。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 17481</td>
+</tr>
+<tr class="row-odd"><td>.add 13334</td>
+<td>绿色骸骨军马</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 17465</td>
+</tr>
+<tr class="row-even"><td>.add 13329</td>
+<td>霜山羊</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 17460</td>
+</tr>
+<tr class="row-odd"><td>.add 13328</td>
+<td>黑山羊</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 17461</td>
+</tr>
+<tr class="row-even"><td>.add 13327</td>
+<td>冰蓝色机械陆行鸟A型</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 17459</td>
+</tr>
+<tr class="row-odd"><td>.add 13326</td>
+<td>白色机械陆行鸟B型</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 15779</td>
+</tr>
+<tr class="row-even"><td>.add 13317</td>
+<td>白色迅猛龙之哨</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 17450</td>
+</tr>
+<tr class="row-odd"><td>.add 13086</td>
+<td>冬泉霜刃豹缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 17229</td>
+</tr>
+<tr class="row-even"><td>.add 12354</td>
+<td>褐色马缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 16082</td>
+</tr>
+<tr class="row-odd"><td>.add 12353</td>
+<td>白马缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 16083</td>
+</tr>
+<tr class="row-even"><td>.add 12351</td>
+<td>冰狼号角</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 16081</td>
+</tr>
+<tr class="row-odd"><td>.add 12330</td>
+<td>赤狼号角</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 16080</td>
+</tr>
+<tr class="row-even"><td>.add 12303</td>
+<td>夜刃豹缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 16055</td>
+</tr>
+<tr class="row-odd"><td>.add 12302</td>
+<td>上古霜刃豹缰绳</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 16056</td>
+</tr>
+<tr class="row-even"><td>.add 8586</td>
+<td>红色迅猛龙之哨</td>
+<td>教你学会召唤这种坐骑。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 16084</td>
+</tr>
+<tr class="row-odd"><td>.add 21324</td>
+<td>黄色其拉共鸣水晶</td>
+<td>教你学会召唤这种坐骑。你只能在安其拉神殿召唤这种坐骑。</td>
+<td>3</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 26055</td>
+</tr>
+<tr class="row-even"><td>.add 21323</td>
+<td>绿色其拉共鸣水晶</td>
+<td>教你学会召唤这种坐骑。你只能在安其拉神殿召唤这种坐骑。</td>
+<td>3</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 26056</td>
+</tr>
+<tr class="row-odd"><td>.add 21321</td>
+<td>红色其拉共鸣水晶</td>
+<td>教你学会召唤这种坐骑。你只能在安其拉神殿召唤这种坐骑。</td>
+<td>3</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 26054</td>
+</tr>
+<tr class="row-even"><td>.add 21218</td>
+<td>蓝色其拉共鸣水晶</td>
+<td>教你学会召唤这种坐骑。你只能在安其拉神殿召唤这种坐骑。</td>
+<td>3</td>
+<td>40</td>
+<td>40</td>
+<td>.aura 25953</td>
+</tr>
+<tr class="row-odd"><td>.add 13325</td>
+<td>绿色萤光机械陆行鸟</td>
+<td>&nbsp;</td>
+<td>3</td>
+<td>30</td>
+<td>40</td>
+<td>.aura 0</td>
+</tr>
+<tr class="row-even"><td>.add 54811</td>
+<td>星穹战马缰绳</td>
+<td>教你学会召唤这种坐骑。这种坐骑的速度会根据你的骑术等级和所在区域改变。</td>
+<td>4</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 75614</td>
+</tr>
+<tr class="row-odd"><td>.add 52200</td>
+<td>赤红死亡战骑缰绳</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>4</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 73313</td>
+</tr>
+<tr class="row-even"><td>.add 50818</td>
+<td>无敌缰绳</td>
+<td>教你学会如何召唤这个坐骑。它只能在外域或北裂境召唤。这是一种速度非常快的坐骑。</td>
+<td>4</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 72286</td>
+</tr>
+<tr class="row-odd"><td>.add 37012</td>
+<td>无头骑士的缰绳</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>4</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 48025</td>
+</tr>
+<tr class="row-even"><td>.add 49283</td>
+<td>鬼灵之虎缰绳</td>
+<td>教你学会如何召唤这个坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 42776</td>
+</tr>
+<tr class="row-odd"><td>.add 47100</td>
+<td>条纹晨刃豹的缰绳</td>
+<td>教你学会如何召唤这个坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 66847</td>
+</tr>
+<tr class="row-even"><td>.add 46308</td>
+<td>黑色骷髅战马</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 64977</td>
+</tr>
+<tr class="row-odd"><td>.add 46100</td>
+<td>白色科多兽</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 64657</td>
+</tr>
+<tr class="row-even"><td>.add 46099</td>
+<td>黑狼号角</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 64658</td>
+</tr>
+<tr class="row-odd"><td>.add 43599</td>
+<td>暴雪巨熊</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 58983</td>
+</tr>
+<tr class="row-even"><td>.add 33976</td>
+<td>美酒节赛羊</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 43899</td>
+</tr>
+<tr class="row-odd"><td>.add 33224</td>
+<td>幽灵虎缰绳</td>
+<td>&nbsp;</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 42776</td>
+</tr>
+<tr class="row-even"><td>.add 29744</td>
+<td>灰色雷象</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 35710</td>
+</tr>
+<tr class="row-odd"><td>.add 29743</td>
+<td>紫色雷象</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 35711</td>
+</tr>
+<tr class="row-even"><td>.add 29222</td>
+<td>紫色陆行鸟</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 35018</td>
+</tr>
+<tr class="row-odd"><td>.add 29221</td>
+<td>黑色陆行鸟</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 35022</td>
+</tr>
+<tr class="row-even"><td>.add 29220</td>
+<td>蓝色陆行鸟</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 35020</td>
+</tr>
+<tr class="row-odd"><td>.add 28927</td>
+<td>红色陆行鸟</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 34795</td>
+</tr>
+<tr class="row-even"><td>.add 28481</td>
+<td>棕色雷象</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 34406</td>
+</tr>
+<tr class="row-odd"><td>.add 15290</td>
+<td>棕色科多兽</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 18990</td>
+</tr>
+<tr class="row-even"><td>.add 15277</td>
+<td>灰色科多兽</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 18989</td>
+</tr>
+<tr class="row-odd"><td>.add 13333</td>
+<td>棕色骸骨军马</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 17464</td>
+</tr>
+<tr class="row-even"><td>.add 13332</td>
+<td>蓝色骸骨军马</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 17463</td>
+</tr>
+<tr class="row-odd"><td>.add 13331</td>
+<td>红色骸骨军马</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 17462</td>
+</tr>
+<tr class="row-even"><td>.add 13322</td>
+<td>未涂色的机械陆行鸟</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 17454</td>
+</tr>
+<tr class="row-odd"><td>.add 13321</td>
+<td>绿色机械陆行鸟</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 17453</td>
+</tr>
+<tr class="row-even"><td>.add 8632</td>
+<td>斑点霜刃豹缰绳</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 10789</td>
+</tr>
+<tr class="row-odd"><td>.add 8631</td>
+<td>条纹霜刃豹缰绳</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 8394</td>
+</tr>
+<tr class="row-even"><td>.add 8629</td>
+<td>条纹夜刃豹缰绳</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 10793</td>
+</tr>
+<tr class="row-odd"><td>.add 8595</td>
+<td>蓝色机械陆行鸟</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 10969</td>
+</tr>
+<tr class="row-even"><td>.add 8592</td>
+<td>紫色迅猛龙之哨</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 10799</td>
+</tr>
+<tr class="row-odd"><td>.add 8591</td>
+<td>青色迅猛龙之哨</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 10796</td>
+</tr>
+<tr class="row-even"><td>.add 8588</td>
+<td>绿色迅猛龙之哨</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 8395</td>
+</tr>
+<tr class="row-odd"><td>.add 8563</td>
+<td>红色机械陆行鸟</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 10873</td>
+</tr>
+<tr class="row-even"><td>.add 5873</td>
+<td>白山羊</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 6898</td>
+</tr>
+<tr class="row-odd"><td>.add 5872</td>
+<td>棕山羊</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 6899</td>
+</tr>
+<tr class="row-even"><td>.add 5864</td>
+<td>灰山羊</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 6777</td>
+</tr>
+<tr class="row-odd"><td>.add 5668</td>
+<td>暗棕狼号角</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 6654</td>
+</tr>
+<tr class="row-even"><td>.add 5665</td>
+<td>暗灰狼号角</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 6653</td>
+</tr>
+<tr class="row-odd"><td>.add 5656</td>
+<td>棕马缰绳</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 458</td>
+</tr>
+<tr class="row-even"><td>.add 5655</td>
+<td>栗色马缰绳</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 6648</td>
+</tr>
+<tr class="row-odd"><td>.add 2414</td>
+<td>杂色马缰绳</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 472</td>
+</tr>
+<tr class="row-even"><td>.add 2411</td>
+<td>黑马缰绳</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 470</td>
+</tr>
+<tr class="row-odd"><td>.add 1132</td>
+<td>棕狼号角</td>
+<td>教你学会召唤这种坐骑。</td>
+<td>3</td>
+<td>20</td>
+<td>20</td>
+<td>.aura 580</td>
+</tr>
+<tr class="row-even"><td>.add 33184</td>
+<td>迅捷魔法扫帚</td>
+<td>&nbsp;</td>
+<td>4</td>
+<td>40</td>
+<td>1</td>
+<td>.aura 0</td>
+</tr>
+<tr class="row-odd"><td>.add 33182</td>
+<td>迅捷飞行扫帚</td>
+<td>&nbsp;</td>
+<td>4</td>
+<td>70</td>
+<td>1</td>
+<td>.aura 0</td>
+</tr>
+<tr class="row-even"><td>.add 37011</td>
+<td>魔法扫帚</td>
+<td>&nbsp;</td>
+<td>3</td>
+<td>10</td>
+<td>1</td>
+<td>.aura 0</td>
+</tr>
+<tr class="row-odd"><td>.add 33183</td>
+<td>魔法扫帚</td>
+<td>&nbsp;</td>
+<td>3</td>
+<td>10</td>
+<td>1</td>
+<td>.aura 0</td>
+</tr>
+<tr class="row-even"><td>.add 33176</td>
+<td>飞行扫帚</td>
+<td>&nbsp;</td>
+<td>3</td>
+<td>60</td>
+<td>1</td>
+<td>.aura 0</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="..\..\index.htm">
+              <img class="logo" src="..\..\_static\WowWlkPrivateServerManual.jpg" alt="Logo">
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="..\08-Faction\index.htm" title="previous chapter">声望修改(Faction)</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="..\10-Stats\index.htm" title="next chapter">装备属性的代码(Stats ID)</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="..\..\_sources\1-CustomizeGuide\09-Mount\index.txt" rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q">
+      <input type="submit" value="Go">
+      <input type="hidden" name="check_keywords" value="yes">
+      <input type="hidden" name="area" value="default">
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="..\..\genindex.htm" title="General Index">index</a></li>
+        <li class="right">
+          <a href="..\10-Stats\index.htm" title="装备属性的代码(Stats ID)">next</a> |</li>
+        <li class="right">
+          <a href="..\08-Faction\index.htm" title="声望修改(Faction)">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="..\..\index.htm">wowWlkPrivateServerManual 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="..\index.htm">单机修改手册(Customize Guide)</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, MacHuGWU.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

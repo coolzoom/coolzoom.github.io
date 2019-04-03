@@ -1,0 +1,22 @@
+各职业Build
+===========
+Build的意思是, 为达到某种目的的一个玩家角色, 所支持它的装备搭配, 铭文, 天赋, 铭文, 技巧等信息。
+
+.. toctree::
+	:maxdepth: 1
+
+	战士Build <Warrior/index.rst>
+	圣骑士Build <Paladin/index.rst>
+	死亡骑士Build <DeathKnight/index.rst>
+	猎人Build <Hunter/index.rst>
+	萨满Build <Shaman/index.rst>
+	盗贼Build <Rogue/index.rst>
+	德鲁伊Build <Druid/index.rst>
+	法师Build <Mage/index.rst>
+	牧师Build <Presis/index.rst>
+	术士Build <Warlock/index.rst>
+
+附录
+----
+
+- 国服WLK天赋模拟器: http://db.duowan.com/tf/tf3/

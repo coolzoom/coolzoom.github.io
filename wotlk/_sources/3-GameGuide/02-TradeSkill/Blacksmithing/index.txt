@@ -1,0 +1,8 @@
+锻造 (Blacksmithing)
+====================
+
+.. toctree::
+	:maxdepth: 1
+
+	Blacksmithing-1-to-375 <Blacksmithing-1-to-375.rst>
+	Blacksmithing-375-to-450 <Blacksmithing-375-to-450.rst>
