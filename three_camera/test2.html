@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>get-start</title>
+		<style>
+			body { margin: 0; }
+			canvas { display: block; }
+		</style>
+	</head>
+	<body>
+        <script src="js/three.js"></script>
+        <script src="OrbitControls.js"></script>
+		<script>
+            //-------------场景-------------
+			var scene = new THREE.Scene();
+            // ----------相机-------------
+			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+            //------------渲染器-----------
+			var renderer = new THREE.WebGLRenderer();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			document.body.appendChild( renderer.domElement );//输出位置
+            //------------添加模型
+			var geometry = new THREE.BoxGeometry();//立方体
+			var geometry2 = new THREE.SphereGeometry();//球体
+            // 添加材质
+			var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );//材质颜色
+            var material2 = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );//材质颜色
+            // 新模型
+			var cube = new THREE.Mesh( geometry, material );//模型1+材质
+            var cube2 = new THREE.Mesh( geometry2, material2 );//模型1+材质
+
+            cube2.position.x =5;
+
+			scene.add( cube );
+            scene.add( cube2 );
+
+            camera.position.z = 20;
+            
+            // 添加控制器 
+            //controls = new OrbitControls( camera, renderer.domElement );
+            //controls.target.set( 20, 20, 0 );
+            //controls.update();       
+
+
+			var animate = function () {
+				requestAnimationFrame( animate );
+
+				cube.rotation.x += 0.01;
+				cube.rotation.y += 0.01;
+
+                cube2.rotation.x += 0.01;
+                cube2.rotation.y += 0.01;
+                               
+				renderer.render( scene, camera );
+			};
+
+			animate();
+		</script>
+	</body>
+</html>
